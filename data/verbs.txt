@@ -1,0 +1,12 @@
+v1;tabe;ru;essen
+v5;omo;u;glauben, denken
+kuru;ku;ru;kommen
+suru;su;ru;machen, tun
+iku;i;ku;gehen (Richtung)
+v5;koro;su;töten, morden
+v1;nige;ru;fliehen
+v5;kae;ru;zurückkehren
+v5;ki;ru;schneiden
+v1;ki;ru;anziehen
+v5;hi;ku;spielen (Instrument)
+v1;mi;ru;sehen
