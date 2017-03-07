@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="de">
 <?php require '../includes/head.html' ?>
+<script>
+  $(document).ready(function(){
+    $.ajax({
+      url : "../data/hiragana.txt",
+      dataType: "text",
+      success : function (data) {
+        var lines = data.split("\n");
+        for (var i = 0, len = lines.length; i < len; i++) {
+          var split = lines[i].split(" ");                                 
+          var string = "<p>"+ split[0] + " <=> "+ split[1] + "</p>";
+          $(".container").append(string);
+        }
+      }
+    });
+  });      
+</script>
 <body>
-
-    <?php
-    $file = fopen('../data/hiragana.txt', 'r');
-
-    while($item = fgets($file)){
-        $arr = explode(' ', $item);
-        echo "<p>{$arr[0]} <=> {$arr[1]}</p>";
-    }
-    ?>
-
+<div class="container">
+</div>
 </body>
 </html>
