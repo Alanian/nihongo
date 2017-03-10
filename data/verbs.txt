@@ -1,12 +1,20 @@
-v1;tabe;ru;essen
-v5;omo;u;glauben, denken
 kuru;ku;ru;kommen
 suru;su;ru;machen, tun
 iku;i;ku;gehen (Richtung)
-v5;koro;su;töten, morden
+v1;ki;ru;anziehen
+v1;mi;ru;sehen
 v1;nige;ru;fliehen
+v1;tabe;ru;essen
+v1;hajime;ru;beginnen, anfangen
+v5;hi;ku;spielen (Instrument)
 v5;kae;ru;zurückkehren
 v5;ki;ru;schneiden
-v1;ki;ru;anziehen
-v5;hi;ku;spielen (Instrument)
-v1;mi;ru;sehen
+v5;koro;su;töten, morden
+v5;ma;tsu;warten
+v5;no;mu;trinken, schlucken
+v5;omo;u;glauben, denken
+v5;oyo;gu;schwimmen
+v5;shi;nu;sterben
+v5;to;ru;nehmen
+v5;to;bu;fliegen, springen
+v5;tsuka;u;benutzen, verwenden
