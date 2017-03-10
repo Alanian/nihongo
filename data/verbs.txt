@@ -6,8 +6,10 @@ v1;mi;ru;sehen
 v1;nige;ru;fliehen
 v1;tabe;ru;essen
 v1;hajime;ru;beginnen, anfangen
+v5;hara;u;bezahlen
 v5;hi;ku;spielen (Instrument)
 v5;kae;ru;zurückkehren
+v5;ki;ku;hören, fragen
 v5;ki;ru;schneiden
 v5;koro;su;töten, morden
 v5;ma;tsu;warten
@@ -18,4 +20,3 @@ v5;shi;nu;sterben
 v5;to;ru;nehmen
 v5;to;bu;fliegen, springen
 v5;tsuka;u;benutzen, verwenden
-v5;hara;u;bezahlen
