@@ -1,4 +1,4 @@
-kuru;ku;ru;kommen
+﻿kuru;ku;ru;kommen
 suru;su;ru;machen, tun
 iku;i;ku;gehen (Richtung)
 v1;ki;ru;anziehen
@@ -18,3 +18,4 @@ v5;shi;nu;sterben
 v5;to;ru;nehmen
 v5;to;bu;fliegen, springen
 v5;tsuka;u;benutzen, verwenden
+v5;hara;u;bezahlen
