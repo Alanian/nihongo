@@ -18,3 +18,4 @@ v5;shi;nu;sterben
 v5;to;ru;nehmen
 v5;to;bu;fliegen, springen
 v5;tsuka;u;benutzen, verwenden
+a
