@@ -1,0 +1,3 @@
+letter;Brief
+chair;Stuhl
+screen;Bildschirm
