@@ -8,31 +8,16 @@
 く ku
 け ke
 こ ko
-が ga
-ぎ gi
-ぐ gu
-げ ge
-ご go
 さ sa
 し shi
 す su
 せ se
 そ so
-ざ za
-じ ji
-ず zu
-ぜ ze
-ぞ zo
 た ta
 ち chi
 つ tsu
 て te
 と to
-だ da
-ぢ ji
-づ zu
-で de
-ど do
 な na
 に ni
 ぬ nu
@@ -43,16 +28,6 @@
 ふ fu
 へ he
 ほ ho
-ば ba
-び bi
-ぶ bu
-べ be
-ぼ bo
-ぱ pa
-ぴ pi
-ぷ pu
-ぺ pe
-ぽ po
 ま ma
 み mi
 む mu
@@ -69,3 +44,64 @@
 わ wa
 を wo
 ん n
+が ga
+ぎ gi
+ぐ gu
+げ ge
+ご go
+ざ za
+じ ji
+ず zu
+ぜ ze
+ぞ zo
+だ da
+ぢ ji
+づ zu
+で de
+ど do
+ば ba
+び bi
+ぶ bu
+べ be
+ぼ bo
+ぱ pa
+ぴ pi
+ぷ pu
+ぺ pe
+ぽ po
+きゃ
+きゅ
+きょ
+しゃ
+しゅ
+しょ
+ちゃ
+ちゅ
+ちょ
+にゃ
+にゅ
+にょ
+ひゃ
+ひゅ
+ひょ
+みゃ
+みゅ
+みょ
+りゃ
+りゅ
+りょ
+ぎゃ
+ぎゅ
+ぎょ
+じゃ
+じゅ
+じょ
+ぢゃ
+ぢゅ
+ぢょ
+びゃ
+びゅ
+びょ
+ぴゃ
+ぴゅ
+ぴょ
