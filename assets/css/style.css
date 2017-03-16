@@ -15,6 +15,18 @@ p{
     text-align: justify;
 }
 
+.input-group .left-addon{
+
+}
+
+.input-group .describing-addon{
+
+}
+
+.input-group .button-addon{
+
+}
+
 #title-img{
     background: url('../images/title.jpg') no-repeat center;
     background-size: 100%;
