@@ -1,39 +1,47 @@
-html body{
+html body {
     background-color: azure;
     color: slategrey;
 }
 
-.container{
+.container {
     margin-top: 2rem;
 }
 
-h1, h2{
+h1, h2 {
     text-align: center;
 }
 
-p{
+p {
     text-align: justify;
 }
 
-.input-group .left-addon{
-
+.input-group{
+    margin: 10px 0 !important;
 }
 
-.input-group .describing-addon{
-
+.left-addon {
+    width: 15% !important;
 }
 
-.input-group .button-addon{
-
+.left-text-addon {
+    width: 25% !important;
 }
 
-#title-img{
+.describing-addon {
+    width: 75% !important;
+}
+
+.button-addon {
+    width: 30% !important;
+}
+
+#title-img {
     background: url('../images/title.jpg') no-repeat center;
     background-size: 100%;
     height: 36rem;
 }
 
-.content{
+.content {
     margin-top: 2rem;
 }
 
