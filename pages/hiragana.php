@@ -1,15 +1,10 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" xmlns="http://www.w3.org/1999/html">
 <?php require '../includes/head.html' ?>
+<script src="../js/Hiragana.class.js"></script>
+<script src="../js/hiragana_process.js"></script>
 <body>
-
 <?php require '../includes/title-img.html' ?>
-
-<script>
-$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip(); 
-});
-</script>
 
 <div class="container">
 
@@ -29,89 +24,86 @@ $(document).ready(function(){
             <div class="learn-container">
                 <div class="before-start">
 
-                        <div class="col-sm-offset-3 col-sm-6">
-                            <div class="input-group" id="hiragana-gojuon">
-                                <span class="input-group-addon left-addon">き</span>
-                                <span class="input-group-addon describing-addon" data-toggle="tooltip" title="46">Gojūon</span>
-                                <span class="input-group-btn button-addon">
-                                    <button class="btn btn-default" type="button">Los</button>
-                                </span>
-                            </div>
-                        </div>
+                    <div class="input-group input-group-lg" id="hiragana-gojuon" data-toggle="tooltip"
+                         title="46 Grundzeichen">
+                        <span class="input-group-addon left-addon">き</span>
+                        <span class="input-group-addon describing-addon">Gojūon</span>
+                        <span class="input-group-btn button-addon">
+                            <button class="btn btn-default button-addon" type="button">Los</button>
+                        </span>
+                    </div>
 
-                        <div class="col-sm-offset-3 col-sm-6">
-                            <div class="input-group" id="hiragana-dakuten">
-                                <span class="input-group-addon left-addon">ぎ</span>
-                                <span class="input-group-addon describing-addon">Dakuten</span>
-                                <span class="input-group-btn button-addon">
-                                    <button class="btn btn-default" type="button">Los</button>
-                                </span>
-                            </div>
-                        </div>
+                    <div class="input-group input-group-lg" id="hiragana-dakuten" data-toggle="tooltip"
+                         title="25 stimmhafte Zeichen">
+                        <span class="input-group-addon left-addon">ぎ</span>
+                        <span class="input-group-addon describing-addon">Dakuten</span>
+                        <span class="input-group-btn button-addon">
+                            <button class="btn btn-default button-addon" type="button">Los</button>
+                        </span>
+                    </div>
 
-                        <div class="col-sm-offset-3 col-sm-6">
-                            <div class="input-group" id="gojuon-dakuten-gojuon">
-                                <span class="input-group-addon left-addon">きぎ</span>
-                                <span class="input-group-addon describing-addon">Gojūon + Dakuten</span>
-                                <span class="input-group-btn button-addon">
-                                    <button class="btn btn-default" type="button">Los</button>
-                                </span>
-                            </div>
-                        </div>
+                    <div class="input-group input-group-lg" id="hiragana-gojuon-dakuten" data-toggle="tooltip"
+                         title="Alle 71 Zeichen">
+                        <span class="input-group-addon left-addon">きぎ</span>
+                        <span class="input-group-addon describing-addon">Gojūon + Dakuten</span>
+                        <span class="input-group-btn button-addon">
+                            <button class="btn btn-default button-addon" type="button">Los</button>
+                        </span>
+                    </div>
 
-                        <div class="col-sm-offset-3 col-sm-6">
-                            <div class="input-group" id="yoon-gojuon">
-                                <span class="input-group-addon left-addon">きょ</span>
-                                <span class="input-group-addon describing-addon">Yōon</span>
-                                <span class="input-group-btn button-addon">
-                                    <button class="btn btn-default" type="button">Los</button>
-                                </span>
-                            </div>
-                        </div>
+                    <div class="input-group input-group-lg" id="hiragana-yoon" data-toggle="tooltip"
+                         title="36 doppelvokalische Verbindungen">
+                        <span class="input-group-addon left-addon">きょ</span>
+                        <span class="input-group-addon describing-addon">Yōon</span>
+                        <span class="input-group-btn button-addon">
+                            <button class="btn btn-default button-addon" type="button">Los</button>
+                        </span>
+                    </div>
 
-                        <div class="col-sm-offset-3 col-sm-6">
-                            <div class="input-group" id="hiragana-first-number">
-                                <span class="input-group-addon left-text-addon">Die ersten</span>
-                                <input type="number" min="1" max="107" class="form-control" placeholder="Bitte eine Zahl eingeben">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button">Los</button>
-                                </span>
-                            </div>
-                        </div>
+                    <div class="input-group input-group-lg" id="hiragana-first-number" data-toggle="tooltip"
+                         title="1-71">
+                        <span class="input-group-addon left-text-addon">Die ersten...</span>
+                        <input type="number" min="1" max="71" class="form-control"
+                               placeholder="Bitte eine Zahl eingeben">
+                        <span class="input-group-btn button-addon">
+                            <button class="btn btn-default button-addon" type="button">Los</button>
+                        </span>
+                    </div>
 
-                        <div class="col-sm-offset-3 col-sm-6">
-                            <div class="input-group" id="hiragana-random-number">
-                                <span class="input-group-addon left-text-addon">Zufällige</span>
-                                <input type="number" min="1" max="107" class="form-control" placeholder="Bitte eine Zahl eingeben">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button">Los</button>
-                                </span>
-                            </div>
-                        </div>
+                    <div class="input-group input-group-lg" id="hiragana-random-number" data-toggle="tooltip"
+                         title="1-71">
+                        <span class="input-group-addon left-text-addon">Zufällige...</span>
+                        <input type="number" min="1" max="71" class="form-control"
+                               placeholder="Bitte eine Zahl eingeben">
+                        <span class="input-group-btn button-addon">
+                            <button class="btn btn-default button-addon" type="button">Los</button>
+                        </span>
+                    </div>
+
+                    <!--                    <div class="input-group input-group-lg" id="text-convert" data-toggle="tooltip"-->
+                    <!--                         title="Ersetzt Roomaji durch Hiragana">-->
+                    <!--                        <span class="input-group-addon left-text-addon">masu - ます (いん)</span>-->
+                    <!--                        <input type="text" class="form-control" placeholder="Text...">-->
+                    <!--                        <span class="input-group-btn button-addon">-->
+                    <!--                            <button class="btn btn-default" type="button">Los</button>-->
+                    <!--                        </span>-->
+                    <!--                    </div>-->
 
                 </div>
 
                 <div class="start">
-
-                    <!--            <div id="hiragana-container">-->
-                    <!--                <div id="info-box-top" class="show-box"></div>-->
-                    <!--                <div id="start">-->
-                    <!--                    <div id="hiragana-box" class="show-box">-->
-                    <!--                    </div>-->
-                    <!--                    <div class="show-box">-->
-                    <!--                        <input id="hiragana-reading">-->
-                    <!--                    </div>-->
-                    <!--                    <div class="show-box">-->
-                    <!--                        <button id="hiragana-submit" class="jp-button">Submit</button>-->
-                    <!--                    </div>-->
-                    <!--                </div>-->
-                    <!--                <div id="end">-->
-                    <!--                    <div class="show-box">-->
-                    <!--                        <button id="hiragana-start" class="jp-button">Start</button>-->
-                    <!--                    </div>-->
-                    <!--                </div>-->
-                    <!--                <div id="info-box-bottom" class="show-box"></div>-->
-                    <!--            </div>-->
+                    <div id="hiragana-container">
+                        <div id="info-box-top" class="show-box"></div>
+                            <div id="hiragana-box" class="show-box">
+                            </div>
+                            <div class="show-box">
+                                <input id="hiragana-reading">
+                            </div>
+                            <div class="show-box">
+                                <button id="check-result" class="jp-button">Submit</button>
+                            </div>
+                        <div id="info-box-bottom" class="show-box"></div>
+                    </div>
 
                 </div>
             </div>

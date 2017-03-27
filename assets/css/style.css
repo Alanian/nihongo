@@ -16,30 +16,29 @@ p {
 }
 
 .input-group{
-    margin: 10px auto !important;
+    margin: 1rem auto !important;
 }
 
-.input-group-addon{
-    padding: 0;
-    margin: 0;
-    width: 50px !important;
+.input-group input{
+    width: 25rem !important;
 }
 
 .left-addon {
-    width: 15% !important;
+    width: 10rem
 }
 
 .left-text-addon {
-    width: 25% !important;
+    width: 15rem
 }
 
 .describing-addon {
-    width: 75% !important;
+    width: 30rem
 }
 
 .button-addon {
-    width: 15px;
+    width: 10rem;
 }
+
 
 #title-img {
     background: url('../images/title.jpg') no-repeat center;

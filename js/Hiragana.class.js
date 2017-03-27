@@ -13,10 +13,17 @@ function Hiragana(character, reading) {
  HIRAGANATABLE CLASS
  *************************************************/
 
-function HiraganaTable() {
+function HiraganaTable(from, number, slice) {
+    slice = slice || false;
     this.table = [];
-    this.fill();
-    this.shuffle();
+    if (slice) {
+        this.fill(0, 71);
+        this.shuffle();
+        this.table = this.table.slice(0, number - 1);
+    }else{
+        this.fill(from, number);
+        this.shuffle();
+    }
 }
 
 HiraganaTable.prototype.addHiragana = function (character, reading) {
@@ -30,7 +37,7 @@ HiraganaTable.prototype.fill = function (from, number) {
         async: false,
         success: function (data) {
             var lines = data.split("\n");
-            var from = (typeof from === "undefined" || from > lines.length || from < 0) ? 0 : from;
+            from = (typeof from === "undefined" || from > lines.length || from < 0) ? 0 : from;
             var len = (typeof number === "undefined" || number > lines.length - from || number < 1) ? lines.length : from + number;
             for (var i = from; i < len; i++) {
                 var split = lines[i].split(" ");
@@ -60,6 +67,7 @@ HiraganaTable.prototype.moveFirstToEnd = function () {
 }
 
 HiraganaTable.prototype.moveFirst = function (index) {
+    index++;
     if (this.table.length <= index) {
         this.moveFirstToEnd();
     } else {

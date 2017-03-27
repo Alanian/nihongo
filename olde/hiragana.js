@@ -1,6 +1,5 @@
 "use strict";
 
-
 function Hiragana(character, reading){
 	this.character = character;
 	this.reading = reading;
