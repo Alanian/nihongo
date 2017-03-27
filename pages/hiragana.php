@@ -5,6 +5,12 @@
 
 <?php require '../includes/title-img.html' ?>
 
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+});
+</script>
+
 <div class="container">
 
     <div class="row">
@@ -26,7 +32,7 @@
                         <div class="col-sm-offset-3 col-sm-6">
                             <div class="input-group" id="hiragana-gojuon">
                                 <span class="input-group-addon left-addon">き</span>
-                                <span class="input-group-addon describing-addon">Gojūon</span>
+                                <span class="input-group-addon describing-addon" data-toggle="tooltip" title="46">Gojūon</span>
                                 <span class="input-group-btn button-addon">
                                     <button class="btn btn-default" type="button">Los</button>
                                 </span>
