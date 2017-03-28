@@ -19,7 +19,7 @@ function HiraganaTable(from, number, slice) {
     if (slice) {
         this.fill(0, 71);
         this.shuffle();
-        this.table = this.table.slice(0, number - 1);
+        this.table = this.table.slice(0, number);
     }else{
         this.fill(from, number);
         this.shuffle();

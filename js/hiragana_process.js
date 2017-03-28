@@ -11,32 +11,32 @@ function swapScreens(show, hide) {
     $(hide).css("display", "none");
 }
 
-function start(from, number, shuffle) {
-    ht = new HiraganaTable(from, number, shuffle);
+function start(from, number, slice) {
+    slice = slice || false;
+    ht = new HiraganaTable(from, number, slice);
     tries = 0;
     matches = 0;
     swapScreens(".start", ".before-start");
-    $("#info-box-top").removeClass();
-    $("#info-box-top").addClass("blank-screen");
-    $("#info-box-top").html("Please insert the correct form of the hiragana shown beneath.");
+    $(".info-box-top").html("Please insert the correct reading of the hiragana shown beneath.");
     update();
 }
 
 function end() {
     swapScreens(".before-start", ".start");
-    $("#info-box-top").removeClass();
-    $("#info-box-top").addClass("black-screen");
-    $("#info-box-top").html("You've done well!");
-    $("#info-box-bottom").html("Reached: " + Math.floor(matches / tries * 100) + "%");
+    // $("#info-box-top").removeClass();
+    // $("#info-box-top").addClass("black-screen");
+    // $("#info-box-top").html("You've done well!");
+    // $("#info-box-bottom").html("Reached: " + Math.floor(matches / tries * 100) + "%");
 }
 
 function update() {
     $("#hiragana-box").html(ht.table[0].character);
-    $("#info-box-bottom").html("Hiragana remaining: " + ht.table.length);
-    $("#hiragana-reading").val("");
+    $(".info-box-bottom").html("Hiragana remaining: " + ht.table.length);
+    $(".result").find("input").val("");
 }
 
 $(document).ready(function () {
+
     $("#hiragana-gojuon").find("button").click(function () {
         start(0, 46);
     });
@@ -60,23 +60,17 @@ $(document).ready(function () {
             start(0, val, true)
     });
 
-
     swapScreens(".before-start", ".start");
-    $("#info-box-top").html("Press the button!");
 
     $("#check-result").click(function () {
-        var input = $("#hiragana-reading").val();
+        var input = $(".result").find("input").val();
 
         if (input == ht.table[0].reading) {
-            $("#info-box-top").html("Correct!");
-            $("#info-box-top").removeClass();
-            $("#info-box-top").addClass("correct-screen");
+            $(".info-box-top").html("Correct!");
             ht.removeFirst();
             matches++;
         } else {
-            $("#info-box-top").html("Wrong! It was <i>" + ht.table[0].reading + "</i>.");
-            $("#info-box-top").removeClass();
-            $("#info-box-top").addClass("wrong-screen");
+            $(".info-box-top").html("Wrong! It was <i>" + ht.table[0].reading + "</i>.");
             ht.moveFirst(3);
         }
 
@@ -84,13 +78,13 @@ $(document).ready(function () {
 
         if (ht.table.length) {
             update();
-            $("#info-box-bottom").append("<br>Accuracy: " + Math.floor(matches / tries * 100) + "%");
+            $(".info-box-bottom").append("<br>Accuracy: " + Math.floor(matches / tries * 100) + "%");
         } else {
             end();
         }
     });
 
-    $("#hiragana-reading").keyup(function (e) {
+    $(".result").keyup(function (e) {
         if (e.keyCode == 13) {
             $("#check-result").trigger("click");
         }

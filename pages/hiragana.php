@@ -93,19 +93,16 @@
 
                 <div class="start">
                     <div id="hiragana-container">
-                        <div id="info-box-top" class="show-box"></div>
-                            <div id="hiragana-box" class="show-box">
-                            </div>
-                            <div class="show-box">
-                                <input id="hiragana-reading">
-                            </div>
-                            <div class="show-box">
-                                <button id="check-result" class="jp-button">Submit</button>
-                            </div>
-                        <div id="info-box-bottom" class="show-box"></div>
+                        <div id="hiragana-box"></div>
+                        <div class="show-box-hiragana info-box-top"></div>
+                        <div class="show-box-hiragana result">
+                            <input type="text">
+                            <button id="check-result">Check</button>
+                        </div>
+                        <div class="show-box-hiragana info-box-bottom"></div>
                     </div>
-
                 </div>
+
             </div>
         </div>
     </div>
