@@ -1,6 +1,26 @@
+@font-face {
+    font-family: "aihara";
+    src: url("../fonts/AiharaHudemojiKaisho2.01.ttf");
+}
+
+@font-face {
+    font-family: "irohamaru";
+    src: url("../fonts/irohamaru-mikami-Regular.ttf");
+}
+
+@font-face {
+    font-family: "strokeorder";
+    src: url("../fonts/KanjiStrokeOrders_v3.001.ttf");
+}
+
+.jap-font {
+    font-family: aihara, sans-serif;
+}
+
 html body {
     background-color: azure;
     color: slategrey;
+    font-size: 1.8rem;
 }
 
 .container {
@@ -24,15 +44,17 @@ p {
 }
 
 .left-addon {
-    width: 10rem
+    width: 10rem;
+    font-size: 3rem !important;
+    padding: 0 !important;
 }
 
 .left-text-addon {
-    width: 15rem
+    width: 15rem;
 }
 
 .describing-addon {
-    width: 30rem
+    width: 30rem;
 }
 
 .button-addon {
@@ -61,11 +83,14 @@ p {
     left: 24rem;
     width: 56rem;
     height: 8rem;
-    line-height: 8rem;
-    padding-left: 2rem;
+    padding-left: 1.2rem;
+    padding-top: 1.2rem;
     border: 1px solid grey;
     border-left: none;
-    font-size: 1.8rem;
+}
+
+.show-box-hiragana p {
+    text-align: left;
 }
 
 .info-box-top {
@@ -79,6 +104,8 @@ p {
 
 .result {
     border-top: none;
+    text-align: center;
+    padding-left: 0.5rem;
 }
 
 .result input {
@@ -86,7 +113,7 @@ p {
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
     border: 1px solid grey;
-    width: 40rem;
+    width: 66%;
     padding-left: 1rem;
     font-size: 2.4rem;
     outline: none;
@@ -94,7 +121,7 @@ p {
 
 .result button {
     line-height: 5rem;
-    width: 12rem;
+    width: 30%;
     border: 1px solid gray;
     border-left: none;
     position: relative;
@@ -105,7 +132,7 @@ p {
 }
 
 #hiragana-box {
-    font-size: 10rem;
+    font-size: 12rem;
     border: 1px solid grey;
     border-top-left-radius: 2rem;
     border-bottom-left-radius: 2rem;
@@ -113,6 +140,28 @@ p {
     height: 24rem;
     text-align: center;
     line-height: 24rem;
+}
+
+.end {
+    text-align: center;
+}
+
+.end p {
+    text-align: center;
+}
+
+.end p.rank {
+    font-size: 24rem;
+    position: relative;
+    bottom: 8rem;
+    height: 20rem;
+    font-weight: 900;
+    color: crimson;
+    text-shadow: 5px 5px black;
+}
+
+.end button {
+    width: 24rem;
 }
 
 /* make sidebar nav vertical */
@@ -138,5 +187,6 @@ p {
     .sidebar-nav .navbar li a {
         padding-top: 12px;
         padding-bottom: 12px;
+        line-height: 3rem;
     }
 }
