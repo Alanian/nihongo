@@ -14,18 +14,18 @@ function Verb(group, stem, ending, meaning) {
 /***** Main Forms *****/
 
 Verb.prototype.getMizenkei = function () {
-    return this.getMainForm(["shi", "ko", "ra", "wa", "ta", "ka", "ga", "sa", "na", "ma", "ba"]);
+    return this.getMainForm(["shi", "ko", "", "ra", "wa", "ta", "ka", "ga", "sa", "na", "ma", "ba"]);
 }
 
 Verb.prototype.getRenyoukei = function () {
-    return this.getMainForm(["shi", "ki", "ri", "i", "chi", "ki", "gi", "shi", "ni", "mi", "bi"]);
+    return this.getMainForm(["shi", "ki", "", "ri", "i", "chi", "ki", "gi", "shi", "ni", "mi", "bi"]);
 }
 
 Verb.prototype.getTeForm = function () {
     if (this.stem + this.ending == "iku")
         return "itte";
     else
-        return this.getMainForm(["shite", "kite", "tte", "tte", "tte", "ite", "ide", "shite", "nde", "nde", "nde"]);
+        return this.getMainForm(["shite", "kite", "te", "tte", "tte", "tte", "ite", "ide", "shite", "nde", "nde", "nde"]);
 }
 
 Verb.prototype.getMainForm = function (groups) {
@@ -35,27 +35,27 @@ Verb.prototype.getMainForm = function (groups) {
         case "kuru":
             return groups[1];
         case "v1":
-            return this.stem;
+            return this.stem + groups[2];
         case "v5":
             switch (this.ending) {
                 case "ru":
-                    return this.stem + groups[2];
-                case "u":
                     return this.stem + groups[3];
-                case "tsu":
+                case "u":
                     return this.stem + groups[4];
-                case "ku":
+                case "tsu":
                     return this.stem + groups[5];
-                case "gu":
+                case "ku":
                     return this.stem + groups[6];
-                case "su":
+                case "gu":
                     return this.stem + groups[7];
-                case "nu":
+                case "su":
                     return this.stem + groups[8];
-                case "mu":
+                case "nu":
                     return this.stem + groups[9];
-                case "bu":
+                case "mu":
                     return this.stem + groups[10];
+                case "bu":
+                    return this.stem + groups[11];
             }
     }
 }
@@ -124,6 +124,7 @@ VerbTable.prototype.moveFirstToEnd = function () {
 }
 
 VerbTable.prototype.moveFirst = function (index) {
+    index++;
     if (this.table.length <= index) {
         this.moveFirstToEnd();
     } else {

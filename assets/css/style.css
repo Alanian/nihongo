@@ -1,3 +1,7 @@
+/*************************************************
+ FONTS
+*************************************************/
+
 @font-face {
     font-family: "aihara";
     src: url("../fonts/AiharaHudemojiKaisho2.01.ttf");
@@ -17,6 +21,10 @@
     font-family: aihara, sans-serif;
 }
 
+/*************************************************
+ GENERAL
+*************************************************/
+
 html body {
     background-color: azure;
     color: slategrey;
@@ -34,6 +42,17 @@ h1, h2 {
 p {
     text-align: justify;
 }
+
+#title-img {
+    background: url('../images/title.jpg') no-repeat center;
+    background-size: 100%;
+    height: 36rem;
+}
+
+
+/*************************************************
+ INPUT GROUP
+*************************************************/
 
 .input-group {
     margin: 1rem auto !important;
@@ -61,49 +80,15 @@ p {
     width: 10rem;
 }
 
-#title-img {
-    background: url('../images/title.jpg') no-repeat center;
-    background-size: 100%;
-    height: 36rem;
-}
+/*************************************************
+ GLOBAL TRAINING
+*************************************************/
 
-.content {
-    margin-top: 2rem;
-}
-
-#hiragana-container {
-    margin: 5rem auto;
-    width: 80rem;
-    height: 24rem;
-}
-
-.show-box-hiragana {
-    position: relative;
-    bottom: 24rem;
-    left: 24rem;
-    width: 56rem;
-    height: 8rem;
-    padding-left: 1.2rem;
-    padding-top: 1.2rem;
-    border: 1px solid grey;
-    border-left: none;
-}
-
-.show-box-hiragana p {
+.show-box p {
     text-align: left;
 }
 
-.info-box-top {
-    border-top-right-radius: 2rem;
-}
-
-.info-box-bottom {
-    border-top: none;
-    border-bottom-right-radius: 2rem;
-}
-
 .result {
-    border-top: none;
     text-align: center;
     padding-left: 0.5rem;
 }
@@ -131,6 +116,16 @@ p {
     border-bottom-right-radius: 1rem;
 }
 
+/*************************************************
+ HIRAGANA TRAINING
+*************************************************/
+
+#hiragana-container {
+    margin: 5rem auto;
+    width: 80rem;
+    height: 24rem;
+}
+
 #hiragana-box {
     font-size: 12rem;
     border: 1px solid grey;
@@ -141,6 +136,90 @@ p {
     text-align: center;
     line-height: 24rem;
 }
+
+#hiragana-container .show-box {
+    position: relative;
+    bottom: 24rem;
+    left: 24rem;
+    width: 56rem;
+    height: 8rem;
+    padding-left: 1.2rem;
+    padding-top: 1.2rem;
+    border: 1px solid grey;
+    border-left: none;
+}
+
+#hiragana-container .info-box-top {
+    border-top-right-radius: 2rem;
+}
+
+#hiragana-container .info-box-bottom {
+    border-top: none;
+    border-bottom-right-radius: 2rem;
+}
+
+#hiragana-container .result {
+    border-top: none;
+}
+
+
+/*************************************************
+ VERBS TRAINING
+*************************************************/
+#verbs-container {
+    margin: 5rem auto;
+    width: 80rem;
+    height: 24rem;
+}
+
+#verbs-box {
+    font-size: 4rem;
+    border: 1px solid grey;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    width: 80rem;
+    height: 8rem;
+    text-align: center;
+    line-height: 8rem;
+}
+
+#verbs-container .show-box {
+    position: relative;
+    width: 40rem;
+    height: 8rem;
+    padding-left: 1.2rem;
+    padding-top: 1.2rem;
+    border: 1px solid grey;
+}
+
+#verbs-container .info-box-top {
+    border-top: none;
+}
+
+#verbs-container .meaning-box {
+    border-top: none;
+    border-bottom-left-radius: 2rem;
+}
+
+#verbs-container .info-box-bottom {
+    border-top: none;
+    border-left: none;
+    left: 40rem;
+    bottom: 24rem;
+}
+
+#verbs-container .result {
+    border-top: none;
+    border-left: none;
+    border-bottom-right-radius: 2rem;
+    left: 40rem;
+    bottom: 8rem;
+}
+
+
+/*************************************************
+ END TRAINING
+*************************************************/
 
 .end {
     text-align: center;
@@ -164,7 +243,10 @@ p {
     width: 24rem;
 }
 
-/* make sidebar nav vertical */
+/*************************************************
+ NAVIGATION
+*************************************************/
+
 @media (min-width: 768px) {
     .sidebar-nav .navbar .navbar-collapse {
         padding: 0;
