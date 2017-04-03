@@ -101,7 +101,7 @@ $(document).ready(function () {
             $(".info-box-bottom").find("p").append("<br>Accuracy: " + accuracy + "%");
         } else {
             if (mixed) end("all the forms");
-            else end(form + "-form");
+            else end("the " + form + "-form");
         }
     });
 

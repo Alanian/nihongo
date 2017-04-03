@@ -70,12 +70,12 @@ $(document).ready(function () {
             accuracy = Math.floor(matches / tries * 100);
             $(".info-box-bottom").find("p").append("<br>Accuracy: " + accuracy + "%");
         } else {
-            end("ひらがな");
+            end("<span class='jap-font'>ひらがな</span>");
         }
     });
 
     $("#start-over-button").click(function () {
-       swapScreens(".before-start", ".end");
+        swapScreens(".before-start", ".end");
     });
 
     $(".result").keyup(function (e) {

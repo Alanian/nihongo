@@ -16,7 +16,7 @@ function end(text) {
     else if (accuracy > 20) rank = "E";
     else rank = "F";
 
-    if (rank == "S") advice = "Congratulations! You successfully mastered <span class='jap-font'>"+text+"</span>.";
+    if (rank == "S") advice = "Congratulations! You successfully mastered " + text + ".";
     else if (rank == "A") advice = "Great job! Try again and master rank S.";
     else if (rank == "B") advice = "You are doing very well. Try to sharpen your skills a bit more.";
     else if (rank == "C") advice = "It's a good result, but there's still room for improvement.";
