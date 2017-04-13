@@ -6,6 +6,7 @@ var ht;
 var tries;
 var matches;
 var accuracy;
+var wrong;
 
 function start(from, number, slice) {
     slice = slice || false;
@@ -33,13 +34,28 @@ function check() {
     var input = $(".result").find("input").val();
     var correct = ht.table[0].reading;
 
+    if (input.length <= correct.length && !wrong) {
+        for (var i = 0; i < input.length; i++) {
+            if (input[i] != correct[i]){
+                wrong = true;
+                tries++;
+            }
+        }
+    }
+
     if (input == correct) {
         $(".result").find("input").val("");
         $(".info-box-top").find("p").html("Correct!");
         ht.removeFirst();
-        matches++;
-        tries++;
+
+        if(!wrong){
+            matches++;
+            tries++;
+        }
+
+        wrong = false;
     }
+
     update();
 }
 
