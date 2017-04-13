@@ -88,7 +88,7 @@
                 <div class="show-box info-box-top"><p></p></div>
                 <div class="show-box result">
                     <input type="text">
-                    <button id="check-result">Check</button>
+                    <button id="skip">Skip</button>
                 </div>
                 <div class="show-box info-box-bottom"><p></p></div>
             </div>

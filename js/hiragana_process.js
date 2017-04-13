@@ -18,9 +18,36 @@ function start(from, number, slice) {
 }
 
 function update() {
-    $("#hiragana-box").html(ht.table[0].character);
-    $(".info-box-bottom").find("p").html("Hiragana remaining: " + ht.table.length + "");
-    $(".result").find("input").val("");
+    if (ht.table.length) {
+        accuracy = Math.floor(matches / tries * 100);
+        $("#hiragana-box").html(ht.table[0].character);
+        $(".info-box-bottom").find("p").html("Hiragana remaining: " + ht.table.length + "");
+        if (accuracy)
+            $(".info-box-bottom").find("p").append("<br>Accuracy: " + accuracy + "%");
+    } else {
+        end("<span class='jap-font'>ひらがな</span>");
+    }
+}
+
+function check() {
+    var input = $(".result").find("input").val();
+    var correct = ht.table[0].reading;
+
+    if (input == correct) {
+        $(".result").find("input").val("");
+        $(".info-box-top").find("p").html("Correct!");
+        ht.removeFirst();
+        matches++;
+        tries++;
+    }
+    update();
+}
+
+function skip() {
+    $(".info-box-top").find("p").html("<span class='jap-font'>" + ht.table[0].character + "</span> = " + ht.table[0].reading);
+    ht.moveFirst(3);
+    tries++;
+    update();
 }
 
 $(document).ready(function () {
@@ -28,20 +55,25 @@ $(document).ready(function () {
     $("#hiragana-gojuon").find("button").click(function () {
         start(0, 46);
     });
+
     $("#hiragana-dakuten").find("button").click(function () {
         start(46, 25);
     });
+
     $("#hiragana-gojuon-dakuten").find("button").click(function () {
         start(0, 71);
     });
+
     $("#hiragana-yoon").find("button").click(function () {
         start(71, 36);
     });
+
     $("#hiragana-first-number").find("button").click(function () {
         var val = $("#hiragana-first-number").find("input[type=number]").val();
         if (val > 0)
             start(0, val);
     });
+
     $("#hiragana-random-number").find("button").click(function () {
         var val = $("#hiragana-random-number").find("input[type=number]").val();
         if (val > 0)
@@ -51,37 +83,22 @@ $(document).ready(function () {
     swapScreens(".before-start", ".start");
     swapScreens("", ".end");
 
-    $("#check-result").click(function () {
-        var input = $(".result").find("input").val();
-
-        if (input == ht.table[0].reading) {
-            $(".info-box-top").find("p").html("Correct!");
-            ht.removeFirst();
-            matches++;
-        } else {
-            $(".info-box-top").find("p").html("Wrong! <span class='jap-font'>" + ht.table[0].character + "</span> = " + ht.table[0].reading);
-            ht.moveFirst(3);
-        }
-
-        tries++;
-
-        if (ht.table.length) {
-            update();
-            accuracy = Math.floor(matches / tries * 100);
-            $(".info-box-bottom").find("p").append("<br>Accuracy: " + accuracy + "%");
-        } else {
-            end("<span class='jap-font'>ひらがな</span>");
-        }
-    });
-
     $("#start-over-button").click(function () {
         swapScreens(".before-start", ".end");
     });
 
+    // $(".result").keyup(function (e) {
+    //     if (e.keyCode == 13) {
+    //         $("#check-result").trigger("click");
+    //     }
+    // });
+
     $(".result").keyup(function (e) {
-        if (e.keyCode == 13) {
-            $("#check-result").trigger("click");
-        }
+        check();
+    });
+
+    $("#skip").click(function () {
+        skip();
     });
 
     $("#hiragana-first-number").find("input").keyup(function (e) {
