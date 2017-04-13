@@ -23,8 +23,9 @@ function update() {
         accuracy = Math.floor(matches / tries * 100);
         $("#hiragana-box").html(ht.table[0].character);
         $(".info-box-bottom").find("p").html("Hiragana remaining: " + ht.table.length + "");
-        if (accuracy)
-            $(".info-box-bottom").find("p").append("<br>Accuracy: " + accuracy + "%");
+        if (!accuracy)
+            accuracy = 0;
+        $(".info-box-bottom").find("p").append("<br>Accuracy: " + accuracy + "%");
     } else {
         end("<span class='jap-font'>ひらがな</span>");
     }
