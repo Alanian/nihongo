@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="de" xmlns="http://www.w3.org/1999/html">
 <?php require '../includes/head.html' ?>
+
 <body>
-<?php require '../includes/title-img.html' ?>
-
 <div class="container">
-
-    <div class="row">
-        <?php require '../includes/sidebar.html' ?>
-        <div class="col-sm-9 content">
+    <!-- closes in template bottom -->
+    <div class="header">
+        <jap>日本弱</jap>
+    </div>
+    <div class="navigation">
+        <?php require '../includes/navigation.html' ?>
+    </div>
+    <div class="content">
+        <!-- closes in template bottom -->

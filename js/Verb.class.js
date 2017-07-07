@@ -15,18 +15,18 @@ function Verb(group, stem, ending, meaning) {
 
 Verb.prototype.getMizenkei = function () {
     return this.getMainForm(["shi", "ko", "", "ra", "wa", "ta", "ka", "ga", "sa", "na", "ma", "ba"]);
-}
+};
 
 Verb.prototype.getRenyoukei = function () {
     return this.getMainForm(["shi", "ki", "", "ri", "i", "chi", "ki", "gi", "shi", "ni", "mi", "bi"]);
-}
+};
 
 Verb.prototype.getTeForm = function () {
     if (this.stem + this.ending == "iku")
         return "itte";
     else
         return this.getMainForm(["shite", "kite", "te", "tte", "tte", "tte", "ite", "ide", "shite", "nde", "nde", "nde"]);
-}
+};
 
 Verb.prototype.getMainForm = function (groups) {
     switch (this.group) {
@@ -58,21 +58,21 @@ Verb.prototype.getMainForm = function (groups) {
                     return this.stem + groups[11];
             }
     }
-}
+};
 
 /***** Extended Forms *****/
 
 Verb.prototype.getNaiForm = function () {
     return this.getMizenkei() + "nai";
-}
+};
 
 Verb.prototype.getMasuForm = function () {
     return this.getRenyoukei() + "masu";
-}
+};
 
 Verb.prototype.getTaiForm = function () {
     return this.getRenyoukei() + "tai";
-}
+};
 
 /*************************************************
  VERBTABLE CLASS
@@ -84,9 +84,9 @@ function VerbTable() {
     this.shuffle();
 }
 
-VerbTable.prototype.addVerb = function (group, stem, ending, meaning) {
+VerbTable.prototype.add = function (group, stem, ending, meaning) {
     this.table.push(new Verb(group, stem, ending, meaning));
-}
+};
 
 VerbTable.prototype.fill = function (number) {
     var original = this;
@@ -98,11 +98,11 @@ VerbTable.prototype.fill = function (number) {
             var len = (typeof number === "undefined" || number > lines.length || number < 1) ? lines.length : number;
             for (var i = 0; i < len; i++) {
                 var split = lines[i].split(";");
-                original.addVerb(split[0], split[1], split[2], split[3]);
+                original.add(split[0], split[1], split[2], split[3]);
             }
         }
     });
-}
+};
 
 VerbTable.prototype.shuffle = function () {
     var temp, rand;
@@ -112,16 +112,16 @@ VerbTable.prototype.shuffle = function () {
         this.table[i - 1] = this.table[rand];
         this.table[rand] = temp;
     }
-}
+};
 
 VerbTable.prototype.removeFirst = function () {
     this.table.shift();
-}
+};
 
 VerbTable.prototype.moveFirstToEnd = function () {
     this.table.push(this.table[0]);
     this.removeFirst();
-}
+};
 
 VerbTable.prototype.moveFirst = function (index) {
     index++;
@@ -131,4 +131,4 @@ VerbTable.prototype.moveFirst = function (index) {
         this.table.splice(index, 0, this.table[0]);
         this.removeFirst();
     }
-}
+};

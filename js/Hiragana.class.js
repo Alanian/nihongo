@@ -26,9 +26,9 @@ function HiraganaTable(from, number, slice) {
     }
 }
 
-HiraganaTable.prototype.addHiragana = function (character, reading) {
+HiraganaTable.prototype.add = function (character, reading) {
     this.table.push(new Hiragana(character, reading));
-}
+};
 
 HiraganaTable.prototype.fill = function (from, number) {
     var original = this;
@@ -38,14 +38,14 @@ HiraganaTable.prototype.fill = function (from, number) {
         success: function (data) {
             var lines = data.split("\n");
             from = (typeof from === "undefined" || from > lines.length || from < 0) ? 0 : from;
-            var len = (typeof number === "undefined" || number > lines.length - from || number < 1) ? lines.length : from + number;
+            var len = (typeof number === "undefined" || number > lines.length - from || number <= 0) ? lines.length : from + number;
             for (var i = from; i < len; i++) {
                 var split = lines[i].split(" ");
-                original.addHiragana(split[0], split[1]);
+                original.add(split[0], split[1]);
             }
         }
     });
-}
+};
 
 HiraganaTable.prototype.shuffle = function () {
     var temp, rand;
@@ -55,16 +55,16 @@ HiraganaTable.prototype.shuffle = function () {
         this.table[i - 1] = this.table[rand];
         this.table[rand] = temp;
     }
-}
+};
 
 HiraganaTable.prototype.removeFirst = function () {
     this.table.shift();
-}
+};
 
 HiraganaTable.prototype.moveFirstToEnd = function () {
     this.table.push(this.table[0]);
     this.removeFirst();
-}
+};
 
 HiraganaTable.prototype.moveFirst = function (index) {
     index++;
@@ -74,4 +74,4 @@ HiraganaTable.prototype.moveFirst = function (index) {
         this.table.splice(index, 0, this.table[0]);
         this.removeFirst();
     }
-}
+};

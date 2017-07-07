@@ -4,12 +4,11 @@
     <script src="../js/hiragana_process.js"></script>
     <h2>Hiragana</h2>
     <p>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
-        ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
-        dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-        magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        Use this training programm to improve your Hiragana reading skills. If the "Gojūon" option is too hard for you,
+        try the "First..." option with a small number like five and increase it steadily.
+    </p>
+    <p>
+        Please enjoy and don't give up!
     </p>
 
     <div class="learn-container">
@@ -70,25 +69,15 @@
                     <button class="btn btn-default button-addon" type="button">Start</button>
                 </span>
             </div>
-
-            <!--                    <div class="input-group input-group-lg" id="text-convert" data-toggle="tooltip"-->
-            <!--                         title="Ersetzt Roomaji durch Hiragana">-->
-            <!--                        <span class="input-group-addon left-text-addon">masu - ます (いん)</span>-->
-            <!--                        <input type="text" class="form-control" placeholder="Text...">-->
-            <!--                        <span class="input-group-btn button-addon">-->
-            <!--                            <button class="btn btn-default" type="button">Los</button>-->
-            <!--                        </span>-->
-            <!--                    </div>-->
-
         </div>
 
         <div class="start">
             <div id="hiragana-container">
-                <div id="hiragana-box" class="jap-font"></div>
+                <div id="hiragana-box"></div>
                 <div class="show-box info-box-top"><p></p></div>
                 <div class="show-box result">
                     <input type="text">
-                    <button id="skip">Skip</button>
+                    <button class="skip">Skip</button>
                 </div>
                 <div class="show-box info-box-bottom"><p></p></div>
             </div>
