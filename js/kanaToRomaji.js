@@ -228,14 +228,18 @@ function kanaToRomaji(text, isParticle) {
     text = text.replace(/ぽ/g, "po");
     text = text.replace(/ポ/g, "po");
 
+    text = text.replace(/。/g, ".");
+    text = text.replace(/、/g, ",");
+    text = text.replace(/「/g, "“");
+    text = text.replace(/」/g, "”");
+    text = text.replace("　", " ");
+
     for (var i = 0; i < text.length; i++) {
         if (text.charAt(i) == "ー") {
             text = text.replace("ー", text.charAt(i - 1));
         } else if (text.charAt(i) == "っ" || text.charAt(i) == "ッ") {
             text = text.replace("っ", text.charAt(i + 1));
             text = text.replace("ッ", text.charAt(i + 1));
-        } else if (text.charAt(i) == "　") {
-            text = text.replace("　", " ");
         }
     }
 

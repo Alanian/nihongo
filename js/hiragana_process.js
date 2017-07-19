@@ -1,3 +1,5 @@
+'use strict';
+
 /*************************************************
  HIRAGANA PROCESS
  *************************************************/
@@ -8,6 +10,7 @@ var tries;
 var matches;
 var accuracy;
 var wrong;
+var numberOfCharacters;
 
 var _info;
 var _result;
@@ -32,21 +35,24 @@ function update() {
             accuracy = 0;
         _info.find('.bottom').append('<br>Accuracy: ' + accuracy + '%');
     } else {
-        end('<span class="jap-font">ひらがな</span>');
+        end();
     }
 }
 
 function check() {
     var input = _result.val();
     var correct = ht.table[0].reading;
-    console.log('check');
 
-    if (input.length <= correct.length && !wrong) {
-        for (var i = 0; i < input.length; i++) {
-            if (input[i] != correct[i]) {
-                wrong = true;
-                showTime(_task.find('p'), 'Wrong...', 1000);
-                tries++;
+    if(input.length <= correct.length){
+        if(wrong){
+            showTime(_task.find('p'), 'Wrong...', 1000);
+        }else{
+            for (var i = 0; i < input.length; i++) {
+                if (input[i] != correct[i]) {
+                    wrong = true;
+
+                    tries++;
+                }
             }
         }
     }
@@ -70,12 +76,17 @@ function check() {
 }
 
 function skip() {
-    console.log('skip');
     _result.val('');
     showTime(_task.find('p'), '<jap>' + ht.table[0].character + '</jap> = ' + ht.table[0].reading, 2000);
     ht.moveFirst(3);
     tries++;
     update();
+}
+
+function checkMaxCharacters(max) {
+    numberOfCharacters = parseInt(prompt('How many? Choose form 1 to ' + max + '.'));
+    if (numberOfCharacters > max || numberOfCharacters < 1 || isNaN(numberOfCharacters))
+        numberOfCharacters = max;
 }
 
 $(document).ready(function () {
@@ -92,36 +103,30 @@ $(document).ready(function () {
 
         switch (startButtonID) {
             case 'gojuon':
-                start(0, 46);
+                checkMaxCharacters(46);
+                start(0, numberOfCharacters);
                 break;
             case 'dakuten':
-                start(46, 5);
+                checkMaxCharacters(25);
+                start(46, numberOfCharacters);
                 break;
             case 'gojuon-dakuten':
-                start(0, 71);
+                numberOfCharacters = 71;
+                start(0, numberOfCharacters);
                 break;
             case 'yoon':
-                start(71, 36);
+                numberOfCharacters = 36;
+                start(71, numberOfCharacters);
                 break;
             case 'sokuon':
-                start(107, 20);
+                numberOfCharacters = 20;
+                start(107, numberOfCharacters);
                 break;
             case 'ultimate':
-                start(0, 127);
-            // $('#hiragana-first-number').find('button').click(function () {
-            //     var val = $('#hiragana-first-number').find('input[type=number]').val();
-            //     if (val > 0)
-            //         start(0, val);
-            // });
-            //
-            // $('#hiragana-random-number').find('button').click(function () {
-            //     var val = $('#hiragana-random-number').find('input[type=number]').val();
-            //     if (val > 0)
-            //         start(0, val, true)
-            // });
+                numberOfCharacters = 127;
+                start(0, numberOfCharacters);
         }
     });
-
 
     $('.start-over').click(function () {
         swapScreens('.prepare', '.end');
@@ -134,16 +139,4 @@ $(document).ready(function () {
     $('.skip').click(function () {
         skip();
     });
-
-    // $('#hiragana-first-number').find('input').keyup(function (e) {
-    //     if (e.keyCode == 13) {
-    //         $('#hiragana-first-number').find('button').trigger('click');
-    //     }
-    // });
-    //
-    // $('#hiragana-random-number').find('input').keyup(function (e) {
-    //     if (e.keyCode == 13) {
-    //         $('#hiragana-random-number').find('button').trigger('click');
-    //     }
-    // });
 });

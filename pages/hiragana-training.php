@@ -6,8 +6,8 @@
     <h1>Hiragana Training</h1>
 
     <p>
-        Use this training program to improve your Hiragana reading skills. If the "Gojūon" option is too hard for you,
-        try the "First..." option with a small number like five and increase it steadily.
+        Use this training program to improve your Hiragana reading skills. Try the "Gojūon" option with a small number
+        (you can choose a number in the revealed input field) and increase it steadily.
     </p>
     <p>
         Please enjoy and don't give up!
@@ -19,36 +19,48 @@
                 <button id="gojuon" class="start-button">
                     <header>Gojūon</header>
                     <section>46 basic characters</section>
-                    <footer><jap>き と ふ し は</jap></footer>
+                    <footer>
+                        <jap>き と ふ し は</jap>
+                    </footer>
                 </button>
                 <button id="dakuten" class="start-button">
                     <header>Dakuten</header>
                     <section>25 voiced variations</section>
-                    <footer><jap>ぎ ど ぷ じ ば</jap></footer>
+                    <footer>
+                        <jap>ぎ ど ぷ じ ば</jap>
+                    </footer>
                 </button>
                 <button id="yoon" class="start-button">
                     <header>Yōon</header>
                     <section>36 vocal combinations</section>
-                    <footer><jap>にゃ しょ きゅ</jap></footer>
+                    <footer>
+                        <jap>にゃ しょ きゅ</jap>
+                    </footer>
                 </button>
             </div>
             <div class="button-group">
                 <button id="gojuon-dakuten" class="start-button double">
                     <header>Gojūon & Dakuten</header>
                     <section>all 71 tones of native Japanese</section>
-                    <footer><jap>き と ふ し は ぎ ど ぷ じ ば</jap></footer>
+                    <footer>
+                        <jap>き と ふ し は ぎ ど ぷ じ ば</jap>
+                    </footer>
                 </button>
                 <button id="sokuon" class="start-button">
                     <header>Sokuon</header>
                     <section>20 double consonants</section>
-                    <footer><jap>っと っし っぽ</jap></footer>
+                    <footer>
+                        <jap>っと っし っぽ</jap>
+                    </footer>
                 </button>
             </div>
             <div class="button-group">
                 <button id="ultimate" class="start-button triple">
                     <header>Ultimate Challenge</header>
                     <section>Gojūon & Dakuten & Yōon & Sokuon</section>
-                    <footer><jap>たっとちゅうばん</jap></footer>
+                    <footer>
+                        <jap>たっとちゅうばん</jap>
+                    </footer>
                 </button>
             </div>
         </div>

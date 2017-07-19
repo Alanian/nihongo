@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 /*************************************************
  HIRAGANA CLASS
@@ -33,15 +33,15 @@ HiraganaTable.prototype.add = function (character, reading) {
 HiraganaTable.prototype.fill = function (from, number) {
     var original = this;
     $.ajax({
-        url: "https://raw.githubusercontent.com/Alanian/nihongo/master/data/hiragana.txt",
+        url: 'https://raw.githubusercontent.com/Alanian/nihongo/master/data/hiragana.txt',
         async: false,
         success: function (data) {
-            var lines = data.split("\n");
-            from = (typeof from === "undefined" || from > lines.length || from < 0) ? 0 : from;
-            var len = (typeof number === "undefined" || number > lines.length - from || number <= 0) ? lines.length : from + number;
+            var lines = data.split('\n');
+            from = (typeof from === 'undefined' || from > lines.length || from < 0) ? 0 : from;
+            var len = (typeof number === 'undefined' || number > lines.length - from || number <= 0) ? lines.length : from + number;
             for (var i = from; i < len; i++) {
-                var split = lines[i].split(" ");
-                original.add(split[0], split[1]);
+                var _split = lines[i].split(' ');
+                original.add(_split[0], _split[1]);
             }
         }
     });
