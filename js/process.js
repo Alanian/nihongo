@@ -58,24 +58,37 @@ function showTime(element, text, time) {
     element.animate({
         opacity: 0
     }, time);
-    // element.removeClass("hidden");
-    // element.html(text);
-    // element.addClass("hidden");
 }
 
 $(document).ready(function () {
+    $('jap').hover(function () {
+        var meaning = $(this).find('meaning');
+        var width = meaning.width();
+        meaning.css('margin-left', '-' + (width / 2 + 16) + 'px');
+    });
+
+    $('.kana-table').find('td').hover(function () {
+        var meaning = $(this).find('meaning');
+        var width = meaning.width();
+        meaning.css('margin-left', '-' + (width / 2 + 16) + 'px');
+        meaning.css('margin-bottom', '-27px');
+    });
+
+    $('em').hover(function () {
+        var meaning = $(this).find('meaning');
+        var width = meaning.width();
+        meaning.css('margin-left', '-' + (width / 2 + 16) + 'px');
+        meaning.css('margin-bottom', '-8px');
+    });
+
     var particleClicked = false;
     $('p').find('jap[particle]').click(function () {
         particleClicked = true;
     });
     $('p').find('jap').click(function () {
         var text = $(this).html();
-        console.log('tex: '+text);
-        var title = $(this).attr('title');
-        console.log('tit: '+title);
         var kanaText = kanjiToKana(text);
-        console.log('knt: '+kanaText);
-        if (text == kanaText) $(this).wrap('<em title="' + title + '"></em>').parent().html(kanaToRomaji(kanaText, particleClicked));
+        if (text == kanaText) $(this).wrap('<em></em>').parent().html(kanaToRomaji(kanaText, particleClicked));
         else $(this).html(kanaText);
         particleClicked = false;
     });

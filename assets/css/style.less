@@ -36,9 +36,51 @@ body {
   font-size: @fontSize;
   background-color: @background;
 
+  em {
+    font-style: italic;
+  }
+
   jap {
     font-family: @japFont;
     font-size: @japFontSize;
+  }
+
+  jap, em, .kana-table td {
+    position: relative;
+
+    &:hover meaning {
+      visibility: visible;
+      opacity: 0.9;
+      bottom: 150%;
+    }
+
+    meaning {
+      position: absolute;
+      left: 50%;
+      padding: 4px 16px 6px;
+      background: #000;
+      color: #fff;
+      text-align: center;
+      visibility: hidden;
+      border-radius: 5px;
+      font-family: @mainFont;
+      font-size: @fontSize*0.8;
+      font-style: initial;
+      white-space: nowrap;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -8px;
+        width: 0;
+        height: 0;
+        border-top: 8px solid black;
+        border-right: 8px solid transparent;
+        border-left: 8px solid transparent;
+      }
+    }
   }
 
   h1 {
@@ -75,10 +117,6 @@ body {
       font-weight: bold;
     }
 
-    em {
-      font-style: italic;
-    }
-
     .header {
       height: @headerHeight;
       background: @headerBackground;
@@ -94,6 +132,7 @@ body {
         width: 78px;
       }
     }
+
     .navigation {
       .navigation-menu {
         > li {
@@ -128,7 +167,7 @@ body {
             > .menu-dropdown {
               padding: 2px 0;
               background: @navigationBackground;
-              z-index: 99;
+              z-index: 9;
             }
 
             > .menu-title:after {
@@ -147,7 +186,7 @@ body {
               margin: 0;
               color: rgba(25, 25, 25, 0);
               transition: 0.5s 0.1s height, 0.5s 0.1s padding, 0.5s 0.1s margin, 0.3s color, 0.6s visibility;
-              z-index: 99;
+              z-index: 9;
             }
           }
 
@@ -175,7 +214,7 @@ body {
               position: absolute;
               top: 100%;
               left: 0;
-              z-index: 101;
+              z-index: 11;
               transition: 0.2s 0.2s border-top ease-out, 0.2s border-top-color;
             }
 
@@ -189,7 +228,7 @@ body {
               position: absolute;
               bottom: 0;
               left: 0;
-              z-index: 101;
+              z-index: 11;
               transition: 0.2s border-bottom ease-in;
             }
 
@@ -207,7 +246,7 @@ body {
             padding: 4px 0;
             position: absolute;
             background: @navigationBackground;
-            z-index: 100;
+            z-index: 10;
             transition: 0.5s padding, 0.5s background;
 
             > li {
@@ -216,7 +255,7 @@ body {
               background: transparent;
               transition: 0.5s height cubic-bezier(0.73, 0.32, 0.34, 1.5), 0.3s padding cubic-bezier(0.73, 0.32, 0.34, 1.5), 0.5s margin cubic-bezier(0.73, 0.32, 0.34, 1.5), 0.5s 0.2s color, 0.2s background-color;
 
-              > a{
+              > a {
                 text-decoration: none;
                 color: inherit;
                 display: block;
@@ -240,7 +279,7 @@ body {
               position: absolute;
               top: 100%;
               left: 0;
-              z-index: 101;
+              z-index: 11;
               transition: 0.5s border-top;
             }
           }
@@ -259,6 +298,33 @@ body {
         line-height: 1.5;
         text-shadow: 0 0 6px rgba(173, 48, 48, 0.3);
         letter-spacing: 1px;
+
+        a {
+          font-weight: bold;
+          text-decoration: none;
+          color: dodgerblue;
+          text-shadow: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        span {
+          &.domino {
+            font-size: @fontSize*3.5;
+            display: inline-block;
+            position: relative;
+            top: 18px;
+            margin: -40px 0;
+
+          }
+        }
+      }
+
+      ul {
+        list-style-type: circle;
+        margin: 20px 0 20px 80px;
       }
 
       .button-group {
@@ -266,18 +332,14 @@ body {
         display: inline-block;
         text-align: center;
         margin: 2% auto;
-      }
 
-      a {
-        text-decoration: underline;
-        font-weight: bold;
-
-        &.button {
+        a {
+          text-decoration: none;
+          font-weight: bold;
           background-color: @containerFontColor;
           color: @containerBackground;
           padding: 10px 20px;
           border-radius: 4px;
-          text-decoration: none;
           margin: 0 4px;
           box-shadow: inset 0 0 20px 2px rgba(0, 0, 0, 0.3);
           letter-spacing: 2px;
@@ -285,6 +347,72 @@ body {
 
           &:hover {
             box-shadow: inset 0 0 20px 2px rgba(255, 255, 255, 0.3);
+          }
+
+        }
+      }
+
+      table {
+        @tableBorder: 1px solid #888;
+
+        margin: 20px auto;
+
+        tr {
+          th {
+            font-weight: bold;
+          }
+
+          td, th {
+            padding: 10px;
+            border-bottom: @tableBorder;
+            text-align: center;
+          }
+        }
+
+        &.grid-table {
+          tr {
+            &:first-child {
+              border-top: @tableBorder;
+            }
+
+            td {
+              padding: 20px;
+              border-right: @tableBorder;
+
+              &:first-child {
+                border-left: @tableBorder;
+              }
+
+              a {
+                font-weight: bold;
+                text-decoration: none;
+                color: dodgerblue;
+                text-shadow: none;
+
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+        }
+
+        &.kana-table {
+          text-align: center;
+          margin: 40px auto;
+          font-size: 3rem;
+          font-family: @japFont;
+          border-collapse: separate;
+          border-spacing: 16px;
+          width: 100%;
+
+          tr {
+            td {
+              padding: 10px;
+              background-color: @containerFontColor;
+              color: @containerBackground;
+              border-radius: 3rem;
+            }
           }
         }
       }
@@ -315,32 +443,26 @@ body {
               font-size: 8rem;
             }
 
-            p{
+            p {
               font-weight: bold;
               text-align: center;
               font-size: 1.4rem;
               height: 5px;
-              //opacity: 1;
-              //transition: 1s all ease-out;
-              //
-              //&.hidden{
-              //  opacity: 0;
-              //}
             }
           }
 
-          .info{
+          .info {
             padding: 0 20px;
           }
 
           .input {
             padding: 22px 0;
 
-            > *{
+            > * {
               margin: 10px 0;
             }
 
-            .result{
+            .result {
               width: 90%;
               padding: 12px 0 12px 20px;
               outline: none;
@@ -443,6 +565,103 @@ body {
 
     .footer {
 
+    }
+  }
+
+  .modal {
+    .exercise-block {
+      h1 {
+        font-size: @fontSize*1.2;
+        text-align: left;
+        font-weight: normal;
+      }
+
+      table {
+        width: 50%;
+      }
+
+      strong {
+        font-weight: bold;
+      }
+
+      ul{
+        display: inline-flex;
+        font-size: @fontSize*0.7;
+        text-align: center;
+        width: 130px;
+
+        li{
+          width: 33px;
+        }
+      }
+
+      .exercise-form {
+        .option {
+          height: 2rem;
+
+          label {
+            line-height: 2rem;
+            cursor: pointer;
+          }
+
+          span {
+            line-height: 2rem;
+          }
+
+          input[type=checkbox],
+          input[type=radio] {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-color: @containerFontColor;
+            padding: 12px;
+            border-radius: 4px;
+            outline: none;
+            position: relative;
+            float: left;
+            margin: 3px 6px 3px 3px;
+            box-shadow: inset 0 0 15px 1px rgba(0, 0, 0, 0.3);
+
+            &:hover {
+              box-shadow: inset 0 0 20px 2px rgba(255, 255, 255, 0.3);
+            }
+
+            &:checked {
+              &:after {
+                content: '\2714';
+                position: absolute;
+                bottom: 0;
+                left: 5px;
+                color: @containerBackground;
+                text-shadow: 0 0 2px;
+                font-size: @fontSize;
+              }
+            }
+          }
+        }
+        button {
+          font-weight: bold;
+          background-color: @containerFontColor;
+          color: #eeeeee;
+          padding: 10px 20px;
+          border-radius: 4px;
+          box-shadow: inset 0 0 20px 2px rgba(0, 0, 0, 0.3);
+          letter-spacing: 2px;
+          cursor: pointer;
+          font-family: inherit;
+          font-size: 1.2rem;
+          border: none;
+          margin: 10px 0 0;
+          outline: none;
+
+          &:hover {
+            box-shadow: inset 0 0 20px 2px rgba(255, 255, 255, 0.3);
+          }
+        }
+
+        .result {
+          margin: 10px 0 0;
+        }
+      }
     }
   }
 }

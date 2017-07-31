@@ -6,7 +6,7 @@
 <div class="container">
     <!-- closes in template bottom -->
     <div class="header">
-        <jap>日本弱</jap>
+        <jap>日本若</jap>
     </div>
     <div class="navigation">
         <?php require '../includes/navigation.html' ?>

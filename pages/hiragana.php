@@ -2,96 +2,53 @@
 
     <script src="../js/Hiragana.class.js"></script>
     <script src="../js/hiragana_process.js"></script>
-    <h2>Hiragana</h2>
+
+    <h1>Hiragana</h1>
+
     <p>
-        Use this training programm to improve your Hiragana reading skills. If the "Gojūon" option is too hard for you,
-        try the "First..." option with a small number like five and increase it steadily.
+        Hiragana was developed from
+        <em>kanji<meaning>chinese characters</meaning></em>,
+        that were used for pronunciation only without considering their meaning.
+        As fast-writing got common, these
+        <em>kanji<meaning>chinese characters</meaning></em>
+        got deformed and simplified.
     </p>
     <p>
-        Please enjoy and don't give up!
+        This writing system consists of 46 main characters and 25 voiced characters. Knowing the pronunciation of these
+        gives you the skill to say <strong>everything</strong> possible in japanese.
+    </p>
+    <p>
+        You can put a character from the i-column add a small version of the y-row together to get a doubled vocal
+        syllable.
+        This "fusion" removes the <strong>i</strong> (or <strong>iy</strong> on irregular) from the new one.<br>
+        <jap>き<meaning>ki</meaning></jap> +
+        <jap>ゃ<meaning>ya ( a bit smaller as the original )</meaning></jap> =
+        <jap>きゃ<meaning>kya</meaning></jap><br>
+        <jap>し<meaning>shi</meaning></jap> +
+        <jap>ょ<meaning>yo ( a bit smaller as the original )</meaning></jap> =
+        <jap>しょ<meaning>sho</meaning></jap><br>
+        <jap>じ<meaning>ji</meaning></jap> +
+        <jap>ょ<meaning>yo ( a bit smaller as the original )</meaning></jap> =
+        <jap>じょ<meaning>jo</meaning></jap>
+    </p>
+    <p>
+        Consonants can also be doubled. Therefore you put a small <strong>tsu</strong> and a consonantal character together.<br>
+        <jap>だ<meaning>da</meaning></jap> +
+        <jap>っ<meaning>tsu ( a bit smaller as the original )</meaning></jap> +
+        <jap>た<meaning>ta</meaning></jap> =
+        <jap>だった<meaning>datta</meaning></jap><br>
+        <jap>と<meaning>to</meaning></jap> +
+        <jap>っ<meaning>tsu ( a bit smaller as the original )</meaning></jap> +
+        <jap>し<meaning>shi</meaning></jap> =
+        <jap>とっし<meaning>tosshi</meaning></jap><br>
+        <jap>ま<meaning>ma</meaning></jap> +
+        <jap>っ<meaning>tsu ( a bit smaller as the original )</meaning></jap> +
+        <jap>ち<meaning>chi</meaning></jap> =
+        <jap>まっち<meaning>macchi</meaning></jap><br>
     </p>
 
-    <div class="learn-container">
-        <div class="before-start">
+<?php require 'container/hiragana-table.html'; ?>
 
-            <div class="input-group input-group-lg" id="hiragana-gojuon" data-toggle="tooltip"
-                 title="46 main characters">
-                <span class="input-group-addon left-addon jap-font">き</span>
-                <span class="input-group-addon describing-addon">Gojūon</span>
-                <span class="input-group-btn button-addon">
-                    <button class="btn btn-default button-addon" type="button">Start</button>
-                </span>
-            </div>
-
-            <div class="input-group input-group-lg" id="hiragana-dakuten" data-toggle="tooltip"
-                 title="25 voiced characters">
-                <span class="input-group-addon left-addon jap-font">ぎ</span>
-                <span class="input-group-addon describing-addon">Dakuten</span>
-                <span class="input-group-btn button-addon">
-                    <button class="btn btn-default button-addon" type="button">Start</button>
-                </span>
-            </div>
-
-            <div class="input-group input-group-lg" id="hiragana-gojuon-dakuten" data-toggle="tooltip"
-                 title="all 71 characters">
-                <span class="input-group-addon left-addon jap-font">きぎ</span>
-                <span class="input-group-addon describing-addon">Gojūon + Dakuten</span>
-                <span class="input-group-btn button-addon">
-                    <button class="btn btn-default button-addon" type="button">Start</button>
-                </span>
-            </div>
-
-            <div class="input-group input-group-lg" id="hiragana-yoon" data-toggle="tooltip"
-                 title="36 vocal combinations">
-                <span class="input-group-addon left-addon jap-font">きょ</span>
-                <span class="input-group-addon describing-addon">Yōon</span>
-                <span class="input-group-btn button-addon">
-                    <button class="btn btn-default button-addon" type="button">Start</button>
-                </span>
-            </div>
-
-            <div class="input-group input-group-lg" id="hiragana-first-number" data-toggle="tooltip"
-                 title="1 to 71">
-                <span class="input-group-addon left-text-addon">First...</span>
-                <input type="number" min="1" max="71" class="form-control"
-                       placeholder="number">
-                <span class="input-group-btn button-addon">
-                    <button class="btn btn-default button-addon" type="button">Start</button>
-                </span>
-            </div>
-
-            <div class="input-group input-group-lg" id="hiragana-random-number" data-toggle="tooltip"
-                 title="1 to 71">
-                <span class="input-group-addon left-text-addon">Random...</span>
-                <input type="number" min="1" max="71" class="form-control"
-                       placeholder="number">
-                <span class="input-group-btn button-addon">
-                    <button class="btn btn-default button-addon" type="button">Start</button>
-                </span>
-            </div>
-        </div>
-
-        <div class="start">
-            <div id="hiragana-container">
-                <div id="hiragana-box"></div>
-                <div class="show-box info-box-top"><p></p></div>
-                <div class="show-box result">
-                    <input type="text">
-                    <button class="skip">Skip</button>
-                </div>
-                <div class="show-box info-box-bottom"><p></p></div>
-            </div>
-        </div>
-
-        <div class="end">
-            <h3>Rank reached:</h3>
-            <p class="rank"></p>
-            <p class="advice"></p>
-            <div>
-                <button id="start-over-button" class="btn btn-default btn-lg">Start over</button>
-            </div>
-        </div>
-
-    </div>
+<?php require 'container/yoon-table.html'; ?>
 
 <?php require '../includes/template_bottom.php' ?>

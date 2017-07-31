@@ -1,13 +1,10 @@
 function kanaToRomaji(text, isParticle) {
 
-    if (isParticle){
-        if (text == "は"){
-            return "wa";
-        } else if(text == "へ"){
-            return "e";
-        } else if(text == "を"){
-            return "o";
-        }
+    if (isParticle) {
+        text = text.replace(/は/g, "wa");
+        text = text.replace(/へ/g, "e");
+        text = text.replace(/を/g, "o");
+        return text;
     }
 
     text = text.replace(/きゃ/g, "kya");
@@ -228,6 +225,13 @@ function kanaToRomaji(text, isParticle) {
     text = text.replace(/ぽ/g, "po");
     text = text.replace(/ポ/g, "po");
 
+    text = text.replace(/ゃ/g, "ya");
+    text = text.replace(/ャ/g, "ya");
+    text = text.replace(/ゅ/g, "yu");
+    text = text.replace(/ュ/g, "yu");
+    text = text.replace(/ょ/g, "yo");
+    text = text.replace(/ョ/g, "yo");
+
     text = text.replace(/。/g, ".");
     text = text.replace(/、/g, ",");
     text = text.replace(/「/g, "“");
@@ -238,8 +242,8 @@ function kanaToRomaji(text, isParticle) {
         if (text.charAt(i) == "ー") {
             text = text.replace("ー", text.charAt(i - 1));
         } else if (text.charAt(i) == "っ" || text.charAt(i) == "ッ") {
-            text = text.replace("っ", text.charAt(i + 1));
-            text = text.replace("ッ", text.charAt(i + 1));
+            text = text.charAt(i + 1) == '<' ? text.replace("っ", "tsu") : text.replace("っ", text.charAt(i + 1));
+            text = text.charAt(i + 1) == '<' ? text.replace("ッ", "tsu") : text.replace("ッ", text.charAt(i + 1));
         }
     }
 

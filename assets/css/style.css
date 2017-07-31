@@ -12,9 +12,54 @@ body {
     font-size: 1.2rem;
     background-color: #202020;
 }
+body em {
+    font-style: italic;
+}
 body jap {
     font-family: aihara, sans-serif;
     font-size: 1.4rem;
+}
+body jap,
+body em,
+body .kana-table td {
+    position: relative;
+}
+body jap:hover meaning,
+body em:hover meaning,
+body .kana-table td:hover meaning {
+    visibility: visible;
+    opacity: 0.9;
+    bottom: 150%;
+}
+body jap meaning,
+body em meaning,
+body .kana-table td meaning {
+    position: absolute;
+    left: 50%;
+    padding: 4px 16px 6px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    visibility: hidden;
+    border-radius: 5px;
+    font-family: "Dosis", sans-serif;
+    font-size: 0.96rem;
+    font-style: initial;
+    white-space: nowrap;
+}
+body jap meaning:after,
+body em meaning:after,
+body .kana-table td meaning:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -8px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid black;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
 }
 body h1 {
     font-size: 2.88rem;
@@ -43,9 +88,6 @@ body .container {
 }
 body .container strong {
     font-weight: bold;
-}
-body .container em {
-    font-style: italic;
 }
 body .container .header {
     height: 16rem;
@@ -84,7 +126,7 @@ body .container .navigation .navigation-menu .menu:hover > a .menu-title:after {
 body .container .navigation .navigation-menu .menu:not(:hover) > .menu-dropdown {
     padding: 2px 0;
     background: #dddddd;
-    z-index: 99;
+    z-index: 9;
 }
 body .container .navigation .navigation-menu .menu:not(:hover) > .menu-title:after {
     border-bottom-color: #dddddd;
@@ -100,7 +142,7 @@ body .container .navigation .navigation-menu .menu:not(:hover) > .menu-dropdown 
     margin: 0;
     color: rgba(25, 25, 25, 0);
     transition: 0.5s 0.1s height, 0.5s 0.1s padding, 0.5s 0.1s margin, 0.3s color, 0.6s visibility;
-    z-index: 99;
+    z-index: 9;
 }
 body .container .navigation .navigation-menu .menu .menu-title {
     display: block;
@@ -126,7 +168,7 @@ body .container .navigation .navigation-menu .menu .menu-title:before {
     position: absolute;
     top: 100%;
     left: 0;
-    z-index: 101;
+    z-index: 11;
     transition: 0.2s 0.2s border-top ease-out, 0.2s border-top-color;
 }
 body .container .navigation .navigation-menu .menu .menu-title:after {
@@ -139,7 +181,7 @@ body .container .navigation .navigation-menu .menu .menu-title:after {
     position: absolute;
     bottom: 0;
     left: 0;
-    z-index: 101;
+    z-index: 11;
     transition: 0.2s border-bottom ease-in;
 }
 body .container .navigation .navigation-menu .menu .menu-title:hover {
@@ -153,7 +195,7 @@ body .container .navigation .navigation-menu .menu .menu-dropdown {
     padding: 4px 0;
     position: absolute;
     background: #dddddd;
-    z-index: 100;
+    z-index: 10;
     transition: 0.5s padding, 0.5s background;
 }
 body .container .navigation .navigation-menu .menu .menu-dropdown > li {
@@ -183,7 +225,7 @@ body .container .navigation .navigation-menu .menu .menu-dropdown:after {
     position: absolute;
     top: 100%;
     left: 0;
-    z-index: 101;
+    z-index: 11;
     transition: 0.5s border-top;
 }
 body .container .content {
@@ -198,29 +240,92 @@ body .container .content p {
     text-shadow: 0 0 6px rgba(173, 48, 48, 0.3);
     letter-spacing: 1px;
 }
+body .container .content p a {
+    font-weight: bold;
+    text-decoration: none;
+    color: dodgerblue;
+    text-shadow: none;
+}
+body .container .content p a:hover {
+    text-decoration: underline;
+}
+body .container .content p span.domino {
+    font-size: 4.2rem;
+    display: inline-block;
+    position: relative;
+    top: 18px;
+    margin: -40px 0;
+}
+body .container .content ul {
+    list-style-type: circle;
+    margin: 20px 0 20px 80px;
+}
 body .container .content .button-group {
     width: 100%;
     display: inline-block;
     text-align: center;
     margin: 2% auto;
 }
-body .container .content a {
-    text-decoration: underline;
+body .container .content .button-group a {
+    text-decoration: none;
     font-weight: bold;
-}
-body .container .content a.button {
     background-color: #ad3030;
     color: #eeeeee;
     padding: 10px 20px;
     border-radius: 4px;
-    text-decoration: none;
     margin: 0 4px;
     box-shadow: inset 0 0 20px 2px rgba(0, 0, 0, 0.3);
     letter-spacing: 2px;
     cursor: pointer;
 }
-body .container .content a.button:hover {
+body .container .content .button-group a:hover {
     box-shadow: inset 0 0 20px 2px rgba(255, 255, 255, 0.3);
+}
+body .container .content table {
+    margin: 20px auto;
+}
+body .container .content table tr th {
+    font-weight: bold;
+}
+body .container .content table tr td,
+body .container .content table tr th {
+    padding: 10px;
+    border-bottom: 1px solid #888888;
+    text-align: center;
+}
+body .container .content table.grid-table tr:first-child {
+    border-top: 1px solid #888888;
+}
+body .container .content table.grid-table tr td {
+    padding: 20px;
+    border-right: 1px solid #888888;
+}
+body .container .content table.grid-table tr td:first-child {
+    border-left: 1px solid #888888;
+}
+body .container .content table.grid-table tr td a {
+    font-weight: bold;
+    text-decoration: none;
+    color: dodgerblue;
+    text-shadow: none;
+}
+body .container .content table.grid-table tr td a:hover {
+    text-decoration: underline;
+}
+body .container .content table.kana-table {
+    text-align: center;
+    margin: 40px auto;
+    font-size: 3rem;
+    font-family: aihara, sans-serif;
+    border-collapse: separate;
+    border-spacing: 16px;
+    width: 100%;
+}
+body .container .content table.kana-table tr td {
+    padding: 10px;
+    background-color: #ad3030;
+    color: #eeeeee;
+    border-radius: 3rem;
 }
 body .container .content .training .start {
     width: 95.7% !important;
@@ -344,4 +449,82 @@ body .container .content .training .start-button footer {
 body .container .content .training .start-button footer jap,
 body .container .content .training .start-button footer em {
     font-size: 2.2399999999999998rem;
+}
+body .modal .exercise-block h1 {
+    font-size: 1.44rem;
+    text-align: left;
+    font-weight: normal;
+}
+body .modal .exercise-block table {
+    width: 50%;
+}
+body .modal .exercise-block strong {
+    font-weight: bold;
+}
+body .modal .exercise-block ul {
+    display: inline-flex;
+    font-size: 0.84rem;
+    text-align: center;
+    width: 130px;
+}
+body .modal .exercise-block ul li {
+    width: 33px;
+}
+body .modal .exercise-block .exercise-form .option {
+    height: 2rem;
+}
+body .modal .exercise-block .exercise-form .option label {
+    line-height: 2rem;
+    cursor: pointer;
+}
+body .modal .exercise-block .exercise-form .option span {
+    line-height: 2rem;
+}
+body .modal .exercise-block .exercise-form .option input[type=checkbox],
+body .modal .exercise-block .exercise-form .option input[type=radio] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #ad3030;
+    padding: 12px;
+    border-radius: 4px;
+    outline: none;
+    position: relative;
+    float: left;
+    margin: 3px 6px 3px 3px;
+    box-shadow: inset 0 0 15px 1px rgba(0, 0, 0, 0.3);
+}
+body .modal .exercise-block .exercise-form .option input[type=checkbox]:hover,
+body .modal .exercise-block .exercise-form .option input[type=radio]:hover {
+    box-shadow: inset 0 0 20px 2px rgba(255, 255, 255, 0.3);
+}
+body .modal .exercise-block .exercise-form .option input[type=checkbox]:checked:after,
+body .modal .exercise-block .exercise-form .option input[type=radio]:checked:after {
+    content: '\2714';
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    color: #eeeeee;
+    text-shadow: 0 0 2px;
+    font-size: 1.2rem;
+}
+body .modal .exercise-block .exercise-form button {
+    font-weight: bold;
+    background-color: #ad3030;
+    color: #eeeeee;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: inset 0 0 20px 2px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.2rem;
+    border: none;
+    margin: 10px 0 0;
+    outline: none;
+}
+body .modal .exercise-block .exercise-form button:hover {
+    box-shadow: inset 0 0 20px 2px rgba(255, 255, 255, 0.3);
+}
+body .modal .exercise-block .exercise-form .result {
+    margin: 10px 0 0;
 }
