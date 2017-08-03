@@ -5,7 +5,7 @@
     little sweets with verbs and find other attributes for them, the sorting process would be very similar.
 </p>
 <p>
-    In this suggestion japanese verbs are sorted by rules applied to them.
+    In this suggestion, Japanese verbs are sorted by rules applied to them.
     The result of this sorting method resulted in four groups:
 </p>
 <ul>
@@ -18,12 +18,12 @@
     <li>
         <p>
             A group just as little as the above one: <jap>くる<meaning>to come</meaning></jap><br>
-            It has its own unique rules, but in some explanations both groups are put together.
+            It has its own unique rules, but in some explanations, both groups are put together.
         </p>
     </li>
     <li>
         <p>
-            A group where rules are always applied to the stem. Lets call that group one-level-group or
+            A group where rules are always applied to the stem. Let's call that group one-level-group or
             <strong>lvl1</strong>.<br>
             All lvl1-verbs have a mora from the <strong>i-column</strong> or <strong>e-column</strong> and
             <strong>ru</strong> at the end.<br>
@@ -39,7 +39,7 @@
     </li>
     <li>
         <p>
-            A group where rules are applied dependent on the ending. This group will be referenced as
+            A group where rules are applied depending on the ending. This group will be referenced as
             <strong>lvl5</strong>.<br>
             It contains all the verbs which can't be assigned to the other groups.<br>
             Examples:
@@ -63,7 +63,7 @@
     is lvl5 and
     <em>miru<meaning>to see; to watch</meaning></em>
     is lvl1.
-    You may think it's irregular, because its form is lvl1, but then you have misunderstood something
+    You may think it's irregular because its form is lvl1, but then you have misunderstood something
     (see <a href="lections.php?lection=4">Lection 4</a>).
     There isn't a rule that says that all verbs with iru or eru are lvl1.
     The rule says that all lvl1 have iru or eru at the end.<br>

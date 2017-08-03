@@ -1,6 +1,6 @@
 <h1>Lection <?= $_GET['lection']; ?> - Masu & Copula</h1>
 <p>
-    Although we don't discussed these themes in detail, there's not much to explain. We will review it plenty enough
+    Although we didn't discuss these themes in detail, there's not much to explain. We will review it plenty enough
     anyway. Please remember following table:
 </p>
 <table>

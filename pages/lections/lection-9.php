@@ -1,7 +1,7 @@
 <h1>Lection <?= $_GET['lection']; ?> - Verbs SSK</h1>
 <p>
     There's not much to add to the explanation from <a href="lections.php?lection=5">Lection 5</a>, we already covered
-    almost anything. You should remember following separation, because it will be important for other word forms.
+    almost anything. You should remember the following separation because it will be important for other word forms.
 </p>
 <p>
     A verb contains a stem and an ending. The ending is the last mora of the verb. Anything until that is the stem.

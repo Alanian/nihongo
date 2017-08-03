@@ -1,7 +1,7 @@
 <h1>Lection <?= $_GET['lection']; ?> - Sentence Construction</h1>
 <p>
-    Sentences can get complicated in every language and japanese isn't an exception. The basics are simple though. In
-    english you have the S-V-O (subject, object, verb) and in Japanese it's <strong>S-O-V</strong>. As mentioned before
+    Sentences can get complicated in every language and Japanese isn't an exception. The basics are simple though. In
+    English, you have the S-V-O (subject, object, verb) and in Japanese it's <strong>S-O-V</strong>. As mentioned before
     the predicate is always at the end. The subject and object can be omitted when clear, but never the predicate.
     Remember that a particle always sticks to the preceding word, you can take them as a solid block.
 </p>
@@ -43,5 +43,5 @@
 </ul>
 <p>
     Don't hurry to translate by just seeing the sentence. If you aren't experienced, it's easier to translate it
-    as "a child take a toy" - which is wrong. I'm telling you this because of my personal failures.
+    as "a child takes a toy" - which is wrong. I'm telling you this because of my personal failures.
 </p>

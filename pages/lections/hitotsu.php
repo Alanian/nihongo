@@ -1,10 +1,10 @@
 <h1>Section Hitotsu</h1>
 <p>
-    In this section you'll learn how to give words functions by using particles. You'll also learn about two main word
+    In this section, you'll learn how to give words functions by using particles. You'll also learn about two main word
     forms and how to append the <em>masu</em>-form. Expand your knowledge with functional themes that help you
-    understand japanese and languages in general. In every lection it is recommended to test yourself - knowledge
+    understand Japanese and languages in general. In every lection it is recommended to test yourself - knowledge
     without practice has no value. The last lection is a test containing the entire section, repeat it if you don't get
-    a hang of it. In the end you'll be able to determine objects, subjects, word forms and get a pro in the matter of
+    a hang of it. In the end, you'll be able to determine objects, subjects, word forms and get a pro in the matter of
     verbs.
 </p>
 <table class="grid-table">

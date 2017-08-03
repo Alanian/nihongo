@@ -40,7 +40,7 @@ if ($no_match):
     ?>
     <h1>Lections</h1>
     <p>
-        So you want to learn Japanese? I hope this page will fulfill your expectations.
+        So you want to learn Japanese? I hope this page will fulfil your expectations.
     </p>
     <p>
         Short and easy to understand lections are awaiting you. You don't need to have previous experience, but you have
@@ -52,13 +52,13 @@ if ($no_match):
     </p>
     <p>
         There are some things you should know before you get started:<br>
-        Japanese words are written <em>cursive</em> to differentiate them from english, hence you should be aware of
+        Japanese words are written <em>cursive</em> to differentiate them from English, hence you should be aware of
         "made" and "<em>made<meaning>until; till; to</meaning></em>". As this page also provides a
-        <a href="hiragana-training.php"><em>Hiragana<meaning>a japanese writing system</meaning></em>-trainer</a>,
-        you have the chance to learn it simultaneously - japanese words will be written in
-        <em>Kana<meaning>the japanese writing systems Hiragana and Katakana</meaning></em>.
+        <a href="hiragana-training.php"><em>Hiragana<meaning>a Japanese writing system</meaning></em>-trainer</a>,
+        you have the chance to learn it simultaneously - Japanese words will be written in
+        <em>Kana<meaning>the Japanese writing systems Hiragana and Katakana</meaning></em>.
         If you can't read it, just click on it and it will turn in readable letters.
-        You can move your mouse over almost every cursive/japanese word to get its meaning.
+        You can move your mouse over almost every cursive/Japanese word to get its meaning.
         <br>Move your mouse over it and then click it:
         <jap>いぬ<meaning>dog</meaning></jap>
         <jap>と<meaning>combining particle (and; with)</meaning></jap>
@@ -66,7 +66,7 @@ if ($no_match):
     </p>
     <p>
         This page is still in progress, so try to keep up. If you have suggestions for improvement or find a mistake or
-        just want to criticise my terrible english, please contact me.
+        just want to criticise my terrible English, please contact me.
     </p>
     <div class="button-group">
         <a href="lections.php?lection=hitotsu" class="button">Start Lection</a>

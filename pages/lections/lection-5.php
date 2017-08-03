@@ -1,7 +1,7 @@
 <h1>Lection <?= $_GET['lection']; ?> - Verbs</h1>
 <p>
     The job of linguists (language scientists) is to explain language and its rules.
-    As japanese verbs were explored, they found similarities and tried to group them by habits.
+    As Japanese verbs were explored, they found similarities and tried to group them by habits.
     In several learning books you can find different explanations. All of them have their advantages and disadvantages.
 </p>
 <p>

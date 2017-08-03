@@ -2,7 +2,7 @@
 <p>
     Japanese has a very complicated politeness-system with several levels, relationships and forms. The
     <em>masu</em>-form is the common one, which is used in everyday conversation. I'm afraid you can't translate it into
-    english, but not to use it makes you a rude or vulgar person, so use it while you speak to a person you should
+    English, but not to use it makes you a rude or vulgar person, so use it while you speak to a person you should
     respect.
 </p>
 <p>

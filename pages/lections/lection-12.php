@@ -1,6 +1,6 @@
 <h1>Lection <?= $_GET['lection']; ?> - Tenses</h1>
 <p>
-    Fortunately there are only two tenses in japanese, <strong>past and non-past</strong>. A non specified sentence has
+    Fortunately, there are only two tenses in Japanese, <strong>past and non-past</strong>. A non-specified sentence has
     to be understood as planned, such as our examples in previous lections. It doesn't mean that other tenses can't be
     expressed, but that you haven't to learn new forms or concepts.
 </p>

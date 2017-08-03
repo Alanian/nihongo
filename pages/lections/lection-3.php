@@ -21,13 +21,13 @@
     So if you are spelling Japanese, you shouldn't spell it letterwise, but morawise.
     The word
     <jap>はなび<meaning>fireworks</meaning></jap>
-    is spelled ha-na-bi, instead of h-a-n-a-b-i.
+    is spelt ha-na-bi, instead of h-a-n-a-b-i.
     and
     <jap>ちんたつげきとう<meaning>just a fictional word</meaning></jap>
-    is spelled chi-n-ta-tsu-ge-ki-to-u.
+    is spelt chi-n-ta-tsu-ge-ki-to-u.
 </p>
 <p>
-    Note: <em>n</em>'s pronunciation length is equal to any other charcter (spell it nnh).
+    Note: <em>n</em>'s pronunciation length is equal to any other character (spell it nnh).
 </p>
 <p>
     If you're asked, what the ending of

@@ -3,7 +3,7 @@
     We had our first particle in <a href="lections.php?lection=2">Lection 2</a>. Our next particle is
     <jap particle>を<meaning>object marker particle</meaning></jap>, the object marker. Note that
     <jap particle>を<meaning>object marker particle</meaning></jap> is written with the mora <em>wo</em>, but with its
-    function as a particle you read it as <em>o</em>. There aren't words which contains
+    function as a particle, you read it as <em>o</em>. There aren't words which contain
     <jap particle>を<meaning>object marker particle</meaning></jap>, so it's just used as a particle and you never have
     to pronounce <em>wo</em> (except if you're into J-Pop).
 </p>
