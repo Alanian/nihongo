@@ -1,9 +1,8 @@
-<h1>Lection <?= $_GET['lection']; ?> - <em>masu</em>-form</h1>
+<h1>Lesson <?= $_GET['lesson']; ?> - <em>masu</em>-form</h1>
 <p>
-    Japanese has a very complicated politeness-system with several levels, relationships and forms. The
+    Japanese has a very complicated politeness-system with several levels, relationships and other formalities. The
     <em>masu</em>-form is the common one, which is used in everyday conversation. I'm afraid you can't translate it into
-    English, but not to use it makes you a rude or vulgar person, so use it while you speak to a person you should
-    respect.
+    English, but not to use it makes you a rude or vulgar person, so use it while you speak to a person you respect.
 </p>
 <p>
     The <em>masu</em>-form is appended to a verb in the RYK, exactly the predicate, other verbs in a sentence must not
@@ -22,21 +21,21 @@
         <td><em>suru</em></td>
         <td><em>shi</em></td>
         <td><em>shimasu</em></td>
-        <td><em>to do or to make</em></td>
+        <td><em>to do</em></td>
     </tr>
     <tr>
         <td>kuru</td>
         <td><em>kuru</em></td>
         <td><em>ki</em></td>
         <td><em>kimasu</em></td>
-        <td><em>to come (to where you are right now)</em></td>
+        <td><em>to come</em></td>
     </tr>
     <tr>
         <td>lvl1</td>
         <td><em>yameru</em></td>
         <td><em>yame</em></td>
         <td><em>yamemasu</em></td>
-        <td><em>to stop or to quit</em></td>
+        <td><em>to stop</em></td>
     </tr>
     <tr>
         <td>lvl5</td>
@@ -45,15 +44,9 @@
         <td><em>machimasu</em></td>
         <td><em>to wait</em></td>
     </tr>
-    <tr>
-        <td>lvl5</td>
-        <td><em>iku</em></td>
-        <td><em>iki</em></td>
-        <td><em>ikimasu</em></td>
-        <td><em>to go (to head a destination/direction)</em></td>
-    </tr>
 </table>
 <p>
     This form is not about <strong>what</strong> you tell, but <strong>to whom</strong> you speak. Even if you speak
-    about crap, you should be polite if you speak to a professor.
+    about crap, you should be polite if you speak to a professor. If you have problems remembering the RYK, please use
+    the <a href="verb-forms-training.php">Verb-trainer</a> provided by this page.
 </p>

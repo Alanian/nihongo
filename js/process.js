@@ -92,4 +92,14 @@ $(document).ready(function () {
         else $(this).html(kanaText);
         particleClicked = false;
     });
+    $('form').find('jap[particle]').click(function () {
+        particleClicked = true;
+    });
+    $('form').find('jap').click(function () {
+        var text = $(this).html();
+        var kanaText = kanjiToKana(text);
+        if (text == kanaText) $(this).wrap('<em></em>').parent().html(kanaToRomaji(kanaText, particleClicked));
+        else $(this).html(kanaText);
+        particleClicked = false;
+    });
 });

@@ -87,7 +87,7 @@
             <input type="radio" name="11" id="44">
         </div>
         <button class="exercise-button" id="exercise-6">Confirm</button>
-        <button class="exercise-next-button" style="visibility: hidden;">Next Lection</button>
+        <button class="exercise-next-button" style="visibility: hidden;">Next Lesson</button>
         <div class="result"></div>
     </div>
 </div>

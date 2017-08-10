@@ -2,32 +2,39 @@
 
 <?php
 $no_match = false;
-if (isset($_GET['lection'])):
-    if ($_GET['lection'] == 1):
-        require 'lections/lection-' . $_GET['lection'] . '.php';
+if (isset($_GET['lesson'])):
+    if (($_GET['lesson'] == 'hitotsu')):
+        require 'lessons/hitotsu.php';
         ?>
         <div class="button-group">
-            <a href="lections.php?lection=hitotsu" class="button">Overview</a>
-            <a href="exercises/exercise-<?= $_GET['lection']; ?>.php" rel="modal:open">Proceed</a>
+            <a href="lessons.php?lesson=1" class="button">Start</a>
         </div>
         <?php
-    elseif (($_GET['lection'] > 20)):
-        ?>
-        <h1>Lection <?= $_GET['lection']; ?> - Coming Soon</h1>
-        <?php
-    elseif (($_GET['lection'] > 1)):
-        require 'lections/lection-' . $_GET['lection'] . '.php';
+    elseif ($_GET['lesson'] == 1):
+        require 'lessons/lesson-' . $_GET['lesson'] . '.php';
         ?>
         <div class="button-group">
-            <a href="lections.php?lection=<?= $_GET['lection'] - 1; ?>" class="button">Previous Lection</a>
-            <a href="exercises/exercise-<?= $_GET['lection']; ?>.php" rel="modal:open">Proceed</a>
+            <a href="lessons.php?lesson=hitotsu" class="button">Overview</a>
+            <a href="exercises/exercise-<?= $_GET['lesson']; ?>.php" rel="modal:open">Proceed</a>
         </div>
         <?php
-    elseif (($_GET['lection'] == 'hitotsu')):
-        require 'lections/hitotsu.php';
+    elseif (($_GET['lesson'] > 20)):
+        ?>
+        <h1>Lesson <?= $_GET['lesson']; ?> - Coming Soon</h1>
+        <?php
+    elseif (($_GET['lesson'] % 20 == 0)):
+        require 'lessons/lesson-' . $_GET['lesson'] . '.php';
+    elseif (($_GET['lesson'] > 1)):
+        require 'lessons/lesson-' . $_GET['lesson'] . '.php';
+        $exercises = [1, 2, 3, 5, 6, 11, 15];
         ?>
         <div class="button-group">
-            <a href="lections.php?lection=1" class="button">Start</a>
+            <a href="lessons.php?lesson=<?= $_GET['lesson'] - 1; ?>" class="button">Previous Lesson</a>
+            <?php if (in_array($_GET['lesson'], $exercises)): ?>
+                <a href="exercises/exercise-<?= $_GET['lesson']; ?>.php" rel="modal:open">Proceed</a>
+            <?php else: ?>
+                <a href="lessons.php?lesson=<?= $_GET['lesson'] + 1; ?>" class="button">Next Lesson</a>
+            <?php endif; ?>
         </div>
         <?php
     else:
@@ -38,13 +45,13 @@ else:
 endif;
 if ($no_match):
     ?>
-    <h1>Lections</h1>
+    <h1>Lessons</h1>
     <p>
         So you want to learn Japanese? I hope this page will fulfil your expectations.
     </p>
     <p>
-        Short and easy to understand lections are awaiting you. You don't need to have previous experience, but you have
-        to understand the essence of a lection before you move to the next one. The direction was chosen considering
+        Short and easy to understand lessons are awaiting you. You don't need to have previous experience, but you have
+        to understand the essence of a lesson before you move to the next one. The direction was chosen considering
         people who are interested in anime and other
         <em>otaku<meaning> a person who lives a hobby of a popular culture</meaning></em>
         stuff. So you are not going to learn business rules in the first place, but I guarantee for high-quality
@@ -69,7 +76,7 @@ if ($no_match):
         just want to criticise my terrible English, please contact me.
     </p>
     <div class="button-group">
-        <a href="lections.php?lection=hitotsu" class="button">Start Lection</a>
+        <a href="lessons.php?lesson=hitotsu" class="button">Start Lesson</a>
     </div>
     <?php
 endif;

@@ -1,4 +1,4 @@
-<h1>Lection <?= $_GET['lection']; ?> - Translation</h1>
+<h1>Lesson <?= $_GET['lesson'];?> - Translation</h1>
 <p>
     Even though romance languages (Italian, Spanish, French, etc.) have the same ancestor (Latin) you can't translate
     them one-to-one because they developed independently. Individual situations needed individual language

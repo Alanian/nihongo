@@ -77,6 +77,10 @@ body h2 {
 body h2 jap {
     font-size: 2.2399999999999998rem;
 }
+body h3 {
+    font-size: 1.92rem;
+    margin: 10px 0;
+}
 body .container {
     width: 60rem;
     margin: 80px auto;
@@ -250,11 +254,11 @@ body .container .content p a:hover {
     text-decoration: underline;
 }
 body .container .content p span.domino {
-    font-size: 4.2rem;
+    font-size: 2.52rem;
     display: inline-block;
     position: relative;
-    top: 18px;
-    margin: -40px 0;
+    top: 8px;
+    margin: -24px 0;
 }
 body .container .content ul {
     list-style-type: circle;
@@ -326,6 +330,46 @@ body .container .content table.kana-table tr td {
     background-color: #ad3030;
     color: #eeeeee;
     border-radius: 3rem;
+}
+body .container .content form.big-test .test-block {
+    margin: 40px 0;
+}
+body .container .content form.big-test .test-block .test-element {
+    display: inline-grid;
+    background-color: #ad3030;
+    color: #eeeeee;
+    padding: 1.5%;
+    border-radius: 8px;
+    width: 22.67%;
+    margin: 1%;
+    text-align: center;
+    box-shadow: 0 4px 10px 2px #222;
+}
+body .container .content form.big-test .test-block .test-element.double {
+    width: 47.78%;
+}
+body .container .content form.big-test .test-block .test-element span {
+    line-height: 1.56rem;
+    font-size: 1.56rem;
+    margin: -5px 0 5px 0;
+}
+body .container .content form.big-test .test-block .test-element span jap {
+    font-size: inherit;
+}
+body .container .content form.big-test .test-block .test-element select,
+body .container .content form.big-test .test-block .test-element input {
+    height: 2rem;
+    border-radius: 4px;
+    text-indent: 10px;
+    font-size: 1.2rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 10px 2px #222 inset;
+}
+body .container .content form.big-test .test-block .test-element select:disabled,
+body .container .content form.big-test .test-block .test-element input:disabled {
+    background-color: #ccc;
 }
 body .container .content .training .start {
     width: 95.7% !important;
@@ -454,6 +498,9 @@ body .modal .exercise-block h1 {
     font-size: 1.44rem;
     text-align: left;
     font-weight: normal;
+}
+body .modal .exercise-block h1 jap {
+    font-size: 1.68rem;
 }
 body .modal .exercise-block table {
     width: 50%;

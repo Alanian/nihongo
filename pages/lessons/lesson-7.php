@@ -1,9 +1,9 @@
-<h1>Lection <?= $_GET['lection']; ?> - Agglutination</h1>
+<h1>Lesson <?= $_GET['lesson'];?> - Agglutination</h1>
 <p>
     Japanese in an agglutinative language, that means word construction is made by <strong>glueing</strong> words
     together to create a new word. Either grammatical elements or other words that function like these can also be
     attached to the word. The main advantage of agglutinative languages is, that irregularities are very rare
-    (see <a href="lections.php?lection=4">Lection 4</a>).
+    (see <a href="lessons.php?lesson=4">Lesson 4</a>).
 </p>
 <p>
     An Example to show agglutination (please ignore the grammar for now):
@@ -58,5 +58,5 @@
     your XBOX to your TV, but it doesn't support HDMI, you cannot plug it in - but you can use an adapter. The ending
     functions as an adapter to connect two elements in <strong>different forms</strong>. There are 7 forms in total, the
     first one will be introduced in the next lesson. Agglutination will be discussed in
-    <a href="lections.php?lection=14">Lection 14</a> in more detail, so don't worry if don't get how it works right now.
+    <a href="lessons.php?lesson=14">Lesson 14</a> in more detail, so don't worry if don't get how it works right now.
 </p>

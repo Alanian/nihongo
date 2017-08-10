@@ -1,6 +1,6 @@
-<h1>Lection <?= $_GET['lection']; ?> - Particle <em>o</em></h1>
+<h1>Lesson <?= $_GET['lesson'];?> - Particle <em>o</em></h1>
 <p>
-    We had our first particle in <a href="lections.php?lection=2">Lection 2</a>. Our next particle is
+    We had our first particle in <a href="lessons.php?lesson=2">Lesson 2</a>. Our next particle is
     <jap particle>を<meaning>object marker particle</meaning></jap>, the object marker. Note that
     <jap particle>を<meaning>object marker particle</meaning></jap> is written with the mora <em>wo</em>, but with its
     function as a particle, you read it as <em>o</em>. There aren't words which contain
@@ -17,4 +17,8 @@
     <jap particle>を<meaning>object marker particle</meaning></jap>
     <jap>みつける<meaning>to find</meaning></jap>
     ➤ find Mari
+    <jap>みち<meaning>road</meaning></jap>
+    <jap particle>を<meaning>object marker particle</meaning></jap>
+    <jap>あるく<meaning>to walk</meaning></jap>
+    ➤ walk (on) the road
 </p>

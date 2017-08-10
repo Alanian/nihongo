@@ -1,6 +1,6 @@
-<h1>Lection <?= $_GET['lection']; ?> - Copula</h1>
+<h1>Lesson <?= $_GET['lesson'];?> - Copula</h1>
 <p>
-    If you're followed the lections so far, you must've been missed the copula. Don't let confuse you by this special
+    If you're followed the lessons so far, you must've been missing the copula. Don't let confuse you by this special
     term as it's very familiar to you. It's a verb that means <strong>be</strong> (or is, am, are). In Japanese:
     <jap>である<meaning>to be</meaning></jap>. It's mainly used as the predicate and you shouldn't use it in-between
     until it's an attribute.
@@ -15,8 +15,7 @@
     extraordinary, it's just wrong.
 </p>
 <p>
-    There's also a rude/manly version <jap>だ<meaning>to be</meaning></jap>. However, it's used in various grammatical
-    rules, so it's just rude when it's used as the predicate.
+    There's also a rude/manly version <jap>だ<meaning>to be</meaning></jap> which originally has its use in the grammar.
 </p>
 <p>
     Examples:<br>
@@ -25,7 +24,7 @@
     <jap>がくせい<meaning>university student</meaning></jap>
     <jap>です<meaning>to be</meaning></jap>
     ➤ I'm a university student.<br>
-    <jap>である<meaning>to be</meaning></jap> : be (be what?)<br>
+    <jap>です<meaning>to be</meaning></jap> : be (be what?)<br>
     <jap>がくせい<meaning>university student</meaning></jap> : university student (who is a student?)<br>
     <jap>わたし<meaning>I</meaning></jap>
     <jap>が<meaning>subject marker particle</meaning></jap> : I (am performing the main action, namely, to be a student)

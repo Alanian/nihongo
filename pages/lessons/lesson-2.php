@@ -1,4 +1,4 @@
-<h1>Lection <?= $_GET['lection'];?> - Particle <em title="possession particle">no</em></h1>
+<h1>Lesson <?= $_GET['lesson']; ?> - Particle <em title="possession particle">no</em></h1>
 <p>
     The first particle we will learn is
     <jap>の<meaning>possession particle</meaning></jap>

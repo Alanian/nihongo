@@ -103,6 +103,11 @@ body {
     }
   }
 
+  h3 {
+    font-size: @fontSize * 1.6;
+    margin: 10px 0;
+  }
+
   .container {
     width: @containerWidth;
     margin: 80px auto;
@@ -312,11 +317,11 @@ body {
 
         span {
           &.domino {
-            font-size: @fontSize*3.5;
+            font-size: @fontSize*2.1;
             display: inline-block;
             position: relative;
-            top: 18px;
-            margin: -40px 0;
+            top: 8px;
+            margin: -24px 0;
 
           }
         }
@@ -412,6 +417,55 @@ body {
               background-color: @containerFontColor;
               color: @containerBackground;
               border-radius: 3rem;
+            }
+          }
+        }
+      }
+
+      form {
+        &.big-test {
+          .test-block {
+            margin: 40px 0;
+
+            .test-element {
+              display: inline-grid;
+              background-color: @containerFontColor;
+              color: @containerBackground;
+              padding: 1.5%;
+              border-radius: 8px;
+              width: 22.67%;
+              margin: 1%;
+              text-align: center;
+              box-shadow: 0 4px 10px 2px #222;
+
+              &.double {
+                width: 47.78%;
+              }
+
+              span {
+                line-height: @fontSize*1.3;
+                font-size: @fontSize*1.3;
+                margin: -5px 0 5px 0;
+
+                jap {
+                  font-size: inherit;
+                }
+              }
+
+              select, input {
+                height: 2rem;
+                border-radius: 4px;
+                text-indent: 10px;
+                font-size: @fontSize;
+                width: 100%;
+                outline: none;
+                border: none;
+                box-shadow: 0 0 10px 2px #222 inset;
+
+                &:disabled {
+                  background-color: #ccc;
+                }
+              }
             }
           }
         }
@@ -574,6 +628,10 @@ body {
         font-size: @fontSize*1.2;
         text-align: left;
         font-weight: normal;
+
+        jap {
+          font-size: @fontSize*1.4;
+        }
       }
 
       table {
@@ -584,13 +642,13 @@ body {
         font-weight: bold;
       }
 
-      ul{
+      ul {
         display: inline-flex;
         font-size: @fontSize*0.7;
         text-align: center;
         width: 130px;
 
-        li{
+        li {
           width: 33px;
         }
       }

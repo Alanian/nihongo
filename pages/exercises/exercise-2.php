@@ -65,7 +65,7 @@
             <input type="checkbox" id="6">
         </div>
         <button class="exercise-button" id="exercise-2">Confirm</button>
-        <button class="exercise-next-button" style="visibility: hidden;">Next Lection</button>
+        <button class="exercise-next-button" style="visibility: hidden;">Next Lesson</button>
         <div class="result"></div>
     </div>
 </div>

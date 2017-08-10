@@ -1,4 +1,4 @@
-<h1>Lection <?= $_GET['lection'];?> - Irregularity</h1>
+<h1>Lesson <?= $_GET['lesson'];?> - Irregularity</h1>
 <p>
     The structure of a language is never planned but develops of its own.
     Grammar wasn't <strong>created</strong>, but it was <strong>found</strong> by researchers a long time after its

@@ -1,11 +1,11 @@
-<h1>Lection <?= $_GET['lection']; ?> - <em>Ren'yōkei</em></h1>
+<h1>Lesson <?= $_GET['lesson'];?> - <em>Ren'yōkei</em></h1>
 <p>
     It's hard to describe, what a form stands for because there's no clear or too complex definition for any of them. In
-    further lections you will understand, how to use the <em>Ren'yōkei</em> (RYK) - The Continuative Form. For now, just
+    further lessons you will understand, how to use the <em>Ren'yōkei</em> (RYK) - The Continuative Form. For now, just
     remember how to build it.
 </p>
 <p>
-    Remember our verb groups from <a href="lections.php?lection=6">Lection 6</a>? Build them like following:
+    Remember our verb groups from <a href="lessons.php?lesson=6">Lesson 6</a>? Build them like following:
 </p>
 <ul>
     <li>

@@ -1,6 +1,6 @@
 'use strict';
 
-var solutions = [5, 2, 4, 6, 205, 2272325277714];
+var solutions = [5, 2, 4, 0, 205, 2272325277714, 0, 0, 0, 0, 17, 0, 0, 0, 309, 0, 0, 0, 0, 0];
 
 $(document).ready(function () {
     $('body').on('mouseenter', '.exercise-block', function () {
@@ -20,12 +20,12 @@ $(document).ready(function () {
                 resultBox.css('color', '#30ad30');
                 $('.exercise-next-button').css('visibility', 'visible');
             } else {
-                resultBox.html('Your result is incorrect. Re-read the lection or contact me if I made a mistake.');
+                resultBox.html('Your result is incorrect. Re-read the lesson or contact me if I made a mistake.');
                 resultBox.css('color', '#ad3030');
             }
 
             $('.exercise-next-button').click(function () {
-                window.location.replace('lections.php?lection=' + (exercise + 1));
+                window.location.replace('lessons.php?lesson=' + (exercise + 1));
             });
         });
 

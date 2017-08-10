@@ -236,6 +236,8 @@ function kanaToRomaji(text, isParticle) {
     text = text.replace(/、/g, ",");
     text = text.replace(/「/g, "“");
     text = text.replace(/」/g, "”");
+    text = text.replace(/【/g, "(");
+    text = text.replace(/】/g, ")");
     text = text.replace("　", " ");
 
     for (var i = 0; i < text.length; i++) {

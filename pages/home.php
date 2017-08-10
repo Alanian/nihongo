@@ -12,7 +12,7 @@
         <br>
         <jap>私<meaning>I</meaning></jap>
         <jap particle>は<meaning>theme particle</meaning></jap>
-        <jap>マンハイム<meaning>Mannheim; a city in Germany</meaning></jap>
+        <jap>マンハイム<meaning>Mannheim, German city</meaning></jap>
         <jap>に<meaning>direction particle</meaning></jap>
         <jap>行きたい<meaning>want to go</meaning></jap>
         <jap>けど、<meaning>but; however</meaning></jap>

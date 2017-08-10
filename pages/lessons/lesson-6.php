@@ -1,4 +1,4 @@
-<h1>Lection <?= $_GET['lection']; ?> - Verb Groups</h1>
+<h1>Lesson <?= $_GET['lesson'];?> - Verb Groups</h1>
 <p>
     Imagine a swimming pool full of m&m's or skittles. Some are bigger, some are rounder and some are inedible.
     You can sort them by shape, weight, or taste, but the easiest way is to sort them by colour. If you replace these
@@ -64,7 +64,7 @@
     <em>miru<meaning>to see; to watch</meaning></em>
     is lvl1.
     You may think it's irregular because its form is lvl1, but then you have misunderstood something
-    (see <a href="lections.php?lection=4">Lection 4</a>).
+    (see <a href="lessons.php?lesson=4">Lesson 4</a>).
     There isn't a rule that says that all verbs with iru or eru are lvl1.
     The rule says that all lvl1 have iru or eru at the end.<br>
     <em>All thumbs are fingers, but not all fingers are thumbs!</em>
