@@ -126,7 +126,7 @@
         <h3>Translate following sentences using the <em>masu</em>-form (ignore the subject)</h3>
 
         <div class="test-element double">
-            <span>They came. <jap>【くる】<meaning>to come</meaning></jap></span>
+            <span>They came.<jap>【くる】<meaning>to come</meaning></jap></span>
             <input value="kimashita" disabled>
         </div>
 
@@ -157,46 +157,36 @@
     </div>
 
     <div class="test-block">
-        <h3>Determine the verb group</h3>
+        <h3>Insert the copula in the given tense</h3>
 
         <div class="test-element">
-            <span><jap>わらう<meaning>to laugh; to smile</meaning></jap></span>
-            <select name="verb_group[]"><option></option><option>suru</option><option>kuru</option><option>lvl1</option><option>lvl5</option></select>
+            <span>Was<jap>【です】<meaning>to be</meaning></jap></span>
+            <input value="deshita" disabled>
         </div>
 
         <div class="test-element">
-            <span><jap>あける<meaning>to open</meaning></jap></span>
-            <select name="verb_group[]"><option></option><option>suru</option><option>kuru</option><option>lvl1</option><option>lvl5</option></select>
+            <span>Isn't<jap>【だ】<meaning>to be</meaning></jap></span>
+            <input name="copula[]">
         </div>
 
         <div class="test-element">
-            <span><jap>よろこぶ<meaning>to be pleased; to enjoy</meaning></jap></span>
-            <select name="verb_group[]"><option></option><option>suru</option><option>kuru</option><option>lvl1</option><option>lvl5</option></select>
+            <span>Weren't<jap>【である】<meaning>to be</meaning></jap></span>
+            <input name="copula[]">
         </div>
 
         <div class="test-element">
-            <span><jap>くる<meaning>to come</meaning></jap></span>
-            <select name="verb_group[]"><option></option><option>suru</option><option>kuru</option><option>lvl1</option><option>lvl5</option></select>
+            <span>Wasn't<jap>【です】<meaning>to be</meaning></jap></span>
+            <input name="copula[]">
         </div>
 
         <div class="test-element">
-            <span><jap>おちる<meaning>to fall</meaning></jap></span>
-            <select name="verb_group[]"><option></option><option>suru</option><option>kuru</option><option>lvl1</option><option>lvl5</option></select>
+            <span>Was<jap>【である】<meaning>to be</meaning></jap></span>
+            <input name="copula[]">
         </div>
 
         <div class="test-element">
-            <span><jap>なる<meaning>to become</meaning></jap></span>
-            <select name="verb_group[]"><option></option><option>suru</option><option>kuru</option><option>lvl1</option><option>lvl5</option></select>
-        </div>
-
-        <div class="test-element">
-            <span><jap>する<meaning>to do; to make</meaning></jap></span>
-            <select name="verb_group[]"><option></option><option>suru</option><option>kuru</option><option>lvl1</option><option>lvl5</option></select>
-        </div>
-
-        <div class="test-element">
-            <span><jap>いきのこる<meaning>to survive</meaning></jap></span>
-            <select name="verb_group[]"><option></option><option>suru</option><option>kuru</option><option>lvl1</option><option>lvl5</option></select>
+            <span>Aren't<jap>【です】<meaning>to be</meaning></jap></span>
+            <input name="copula[]">
         </div>
     </div>
 

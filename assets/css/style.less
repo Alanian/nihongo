@@ -6,13 +6,16 @@
 }
 
 @font-face {
-  font-family: "aihara";
-  src: url("../fonts/AiharaHudemojiKaisho2.01.ttf");
+  font-family: "japfont";
+  //src: url("../fonts/AiharaHudemojiKaisho2.01.ttf");
+  //src: url("../fonts/hkgokukaikk.ttf");
+  //src: url("../fonts/Mamelon.otf");
+  src: url("../fonts/KaiTi.ttf");
 }
 
 @background: #202020;
 @mainFont: "Dosis", sans-serif;
-@japFont: aihara, sans-serif;
+@japFont: japfont, sans-serif;
 @fontSize: 1.2rem;
 @japFontSize: @fontSize + 0.2;
 
@@ -42,7 +45,7 @@ body {
 
   jap {
     font-family: @japFont;
-    font-size: @japFontSize;
+    //font-size: @japFontSize;
   }
 
   jap, em, .kana-table td {
@@ -443,8 +446,8 @@ body {
               }
 
               span {
-                line-height: @fontSize*1.3;
-                font-size: @fontSize*1.3;
+                line-height: @fontSize*1.2;
+                font-size: @fontSize*1.2;
                 margin: -5px 0 5px 0;
 
                 jap {

@@ -20,4 +20,7 @@
         <jap>が<meaning>subject particle</meaning></jap>
         <jap>ありません。<meaning>aren't; haven't</meaning></jap>
     </p>
+    <p><jap>
+        <?php require '../data/vocabulary.txt'; ?>
+        </jap></p>
 <?php require '../includes/template_bottom.php' ?>
