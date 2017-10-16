@@ -33,7 +33,7 @@ HiraganaTable.prototype.add = function (character, reading) {
 HiraganaTable.prototype.fill = function (from, number) {
     var original = this;
     $.ajax({
-        url: 'https://raw.githubusercontent.com/Alanian/nihongo/master/data/hiragana.txt',
+        url: 'https://raw.githubusercontent.com/Alanian/nihongo/master/Data/hiragana.txt',
         async: false,
         success: function (data) {
             var lines = data.split('\n');

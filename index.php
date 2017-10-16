@@ -14,7 +14,7 @@
 </head>
 <body>
 <container>
-    <pre><?php var_dump($_GET); ?></pre>
+<!--    <pre>--><?php //var_dump($_GET); ?><!--</pre>-->
     <header>
         <?= $global->jap('日本語'); ?>
     </header>
@@ -31,6 +31,8 @@
         else $path = $pageRoot . 'home.phtml';
 
         if (file_exists($path)) require $path;
+
+        echo $path;
         ?>
         <footer>
             &copy; Nipponjaku <?= date('Y'); ?>. Formerly Anime Sekai.
