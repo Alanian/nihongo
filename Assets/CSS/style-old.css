@@ -1,0 +1,743 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis|Josefin+Sans);
+
+@font-face {
+    font-family: "pica";
+    src: url("../Fonts/IMFeDPrm28P.ttf");
+}
+
+@font-face {
+    font-family: "KaiTi";
+    src: url("../Fonts/KaiTi.ttf");
+}
+
+body {
+    font-family: Josefin Sans, sans-serif;
+    font-size: 1.2rem;
+    background-color: #222;
+}
+
+body roma {
+    font-style: italic;
+}
+
+body jap {
+    font-family: KaiTi, sans-serif;
+}
+
+body jap,
+body roma,
+body .kana-table td {
+    position: relative;
+}
+
+body jap:hover meaning,
+body roma:hover meaning,
+body .kana-table td:hover meaning {
+    visibility: visible;
+    opacity: 0.9;
+    bottom: 150%;
+}
+
+body jap:hover meaning,
+body roma:hover meaning,
+body .kana-table td:hover meaning {
+    position: absolute;
+    left: 50%;
+    padding: 4px 16px 6px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    visibility: hidden;
+    border-radius: 5px;
+    font-family: Josefin Sans, sans-serif;
+    font-size: 0.96rem;
+    font-style: initial;
+    white-space: nowrap;
+}
+
+body jap:hover meaning:after,
+body roma:hover meaning:after,
+body .kana-table td:hover meaning:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -8px;
+    width: 0;
+    height: 0;
+    border-width: 8px;
+    border-style: solid;
+    border-color: black transparent transparent;
+}
+
+body jap:hover h1,
+body roma:hover h1,
+body .kana-table td:hover h1 {
+    font-size: 2.88rem;
+    text-align: center;
+    margin: 0 0 20px 0;
+    font-weight: bold;
+}
+
+body jap:hover h1 jap,
+body roma:hover h1 jap,
+body .kana-table td:hover h1 jap {
+    font-size: 3.36rem;
+}
+
+body jap:hover h2,
+body roma:hover h2,
+body .kana-table td:hover h2 {
+    font-size: 2.16rem;
+    margin: 1.92rem 0 0 1.92rem;
+}
+
+body jap:hover h2 jap,
+body roma:hover h2 jap,
+body .kana-table td:hover h2 jap {
+    font-size: 2.24rem;
+}
+
+body jap:hover h3,
+body roma:hover h3,
+body .kana-table td:hover h3 {
+    font-size: 1.92rem;
+    margin: 10px 0;
+}
+
+body jap:hover .container,
+body roma:hover .container,
+body .kana-table td:hover .container {
+    width: 80rem;
+    margin: 80px auto;
+    border: 1px solid #111;
+    border-radius: 16px;
+    box-sizing: initial;
+    background-color: #eee;
+    color: #ad3030;
+}
+
+body jap:hover .container strong,
+body roma:hover .container strong,
+body .kana-table td:hover .container strong {
+    font-weight: bold;
+}
+
+body jap:hover .container .header,
+body roma:hover .container .header,
+body .kana-table td:hover .container .header {
+    height: 20rem;
+    background: url(../Images/title.jpg) no-repeat center left;
+    background-size: cover;
+    border-radius: 16px 16px 0 0;
+    box-shadow: inset 0 0 50px 0 rgba(0, 0, 0, 0.5);
+}
+
+body jap:hover .container .header jap,
+body roma:hover .container .header jap,
+body .kana-table td:hover .container .header jap {
+    font-size: 6rem;
+    float: right;
+    margin: 16px 16px 0 0;
+    width: 100px;
+}
+
+body jap:hover .container .navigation .navigation-menu > li,
+body roma:hover .container .navigation .navigation-menu > li,
+body .kana-table td:hover .container .navigation .navigation-menu > li {
+    float: left;
+    border-top: 1px solid #111;
+}
+
+body jap:hover .container .navigation .navigation-menu .menu,
+body roma:hover .container .navigation .navigation-menu .menu,
+body .kana-table td:hover .container .navigation .navigation-menu .menu {
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+body jap:hover .container .navigation .navigation-menu .menu:hover .menu-title,
+body roma:hover .container .navigation .navigation-menu .menu:hover .menu-title,
+body .kana-table td:hover .container .navigation .navigation-menu .menu:hover .menu-title {
+    padding: 8px;
+}
+
+body jap:hover .container .navigation .navigation-menu .menu:hover > a .menu-title:before,
+body roma:hover .container .navigation .navigation-menu .menu:hover > a .menu-title:before,
+body .kana-table td:hover .container .navigation .navigation-menu .menu:hover > a .menu-title:before {
+    border-top-width: 0;
+    transition: 0.2s border-top-width ease-in, 0.3s border-top-color;
+}
+
+body jap:hover .container .navigation .navigation-menu .menu:hover > a .menu-title:after,
+body roma:hover .container .navigation .navigation-menu .menu:hover > a .menu-title:after,
+body .kana-table td:hover .container .navigation .navigation-menu .menu:hover > a .menu-title:after {
+    border-bottom-width: 8px;
+    transition: 0.2s 0.2s border-bottom-width ease-out;
+}
+
+body jap:hover .container .navigation .navigation-menu .menu:not(:hover) > .menu-dropdown,
+body roma:hover .container .navigation .navigation-menu .menu:not(:hover) > .menu-dropdown,
+body .kana-table td:hover .container .navigation .navigation-menu .menu:not(:hover) > .menu-dropdown {
+    padding: 2px 0;
+    background: #ddd;
+    z-index: 9;
+}
+
+body jap:hover .container .navigation .navigation-menu .menu:not(:hover) > .menu-title:after,
+body roma:hover .container .navigation .navigation-menu .menu:not(:hover) > .menu-title:after,
+body .kana-table td:hover .container .navigation .navigation-menu .menu:not(:hover) > .menu-title:after {
+    border-bottom-color: #ddd;
+}
+
+body jap:hover .container .navigation .navigation-menu .menu:not(:hover) > .menu-dropdown:after,
+body roma:hover .container .navigation .navigation-menu .menu:not(:hover) > .menu-dropdown:after,
+body .kana-table td:hover .container .navigation .navigation-menu .menu:not(:hover) > .menu-dropdown:after {
+    border-top-color: #ddd;
+}
+
+body jap:hover .container .navigation .navigation-menu .menu:not(:hover) > .menu-dropdown > li,
+body roma:hover .container .navigation .navigation-menu .menu:not(:hover) > .menu-dropdown > li,
+body .kana-table td:hover .container .navigation .navigation-menu .menu:not(:hover) > .menu-dropdown > li {
+    visibility: hidden;
+    height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+    color: rgba(25, 25, 25, 0);
+    transition: 0.5s 0.1s height, 0.5s 0.1s padding, 0.5s 0.1s margin, 0.3s color, 0.6s visibility;
+    z-index: 9;
+}
+
+body jap:hover .container .navigation .navigation-menu .menu .menu-title,
+body roma:hover .container .navigation .navigation-menu .menu .menu-title,
+body .kana-table td:hover .container .navigation .navigation-menu .menu .menu-title {
+    display: block;
+    width: 20rem;
+    height: 40px;
+    padding: 16px;
+    background: #333;
+    text-align: center;
+    color: #ddd;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: 0.4s background-color, 0.4s padding;
+    text-shadow: 0 0 6px;
+}
+
+body jap:hover .container .navigation .navigation-menu .menu .menu-title:before,
+body roma:hover .container .navigation .navigation-menu .menu .menu-title:before,
+body .kana-table td:hover .container .navigation .navigation-menu .menu .menu-title:before {
+    content: "";
+    display: block;
+    height: 0;
+    border-top: 16px solid #333;
+    border-left: 10rem solid transparent;
+    border-right: 10rem solid transparent;
+    border-bottom: 0 solid #ddd;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 11;
+    transition: 0.2s 0.2s border-top ease-out, 0.2s border-top-color;
+}
+
+body jap:hover .container .navigation .navigation-menu .menu .menu-title:after,
+body roma:hover .container .navigation .navigation-menu .menu .menu-title:after,
+body .kana-table td:hover .container .navigation .navigation-menu .menu .menu-title:after {
+    content: "";
+    display: block;
+    height: 0;
+    border-left: 10rem solid transparent;
+    border-right: 10rem solid transparent;
+    border-bottom: 0 solid #ddd;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 11;
+    transition: 0.2s border-bottom ease-in;
+}
+
+body jap:hover .container .navigation .navigation-menu .menu .menu-title:hover,
+body roma:hover .container .navigation .navigation-menu .menu .menu-title:hover,
+body .kana-table td:hover .container .navigation .navigation-menu .menu .menu-title:hover {
+    background: #222;
+}
+
+body jap:hover .container .navigation .navigation-menu .menu .menu-title:hover:before,
+body roma:hover .container .navigation .navigation-menu .menu .menu-title:hover:before,
+body .kana-table td:hover .container .navigation .navigation-menu .menu .menu-title:hover:before {
+    border-top-color: #222;
+}
+
+body jap:hover .container .navigation .navigation-menu .menu .menu-dropdown,
+body roma:hover .container .navigation .navigation-menu .menu .menu-dropdown,
+body .kana-table td:hover .container .navigation .navigation-menu .menu .menu-dropdown {
+    min-width: 100%;
+    padding: 4px 0;
+    position: absolute;
+    background: #ddd;
+    z-index: 10;
+    transition: 0.5s padding, 0.5s background;
+}
+
+body jap:hover .container .navigation .navigation-menu .menu .menu-dropdown > li,
+body roma:hover .container .navigation .navigation-menu .menu .menu-dropdown > li,
+body .kana-table td:hover .container .navigation .navigation-menu .menu .menu-dropdown > li {
+    overflow: hidden;
+    padding: 0 5px 0 20px;
+    background: transparent;
+    transition: 0.4s padding cubic-bezier(0.7, -0.5, 0.3, 1.5) 0.2s background-color;
+}
+
+body jap:hover .container .navigation .navigation-menu .menu .menu-dropdown > li > a,
+body roma:hover .container .navigation .navigation-menu .menu .menu-dropdown > li > a,
+body .kana-table td:hover .container .navigation .navigation-menu .menu .menu-dropdown > li > a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 10px 0;
+}
+
+body jap:hover .container .navigation .navigation-menu .menu .menu-dropdown > li:hover,
+body roma:hover .container .navigation .navigation-menu .menu .menu-dropdown > li:hover,
+body .kana-table td:hover .container .navigation .navigation-menu .menu .menu-dropdown > li:hover {
+    background: #bbb;
+    padding: 0 5px 0 30px;
+}
+
+body jap:hover .container .navigation .navigation-menu .menu .menu-dropdown:after,
+body roma:hover .container .navigation .navigation-menu .menu .menu-dropdown:after,
+body .kana-table td:hover .container .navigation .navigation-menu .menu .menu-dropdown:after {
+    content: "";
+    display: block;
+    height: 0;
+    border-top: 16px solid #ddd;
+    border-left: 10rem solid transparent;
+    border-right: 10rem solid transparent;
+    border-bottom: 0 solid #ddd;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 11;
+    transition: 0.5s border-top;
+}
+
+body jap:hover .container .content,
+body roma:hover .container .content,
+body .kana-table td:hover .container .content {
+    padding: 80px 40px 40px;
+    box-shadow: inset 0 0 50px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+}
+
+body jap:hover .container .content p,
+body roma:hover .container .content p,
+body .kana-table td:hover .container .content p {
+    margin: 20px 0;
+    text-align: justify;
+    line-height: 1.5;
+    text-shadow: 0 0 6px rgba(173, 48, 48, 0.3);
+    letter-spacing: 1px;
+}
+
+body jap:hover .container .content p a,
+body roma:hover .container .content p a,
+body .kana-table td:hover .container .content p a {
+    font-weight: bold;
+    text-decoration: none;
+    color: dodgerblue;
+    text-shadow: none;
+}
+
+body jap:hover .container .content p a:hover,
+body roma:hover .container .content p a:hover,
+body .kana-table td:hover .container .content p a:hover {
+    text-decoration: underline;
+}
+
+body jap:hover .container .content p span.domino,
+body roma:hover .container .content p span.domino,
+body .kana-table td:hover .container .content p span.domino {
+    font-size: 2.52rem;
+    display: inline-block;
+    position: relative;
+    top: 8px;
+    margin: -24px 0;
+}
+
+body jap:hover .container .content ul,
+body roma:hover .container .content ul,
+body .kana-table td:hover .container .content ul {
+    list-style-type: circle;
+    margin: 20px 0 20px 80px;
+}
+
+body jap:hover .container .content .button-group,
+body roma:hover .container .content .button-group,
+body .kana-table td:hover .container .content .button-group {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin: 2% auto;
+}
+
+body jap:hover .container .content .button-group a,
+body roma:hover .container .content .button-group a,
+body .kana-table td:hover .container .content .button-group a {
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #ad3030;
+    color: #eee;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin: 0 4px;
+    box-shadow: inset 0 0 20px 2px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+body jap:hover .container .content .button-group a:hover,
+body roma:hover .container .content .button-group a:hover,
+body .kana-table td:hover .container .content .button-group a:hover {
+    box-shadow: inset 0 0 20px 2px rgba(255, 255, 255, 0.3);
+}
+
+body jap:hover .container .content table,
+body roma:hover .container .content table,
+body .kana-table td:hover .container .content table {
+    margin: 20px auto;
+}
+
+body jap:hover .container .content table tr th,
+body roma:hover .container .content table tr th,
+body .kana-table td:hover .container .content table tr th {
+    font-weight: bold;
+}
+
+body jap:hover .container .content table tr td,
+body roma:hover .container .content table tr td,
+body .kana-table td:hover .container .content table tr td,
+body jap:hover .container .content table tr th,
+body roma:hover .container .content table tr th,
+body .kana-table td:hover .container .content table tr th {
+    padding: 10px;
+    border-bottom: 1px solid #888;
+    text-align: center;
+}
+
+body jap:hover .container .content table.grid-table tr:first-child,
+body roma:hover .container .content table.grid-table tr:first-child,
+body .kana-table td:hover .container .content table.grid-table tr:first-child {
+    border-top: 1px solid #888;
+}
+
+body jap:hover .container .content table.grid-table tr td,
+body roma:hover .container .content table.grid-table tr td,
+body .kana-table td:hover .container .content table.grid-table tr td {
+    padding: 20px;
+    border-right: 1px solid #888;
+}
+
+body jap:hover .container .content table.grid-table tr td:first-child,
+body roma:hover .container .content table.grid-table tr td:first-child,
+body .kana-table td:hover .container .content table.grid-table tr td:first-child {
+    border-left: 1px solid #888;
+}
+
+body jap:hover .container .content table.grid-table tr td a,
+body roma:hover .container .content table.grid-table tr td a,
+body .kana-table td:hover .container .content table.grid-table tr td a {
+    font-weight: bold;
+    text-decoration: none;
+    color: dodgerblue;
+    text-shadow: none;
+}
+
+body jap:hover .container .content table.grid-table tr td a:hover,
+body roma:hover .container .content table.grid-table tr td a:hover,
+body .kana-table td:hover .container .content table.grid-table tr td a:hover {
+    text-decoration: underline;
+}
+
+body jap:hover .container .content table.kana-table,
+body roma:hover .container .content table.kana-table,
+body .kana-table td:hover .container .content table.kana-table {
+    text-align: center;
+    margin: 40px auto;
+    font-size: 3rem;
+    font-family: KaiTi, sans-serif;
+    border-collapse: separate;
+    border-spacing: 16px;
+    width: 100%;
+}
+
+body jap:hover .container .content table.kana-table tr td,
+body roma:hover .container .content table.kana-table tr td,
+body .kana-table td:hover .container .content table.kana-table tr td {
+    padding: 10px;
+    background-color: #ad3030;
+    color: #eee;
+    border-radius: 3rem;
+}
+
+body jap:hover .container .content form.big-test .test-block,
+body roma:hover .container .content form.big-test .test-block,
+body .kana-table td:hover .container .content form.big-test .test-block {
+    margin: 40px 0;
+}
+
+body jap:hover .container .content form.big-test .test-block .test-element,
+body roma:hover .container .content form.big-test .test-block .test-element,
+body .kana-table td:hover .container .content form.big-test .test-block .test-element {
+    display: inline-grid;
+    background-color: #ad3030;
+    color: #eee;
+    padding: 1.5%;
+    border-radius: 8px;
+    width: 22.67%;
+    margin: 1%;
+    text-align: center;
+    box-shadow: 0 4px 10px 2px #222;
+}
+
+body jap:hover .container .content form.big-test .test-block .test-element.double,
+body roma:hover .container .content form.big-test .test-block .test-element.double,
+body .kana-table td:hover .container .content form.big-test .test-block .test-element.double {
+    width: 47.78%;
+}
+
+body jap:hover .container .content form.big-test .test-block .test-element span,
+body roma:hover .container .content form.big-test .test-block .test-element span,
+body .kana-table td:hover .container .content form.big-test .test-block .test-element span {
+    line-height: 1.44rem;
+    font-size: 1.44rem;
+    margin: -5px 0 5px 0;
+}
+
+body jap:hover .container .content form.big-test .test-block .test-element span jap,
+body roma:hover .container .content form.big-test .test-block .test-element span jap,
+body .kana-table td:hover .container .content form.big-test .test-block .test-element span jap {
+    font-size: inherit;
+}
+
+body jap:hover .container .content form.big-test .test-block .test-element select,
+body roma:hover .container .content form.big-test .test-block .test-element select,
+body .kana-table td:hover .container .content form.big-test .test-block .test-element select,
+body jap:hover .container .content form.big-test .test-block .test-element input,
+body roma:hover .container .content form.big-test .test-block .test-element input,
+body .kana-table td:hover .container .content form.big-test .test-block .test-element input {
+    height: 2rem;
+    border-radius: 4px;
+    text-indent: 10px;
+    font-size: 1.2rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 10px 2px #222 inset;
+}
+
+body jap:hover .container .content form.big-test .test-block .test-element select:disabled,
+body roma:hover .container .content form.big-test .test-block .test-element select:disabled,
+body .kana-table td:hover .container .content form.big-test .test-block .test-element select:disabled,
+body jap:hover .container .content form.big-test .test-block .test-element input:disabled,
+body roma:hover .container .content form.big-test .test-block .test-element input:disabled,
+body .kana-table td:hover .container .content form.big-test .test-block .test-element input:disabled {
+    background-color: #ccc;
+}
+
+body jap:hover .container .content .training .start,
+body roma:hover .container .content .training .start,
+body .kana-table td:hover .container .content .training .start {
+    width: 95.7% !important;
+    background: radial-gradient(#b400e6, #6400a0);
+    color: #eeeeee;
+    text-shadow: 0 0 6px;
+    border-radius: 4px;
+    box-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.6);
+    margin: 2% auto;
+    height: 200px;
+}
+
+body jap:hover .container .content .training .start div,
+body roma:hover .container .content .training .start div,
+body .kana-table td:hover .container .content .training .start div {
+    float: left;
+    height: 200px;
+    width: 35%;
+    text-align: center;
+}
+
+body jap:hover .container .content .training .start .task,
+body roma:hover .container .content .training .start .task,
+body .kana-table td:hover .container .content .training .start .task {
+    width: 30%;
+    padding: 0;
+}
+
+body jap:hover .container .content .training .start .task > jap,
+body roma:hover .container .content .training .start .task > jap,
+body .kana-table td:hover .container .content .training .start .task > jap {
+    font-size: 8rem;
+}
+
+body jap:hover .container .content .training .start .task p,
+body roma:hover .container .content .training .start .task p,
+body .kana-table td:hover .container .content .training .start .task p {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.4rem;
+    height: 5px;
+}
+
+body jap:hover .container .content .training .start .info,
+body roma:hover .container .content .training .start .info,
+body .kana-table td:hover .container .content .training .start .info {
+    padding: 0 20px;
+}
+
+body jap:hover .container .content .training .start .input,
+body roma:hover .container .content .training .start .input,
+body .kana-table td:hover .container .content .training .start .input {
+    padding: 22px 0;
+}
+
+body jap:hover .container .content .training .start .input > *,
+body roma:hover .container .content .training .start .input > *,
+body .kana-table td:hover .container .content .training .start .input > * {
+    margin: 10px 0;
+}
+
+body jap:hover .container .content .training .start .input .result,
+body roma:hover .container .content .training .start .input .result,
+body .kana-table td:hover .container .content .training .start .input .result {
+    width: 90%;
+    padding: 12px 0 12px 20px;
+    outline: none;
+    font-size: 24px;
+    font-family: Josefin Sans, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #eee;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    text-indent: 30%;
+    transition: all 0.3s ease-in-out;
+}
+
+body jap:hover .container .content .training .start .input .result:focus,
+body roma:hover .container .content .training .start .input .result:focus,
+body .kana-table td:hover .container .content .training .start .input .result:focus {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    text-indent: 0;
+}
+
+body jap:hover .container .content .training .start .input .skip,
+body roma:hover .container .content .training .start .input .skip,
+body .kana-table td:hover .container .content .training .start .input .skip {
+    width: 90%;
+    padding: 12px;
+    outline: none;
+    font-size: 24px;
+    font-family: Josefin Sans, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #eee;
+    border: 2px outset;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: text-shadow 0.3s ease-in-out;
+    box-shadow: inset -4px -4px 16px 0 rgba(0, 0, 0, 0.3);
+}
+
+body jap:hover .container .content .training .start .input .skip:hover,
+body roma:hover .container .content .training .start .input .skip:hover,
+body .kana-table td:hover .container .content .training .start .input .skip:hover {
+    text-shadow: 0 0 12px;
+}
+
+body jap:hover .container .content .training .start .input .skip:active,
+body roma:hover .container .content .training .start .input .skip:active,
+body .kana-table td:hover .container .content .training .start .input .skip:active {
+    border: 2px inset;
+    box-shadow: inset 4px 4px 16px 0 rgba(0, 0, 0, 0.3);
+}
+
+body jap:hover .container .content .training .double,
+body roma:hover .container .content .training .double,
+body .kana-table td:hover .container .content .training .double {
+    width: 62.3% !important;
+}
+
+body jap:hover .container .content .training .triple,
+body roma:hover .container .content .training .triple,
+body .kana-table td:hover .container .content .training .triple {
+    width: 95.7% !important;
+}
+
+body jap:hover .container .content .training .start-button,
+body roma:hover .container .content .training .start-button,
+body .kana-table td:hover .container .content .training .start-button {
+    width: 29%;
+    height: 200px;
+    background: radial-gradient(circle, #b400e6 50%, #6400a0);
+    color: #eee;
+    text-shadow: 0 0 6px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.6);
+    font-family: Josefin Sans, sans-serif;
+    margin: 0 2%;
+    cursor: pointer;
+    transition: 0.3s linear all;
+}
+
+body jap:hover .container .content .training .start-button:hover,
+body roma:hover .container .content .training .start-button:hover,
+body .kana-table td:hover .container .content .training .start-button:hover {
+    filter: saturate(120%) drop-shadow(0 0 8px black);
+}
+
+body jap:hover .container .content .training .start-button header,
+body roma:hover .container .content .training .start-button header,
+body .kana-table td:hover .container .content .training .start-button header {
+    font-size: 2.04rem;
+    font-weight: bold;
+}
+
+body jap:hover .container .content .training .start-button section,
+body roma:hover .container .content .training .start-button section,
+body .kana-table td:hover .container .content .training .start-button section {
+    height: 80px;
+    font-size: 1.4rem;
+    display: table-cell;
+    vertical-align: middle;
+    margin: auto;
+    width: 1000px;
+    padding: 0 10px;
+}
+
+body jap:hover .container .content .training .start-button footer,
+body roma:hover .container .content .training .start-button footer,
+body .kana-table td:hover .container .content .training .start-button footer {
+    height: 50px;
+}
+
+body jap:hover .container .content .training .start-button footer jap,
+body roma:hover .container .content .training .start-button footer jap,
+body .kana-table td:hover .container .content .training .start-button footer jap,
+body jap:hover .container .content .training .start-button footer roma,
+body roma:hover .container .content .training .start-button footer roma,
+body .kana-table td:hover .container .content .training .start-button footer roma {
+    font-size: 2.24rem;
+}
+
+body jap:hover .container .footer,
+body roma:hover .container .footer,
+body .kana-table td:hover .container .footer {
+    font-size: 1rem;
+    margin: 60px 0 -30px;
+}

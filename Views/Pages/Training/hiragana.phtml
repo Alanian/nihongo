@@ -1,0 +1,75 @@
+<script src="<?= $root . 'Assets/JS/hiragana_process.js'; ?>"></script>
+<script src="<?= $root . 'Assets/JS/Hiragana.class.js'; ?>"></script>
+
+<h1>Hiragana Training</h1>
+
+<p>
+    Use this training program to improve your Hiragana reading skills. Try the "Gojūon" option with a small number
+    (you can choose a number in the revealed input field) and increase it steadily.
+</p>
+<p>
+    Please enjoy and don't give up!
+</p>
+
+<div class="training">
+    <div class="prepare">
+        <div class="button-group">
+            <button id="gojuon" class="start-button">
+                <div class="header">Gojūon</div>
+                <div class="section">46 basic characters</div>
+                <div class="footer"><jap>き と ふ し は</jap></div>
+            </button>
+            <button id="dakuten" class="start-button">
+                <div class="header">Dakuten</div>
+                <div class="section">25 voiced variations</div>
+                <div class="footer"><jap>ぎ ど ぷ じ ば</jap></div>
+            </button>
+            <button id="yoon" class="start-button">
+                <div class="header">Yōon</div>
+                <div class="section">36 vocal combinations</div>
+                <div class="footer"><jap>にゃ しょ きゅ</jap></div>
+            </button>
+        </div>
+        <div class="button-group">
+            <button id="gojuon-dakuten" class="start-button double">
+                <div class="header">Gojūon & Dakuten</div>
+                <div class="section">all 71 tones of native Japanese</div>
+                <div class="footer"><jap>き ぎ と ど ふ ぷ し じ は ば</jap></div>
+            </button>
+            <button id="sokuon" class="start-button">
+                <div class="header">Sokuon</div>
+                <div class="section">20 double consonants</div>
+                <div class="footer"><jap>っと っし っぽ</jap></div>
+            </button>
+        </div>
+        <div class="button-group">
+            <button id="ultimate" class="start-button triple">
+                <div class="header">Ultimate Challenge</div>
+                <div class="section">Gojūon & Dakuten & Yōon & Sokuon</div>
+                <div class="footer"><jap>たっとちゅうばん</jap></div>
+            </button>
+        </div>
+    </div>
+    <div class="start">
+        <div class="info">
+            <p class="top"></p>
+            <p class="bottom"></p>
+        </div>
+        <div class="task">
+            <p></p>
+            <jap></jap>
+        </div>
+        <div class="input">
+            <input type="text" class="result" placeholder="Reading">
+            <button class="skip">I have no idea</button>
+        </div>
+    </div>
+    <div class="end">
+        <h3>Rank reached:</h3>
+        <p class="rank"></p>
+        <p class="advice"></p>
+        <div class="button-group">
+            <a class="start-over button">Start Over</a>
+        </div>
+    </div>
+</div>

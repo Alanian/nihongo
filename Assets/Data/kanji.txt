@@ -1,0 +1,3 @@
+﻿漢字;かんじ;kanji (chinese characters)
+時間;じかん;time
+忍者;にんじゃ;ninja

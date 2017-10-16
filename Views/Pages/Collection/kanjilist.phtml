@@ -1,0 +1,19 @@
+<?php
+$path = 'Assets/Data/kanji.txt';
+$file = file_get_contents($path);
+$lines = explode(PHP_EOL, $file);
+?>
+
+<table>
+    <tr>
+        <th>Kanji</th>
+        <th>Reading</th>
+        <th>Meaning</th>
+    </tr>
+    <?php foreach ($lines as $line) {
+        $items = explode(';', $line);
+        echo '<tr><td><jap>' . $items[0] . '</jap></td>';
+        echo '<td><jap>' . $items[1] . '</jap></td>';
+        echo '<td>' . $items[2] . '</td></tr>';
+    } ?>
+</table>

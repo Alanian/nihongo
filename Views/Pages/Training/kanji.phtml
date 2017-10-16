@@ -1,0 +1,48 @@
+<script src="<?= $root . 'Assets/JS/kanji_process.js'; ?>"></script>
+<script src="<?= $root . 'Assets/JS/Kanji.class.js'; ?>"></script>
+
+<h1>Kanji Training</h1>
+
+<p>
+    Use this training program to improve your Kanji reading skills. Get a look on the
+    <a href="Collection/KanjiList">
+        <?= $global->roma('kanji', 'chinese characters'); ?> list
+    </a> if you want to learn them before training. Although the training alone is recommended.
+</p>
+<p>
+    <?= $global->roma('Kanji', 'chinese characters'); ?> are very hard at the beginning but get easy pretty fast.
+</p>
+
+<div class="training">
+    <div class="prepare">
+        <div class="button-group">
+            <button id="group1" class="start-button">
+                <div class="header">Group 1</div>
+                <div class="section">3 test words</div>
+                <div class="footer"><jap>侍　罪　泥　焼　戦</jap></div>
+            </button>
+        </div>
+    </div>
+    <div class="start">
+        <div class="info">
+            <p class="top"></p>
+            <p class="bottom"></p>
+        </div>
+        <div class="task">
+            <p></p>
+            <jap></jap>
+        </div>
+        <div class="input">
+            <input type="text" class="result" placeholder="Reading">
+            <button class="skip">I have no idea</button>
+        </div>
+    </div>
+    <div class="end">
+        <h3>Rank reached:</h3>
+        <p class="rank"></p>
+        <p class="advice"></p>
+        <div class="button-group">
+            <a class="start-over button">Start Over</a>
+        </div>
+    </div>
+</div>

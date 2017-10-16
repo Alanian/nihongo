@@ -1,1 +1,388 @@
-@import url(https://fonts.googleapis.com/css?family=Dosis|Josefin+Sans);@font-face {font-family: "pica";src: url("../fonts/IMFeDPrm28P.ttf");}@font-face {font-family: "japfont";src: url("../fonts/KaiTi.ttf");}body {font-family: "Dosis", sans-serif;font-size: 1.2rem;background-color: #202020;}body em {font-style: italic;}body jap {font-family: japfont, sans-serif;font-size: 1.4rem;}body jap, body em, body .kana-table td {position: relative;}body jap:hover meaning, body em:hover meaning, body .kana-table td:hover meaning {visibility: visible;opacity: 0.9;bottom: 150%;}body jap meaning, body em meaning, body .kana-table td meaning {position: absolute;left: 50%;padding: 4px 16px 6px;background: #000;color: #fff;text-align: center;visibility: hidden;border-radius: 5px;font-family: "Dosis", sans-serif;font-size: 0.96rem;font-style: initial;white-space: nowrap;}body jap meaning:after, body em meaning:after, body .kana-table td meaning:after {content: '';position: absolute;top: 100%;left: 50%;margin-left: -8px;width: 0;height: 0;border-top: 8px solid black;border-right: 8px solid transparent;border-left: 8px solid transparent;}body h1 {font-size: 2.88rem;text-align: center;margin: 0 0 20px 0;font-weight: bold;}body h1 jap {font-size: 3.36rem;}body h2 {font-size: 2.16rem;margin: 1.92rem 0 0 1.92rem;}body h2 jap {font-size: 2.24rem;}body h3 {font-size: 1.92rem;margin: 10px 0;}body .container {width: 60rem;margin: 80px auto;border: 1px solid #101010;border-radius: 16px;box-sizing: initial;background-color: #eeeeee;color: #ad3030;}body .container strong {font-weight: bold;}body .container .header {height: 16rem;background: url(../images/title.jpg) no-repeat center left;background-size: cover;border-top-right-radius: 16px;border-top-left-radius: 16px;box-shadow: inset 0 0 50px 0 rgba(0, 0, 0, 0.5);}body .container .header jap {font-size: 5rem;float: right;margin: 4px 16px 0 0;width: 78px;}body .container .navigation .navigation-menu > li {float: left;border-top: 1px solid #101010;}body .container .navigation .navigation-menu .menu {display: block;position: relative;cursor: pointer;}body .container .navigation .navigation-menu .menu:hover .menu-title {padding: 8px;}body .container .navigation .navigation-menu .menu:hover > a .menu-title:before {border-top-width: 0;transition: 0.2s border-top-width ease-in, 0.3s border-top-color;}body .container .navigation .navigation-menu .menu:hover > a .menu-title:after {border-bottom-width: 8px;transition: 0.2s 0.2s border-bottom-width ease-out;}body .container .navigation .navigation-menu .menu:not(:hover) > .menu-dropdown {padding: 2px 0;background: #dddddd;z-index: 9;}body .container .navigation .navigation-menu .menu:not(:hover) > .menu-title:after {border-bottom-color: #dddddd;}body .container .navigation .navigation-menu .menu:not(:hover) > .menu-dropdown:after {border-top-color: #dddddd;}body .container .navigation .navigation-menu .menu:not(:hover) > .menu-dropdown > li {visibility: hidden;height: 0;padding-top: 0;padding-bottom: 0;margin: 0;color: rgba(25, 25, 25, 0);transition: 0.5s 0.1s height, 0.5s 0.1s padding, 0.5s 0.1s margin, 0.3s color, 0.6s visibility;z-index: 9;}body .container .navigation .navigation-menu .menu .menu-title {display: block;width: 15rem;height: 40px;padding: 16px;background: #303030;text-align: center;color: #dddddd;font-size: 1.2rem;text-transform: uppercase;transition: 0.4s background-color, 0.4s padding;text-shadow: 0 0 6px;}body .container .navigation .navigation-menu .menu .menu-title:before {content: "";display: block;height: 0;border-top: 16px solid #303030;border-left: 7.5rem solid transparent;border-right: 7.5rem solid transparent;border-bottom: 0 solid #dddddd;position: absolute;top: 100%;left: 0;z-index: 11;transition: 0.2s 0.2s border-top ease-out, 0.2s border-top-color;}body .container .navigation .navigation-menu .menu .menu-title:after {content: "";display: block;height: 0;border-left: 7.5rem solid transparent;border-right: 7.5rem solid transparent;border-bottom: 0 solid #dddddd;position: absolute;bottom: 0;left: 0;z-index: 11;transition: 0.2s border-bottom ease-in;}body .container .navigation .navigation-menu .menu .menu-title:hover {background: #202020;}body .container .navigation .navigation-menu .menu .menu-title:hover:before {border-top-color: #202020;}body .container .navigation .navigation-menu .menu .menu-dropdown {min-width: 100%;padding: 4px 0;position: absolute;background: #dddddd;z-index: 10;transition: 0.5s padding, 0.5s background;}body .container .navigation .navigation-menu .menu .menu-dropdown > li {overflow: hidden;padding: 0 5px 0 20px;background: transparent;transition: 0.5s height cubic-bezier(0.73, 0.32, 0.34, 1.5), 0.3s padding cubic-bezier(0.73, 0.32, 0.34, 1.5), 0.5s margin cubic-bezier(0.73, 0.32, 0.34, 1.5), 0.5s 0.2s color, 0.2s background-color;}body .container .navigation .navigation-menu .menu .menu-dropdown > li > a {text-decoration: none;color: inherit;display: block;padding: 10px 0;}body .container .navigation .navigation-menu .menu .menu-dropdown > li:hover {background: #bbbbbb;padding: 0 5px 0 30px;}body .container .navigation .navigation-menu .menu .menu-dropdown:after {content: "";display: block;height: 0;border-top: 16px solid #dddddd;border-left: 7.5rem solid transparent;border-right: 7.5rem solid transparent;border-bottom: 0 solid #dddddd;position: absolute;top: 100%;left: 0;z-index: 11;transition: 0.5s border-top;}body .container .content {padding: 80px 40px 40px;box-shadow: inset 0 0 50px 0 rgba(0, 0, 0, 0.5);border-radius: 16px;}body .container .content p {margin: 20px 0;text-align: justify;line-height: 1.5;text-shadow: 0 0 6px rgba(173, 48, 48, 0.3);letter-spacing: 1px;}body .container .content p a {font-weight: bold;text-decoration: none;color: dodgerblue;text-shadow: none;}body .container .content p a:hover {text-decoration: underline;}body .container .content p span.domino {font-size: 2.52rem;display: inline-block;position: relative;top: 8px;margin: -24px 0;}body .container .content ul {list-style-type: circle;margin: 20px 0 20px 80px;}body .container .content .button-group {width: 100%;display: inline-block;text-align: center;margin: 2% auto;}body .container .content .button-group a {text-decoration: none;font-weight: bold;background-color: #ad3030;color: #eeeeee;padding: 10px 20px;border-radius: 4px;margin: 0 4px;box-shadow: inset 0 0 20px 2px rgba(0, 0, 0, 0.3);letter-spacing: 2px;cursor: pointer;}body .container .content .button-group a:hover {box-shadow: inset 0 0 20px 2px rgba(255, 255, 255, 0.3);}body .container .content table {margin: 20px auto;}body .container .content table tr th {font-weight: bold;}body .container .content table tr td, body .container .content table tr th {padding: 10px;border-bottom: 1px solid #888;text-align: center;}body .container .content table.grid-table tr:first-child {border-top: 1px solid #888;}body .container .content table.grid-table tr td {padding: 20px;border-right: 1px solid #888;}body .container .content table.grid-table tr td:first-child {border-left: 1px solid #888;}body .container .content table.grid-table tr td a {font-weight: bold;text-decoration: none;color: dodgerblue;text-shadow: none;}body .container .content table.grid-table tr td a:hover {text-decoration: underline;}body .container .content table.kana-table {text-align: center;margin: 40px auto;font-size: 3rem;font-family: japfont, sans-serif;border-collapse: separate;border-spacing: 16px;width: 100%;}body .container .content table.kana-table tr td {padding: 10px;background-color: #ad3030;color: #eeeeee;border-radius: 3rem;}body .container .content form.big-test .test-block {margin: 40px 0;}body .container .content form.big-test .test-block .test-element {display: inline-grid;background-color: #ad3030;color: #eeeeee;padding: 1.5%;border-radius: 8px;width: 22.67%;margin: 1%;text-align: center;box-shadow: 0 4px 10px 2px #222;}body .container .content form.big-test .test-block .test-element.double {width: 47.78%;}body .container .content form.big-test .test-block .test-element span {line-height: 1.44rem;font-size: 1.44rem;margin: -5px 0 5px 0;}body .container .content form.big-test .test-block .test-element span jap {font-size: inherit;}body .container .content form.big-test .test-block .test-element select, body .container .content form.big-test .test-block .test-element input {height: 2rem;border-radius: 4px;text-indent: 10px;font-size: 1.2rem;width: 100%;outline: none;border: none;box-shadow: 0 0 10px 2px #222 inset;}body .container .content form.big-test .test-block .test-element select:disabled, body .container .content form.big-test .test-block .test-element input:disabled {background-color: #ccc;}body .container .content .training .start {width: 95.7% !important;background: radial-gradient(#b400e6, #6400a0);color: #eeeeee;text-shadow: 0 0 6px;border-radius: 4px;box-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.6);margin: 2% auto;height: 200px;}body .container .content .training .start div {float: left;height: 200px;width: 35%;text-align: center;}body .container .content .training .start .task {width: 30%;padding: 0;}body .container .content .training .start .task > jap {font-size: 8rem;}body .container .content .training .start .task p {font-weight: bold;text-align: center;font-size: 1.4rem;height: 5px;}body .container .content .training .start .info {padding: 0 20px;}body .container .content .training .start .input {padding: 22px 0;}body .container .content .training .start .input > * {margin: 10px 0;}body .container .content .training .start .input .result {width: 90%;padding: 12px 0 12px 20px;outline: none;font-size: 24px;font-family: "Dosis", sans-serif;font-weight: bold;letter-spacing: 1px;background: rgba(0, 0, 0, 0.3);color: #eeeeee;border: 1px solid rgba(0, 0, 0, 0.3);border-radius: 4px;text-indent: 30%;transition: all 0.3s ease-in-out;}body .container .content .training .start .input .result:focus {box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);text-indent: 0;}body .container .content .training .start .input .skip {width: 90%;padding: 12px;outline: none;font-size: 24px;font-family: "Dosis", sans-serif;font-weight: bold;letter-spacing: 1px;background: rgba(255, 255, 255, 0.2);color: #eeeeee;border: 2px outset;border-radius: 4px;cursor: pointer;transition: text-shadow 0.3s ease-in-out;box-shadow: inset -4px -4px 16px 0 rgba(0, 0, 0, 0.3);}body .container .content .training .start .input .skip:hover {text-shadow: 0 0 12px;}body .container .content .training .start .input .skip:active {border: 2px inset;box-shadow: inset 4px 4px 16px 0 rgba(0, 0, 0, 0.3);}body .container .content .training .double {width: 62.3% !important;}body .container .content .training .triple {width: 95.7% !important;}body .container .content .training .start-button {width: 29%;height: 200px;background: radial-gradient(circle, #b400e6 50%, #6400a0);color: #eeeeee;text-shadow: 0 0 6px;border: none;border-radius: 4px;box-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.6);font-family: "Dosis", sans-serif;margin: 0 2%;cursor: pointer;transition: 0.3s linear all;}body .container .content .training .start-button:hover {filter: saturate(120%) drop-shadow(0 0 8px black);}body .container .content .training .start-button header {font-size: 2.04rem;font-weight: bold;}body .container .content .training .start-button section {height: 80px;font-size: 1.4rem;display: table-cell;vertical-align: middle;margin: auto;width: 1000px;padding: 0 10px;}body .container .content .training .start-button footer {height: 50px;}body .container .content .training .start-button footer jap, body .container .content .training .start-button footer em {font-size: 2.24rem;}body .modal .exercise-block h1 {font-size: 1.44rem;text-align: left;font-weight: normal;}body .modal .exercise-block h1 jap {font-size: 1.68rem;}body .modal .exercise-block table {width: 50%;}body .modal .exercise-block strong {font-weight: bold;}body .modal .exercise-block ul {display: inline-flex;font-size: 0.84rem;text-align: center;width: 130px;}body .modal .exercise-block ul li {width: 33px;}body .modal .exercise-block .exercise-form .option {height: 2rem;}body .modal .exercise-block .exercise-form .option label {line-height: 2rem;cursor: pointer;}body .modal .exercise-block .exercise-form .option span {line-height: 2rem;}body .modal .exercise-block .exercise-form .option input[type=checkbox], body .modal .exercise-block .exercise-form .option input[type=radio] {-webkit-appearance: none;-moz-appearance: none;background-color: #ad3030;padding: 12px;border-radius: 4px;outline: none;position: relative;float: left;margin: 3px 6px 3px 3px;box-shadow: inset 0 0 15px 1px rgba(0, 0, 0, 0.3);}body .modal .exercise-block .exercise-form .option input[type=checkbox]:hover, body .modal .exercise-block .exercise-form .option input[type=radio]:hover {box-shadow: inset 0 0 20px 2px rgba(255, 255, 255, 0.3);}body .modal .exercise-block .exercise-form .option input[type=checkbox]:checked:after, body .modal .exercise-block .exercise-form .option input[type=radio]:checked:after {content: '\2714';position: absolute;bottom: 0;left: 5px;color: #eeeeee;text-shadow: 0 0 2px;font-size: 1.2rem;}body .modal .exercise-block .exercise-form button {font-weight: bold;background-color: #ad3030;color: #eeeeee;padding: 10px 20px;border-radius: 4px;box-shadow: inset 0 0 20px 2px rgba(0, 0, 0, 0.3);letter-spacing: 2px;cursor: pointer;font-family: inherit;font-size: 1.2rem;border: none;margin: 10px 0 0;outline: none;}body .modal .exercise-block .exercise-form button:hover {box-shadow: inset 0 0 20px 2px rgba(255, 255, 255, 0.3);}body .modal .exercise-block .exercise-form .result {margin: 10px 0 0;}
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+
+@font-face {
+    font-family: "KaiTi";
+    src: url("../Fonts/KaiTi.ttf");
+}
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.4rem;
+    background-color: #111;
+    color: #ad3030;
+}
+
+container {
+    display: block;
+    width: 64rem;
+    margin: 50px auto;
+}
+
+header {
+    display: block;
+    height: 20rem;
+    background: url(../Images/title.jpg) no-repeat center left;
+    background-size: cover;
+    border-radius: 16px 16px 0 0;
+    box-shadow: inset 0 0 50px 0 rgba(0, 0, 0, 0.5);
+}
+
+header jap {
+    font-size: 6rem;
+    float: right;
+    margin: 16px 16px 0 0;
+    width: 100px;
+}
+
+content {
+    display: block;
+    background: url(../Images/gplaypattern.png);
+    padding: 50px;
+    border-radius: 0 0 16px 16px;
+    box-shadow: inset 0 0 50px 0 rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    display: block;
+    font-size: 1rem;
+    margin: 50px 0 -30px 0;
+}
+
+jap {
+    font-family: "KaiTi", sans-serif;
+}
+
+roma {
+    font-style: italic;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 0 0 40px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin: 0 0 10px 30px;
+}
+
+h3 {
+    font-size: 1.6rem;
+    margin: 0 0 -10px 0;
+}
+
+p {
+    margin: 20px 0;
+}
+
+p a {
+    font-weight: bold;
+    text-decoration: none;
+    color: dodgerblue;
+    text-shadow: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+jap,
+roma,
+.kana-table td {
+    position: relative;
+}
+
+jap:hover meaning,
+roma:hover meaning,
+.kana-table td:hover meaning {
+    visibility: visible;
+    opacity: 0.9;
+    bottom: 150%;
+}
+
+jap meaning,
+roma meaning,
+.kana-table td meaning {
+    position: absolute;
+    left: 50%;
+    padding: 4px 16px 6px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    visibility: hidden;
+    border-radius: 5px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1rem;
+    font-style: initial;
+    white-space: nowrap;
+}
+
+jap meaning:after,
+roma meaning:after,
+.kana-table td meaning:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -8px;
+    width: 0;
+    height: 0;
+    border-width: 8px;
+    border-style: solid;
+    border-color: black transparent transparent;
+}
+
+navigation ul {
+    overflow: hidden;
+    background-color: #333;
+}
+
+navigation ul li {
+    float: left;
+}
+
+navigation ul li a {
+    display: inline-block;
+    color: #fff;
+    padding: 16px 20px 12px;
+    text-transform: uppercase;
+    text-shadow: 0 0 6px;
+    width: 12.8rem;
+    text-align: center;
+    transition: .3s;
+}
+
+navigation ul li a:hover {
+    background-color: #222;
+}
+
+navigation .dropdown ul {
+    display: none;
+    position: absolute;
+    background-color: #eee;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 16px 16px;
+}
+
+navigation .dropdown ul a {
+    color: inherit;
+    padding: 14px 16px 10px;
+    display: block;
+    font-size: 1.2rem;
+    text-align: left;
+    text-transform: none;
+    text-shadow: none;
+}
+
+navigation .dropdown ul a:hover {
+    background-color: #ddd;
+    padding-left: 30px;
+}
+
+navigation .dropdown:hover ul {
+    display: block;
+}
+
+.training .start {
+    width: 98% !important;
+    background: radial-gradient(#b400e6, #6400a0);
+    color: #eeeeee;
+    text-shadow: 0 0 6px;
+    border-radius: 4px;
+    box-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.6);
+    margin: 2% auto;
+    height: 200px;
+}
+
+.training .start div {
+    float: left;
+    height: 200px;
+    width: 35%;
+    text-align: center;
+}
+
+.training .start .task {
+    width: 30%;
+    padding: 0;
+}
+
+.training .start .task > jap {
+    font-size: 8rem;
+}
+
+.training .start .task p {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.4rem;
+    height: 5px;
+}
+
+.training .start .info {
+    padding: 0 20px;
+}
+
+.training .start .input {
+    padding: 22px 0;
+}
+
+.training .start .input > * {
+    margin: 10px 0;
+}
+
+.training .start .input .result {
+    width: 90%;
+    padding: 12px 0 12px 20px;
+    outline: none;
+    font-size: 24px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #eee;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    text-indent: 30%;
+    transition: all 0.3s ease-in-out;
+}
+
+.training .start .input .result:focus {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    text-indent: 0;
+}
+
+.training .start .input .skip {
+    width: 90%;
+    padding: 12px;
+    outline: none;
+    font-size: 24px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #eee;
+    border: 2px outset;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: inset -4px -4px 16px 0 rgba(0, 0, 0, 0.3);
+}
+
+.training .start .input .skip:hover {
+    text-shadow: 0 0 12px;
+    box-shadow: inset -2px -2px 16px 4px rgba(0, 0, 0, 0.3);
+}
+
+.training .start .input .skip:active {
+    border: 2px inset;
+    box-shadow: inset 4px 4px 16px 0 rgba(0, 0, 0, 0.3);
+}
+
+.training .double {
+    width: 64.41% !important;
+}
+
+.training .triple {
+    width: 98% !important;
+}
+
+.training .start-button {
+    width: 30.82%;
+    height: 200px;
+    background: radial-gradient(circle, #b400e6 50%, #6400a0);
+    color: #eee;
+    text-shadow: 0 0 6px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.6);
+    font-family: "Josefin Sans", sans-serif;
+    margin: 1.25% 1%;
+    cursor: pointer;
+    transition: 0.3s linear all;
+}
+
+.training .start-button:hover {
+    filter: saturate(120%) drop-shadow(0 0 8px black);
+}
+
+.training .start-button .header {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.training .start-button .section {
+    height: 80px;
+    font-size: 1.6rem;
+    display: table-cell;
+    vertical-align: middle;
+    margin: auto;
+    width: 1000px;
+    padding: 0 10px;
+}
+
+.training .start-button .footer {
+    height: 50px;
+}
+
+.training .start-button .footer jap,
+.training .start-button .footer roma {
+    font-size: 1.8rem;
+}
+
+table {
+    margin: 20px auto;
+}
+
+table tr th {
+    font-weight: bold;
+}
+
+table tr td,
+table tr th {
+    padding: 10px;
+    border-bottom: 1px solid #888;
+    text-align: center;
+}
+
+table.grid-table tr:first-child {
+    border-top: 1px solid #888;
+}
+
+table.grid-table tr td {
+    padding: 20px;
+    border-right: 1px solid #888;
+}
+
+table.grid-table tr td:first-child {
+    border-left: 1px solid #888;
+}
+
+table.grid-table tr td a {
+    font-weight: bold;
+    text-decoration: none;
+    color: dodgerblue;
+    text-shadow: none;
+}
+
+table.grid-table tr td a:hover {
+    text-decoration: underline;
+}
+
+table.kana-table {
+    text-align: center;
+    margin: 40px auto;
+    font-size: 3rem;
+    border-collapse: separate;
+    border-spacing: 16px;
+    width: 100%;
+    font-family: "KaiTi", sans-serif;
+}
+
+table.kana-table tr td {
+    padding: 12px;
+    background-color: #ad3030;
+    color: #eee;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0px 3px 6px 2px black;
+}

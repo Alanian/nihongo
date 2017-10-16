@@ -1,311 +1,375 @@
-@import url(https://fonts.googleapis.com/css?family=Dosis|Josefin+Sans);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
 
 @font-face {
-  font-family: "pica";
-  src: url("../fonts/IMFeDPrm28P.ttf");
+  font-family: "KaiTi";
+  src: url("../Fonts/KaiTi.ttf");
 }
 
-@font-face {
-  font-family: "japfont";
-  //src: url("../fonts/AiharaHudemojiKaisho2.01.ttf");
-  //src: url("../fonts/hkgokukaikk.ttf");
-  //src: url("../fonts/Mamelon.otf");
-  src: url("../fonts/KaiTi.ttf");
+@border-radius: 16px;
+@container-width: 64rem;
+
+.main-font() {
+  font-family: "Josefin Sans", sans-serif;
+}
+.jap-font() {
+  font-family: "KaiTi", sans-serif;
 }
 
-@background: #202020;
-@mainFont: "Dosis", sans-serif;
-@japFont: japfont, sans-serif;
-@fontSize: 1.2rem;
-@japFontSize: @fontSize + 0.2;
-
-@containerWidth: 60rem;
-@containerBackground: #eeeeee;
-@containerBorderRadius: 16px;
-@containerBorder: 1px solid #101010;
-@containerFontColor: #ad3030;
-
-@headerHeight: 16rem;
-@headerBackground: url(../images/title.jpg) no-repeat center left;
-
-@navigationMenuWidth: @containerWidth/4;
-@navigationBackground: #dddddd;
-@navigationBackgroundHover: #bbbbbb;
-@navigationForeground: #303030;
-@navigationForegroundHover: #202020;
 
 body {
-  font-family: @mainFont;
-  font-size: @fontSize;
-  background-color: @background;
+  .main-font;
+  font-size: 1.4rem;
+  background-color: #111;
+  color: #ad3030;
+}
 
-  em {
-    font-style: italic;
-  }
+container {
+  display: block;
+  width: @container-width;
+  margin: 50px auto;
+}
+
+header {
+  display: block;
+  height: 20rem;
+  background: url(../Images/title.jpg) no-repeat center left;
+  background-size: cover;
+  border-radius: @border-radius @border-radius 0 0;
+  box-shadow: inset 0 0 50px 0 rgba(0, 0, 0, 0.5);
 
   jap {
-    font-family: @japFont;
-    //font-size: @japFontSize;
+    font-size: 6rem;
+    float: right;
+    margin: 16px 16px 0 0;
+    width: 100px;
   }
+}
 
-  jap, em, .kana-table td {
-    position: relative;
+content {
+  display: block;
+  background: url(../Images/gplaypattern.png);
+  padding: 50px;
+  border-radius: 0 0 @border-radius @border-radius;
+  box-shadow: inset 0 0 50px 0 rgba(0, 0, 0, 0.5);
+}
 
-    &:hover meaning {
+footer {
+  display: block;
+  font-size: 1rem;
+  margin: 50px 0 -30px 0;
+}
+
+jap {
+  .jap-font;
+}
+
+roma {
+  font-style: italic;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 0 0 40px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin: 0 0 10px 30px;
+}
+
+h3 {
+  font-size: 1.6rem;
+  margin: 0 0 -10px 0;
+}
+
+p {
+  margin: 20px 0;
+
+  a {
+    font-weight: bold;
+    text-decoration: none;
+    color: dodgerblue;
+    text-shadow: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+jap, roma, .kana-table td {
+  position: relative;
+
+  &:hover {
+    meaning {
       visibility: visible;
       opacity: 0.9;
       bottom: 150%;
     }
+  }
 
-    meaning {
+  meaning {
+    position: absolute;
+    left: 50%;
+    padding: 4px 16px 6px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    visibility: hidden;
+    border-radius: 5px;
+    .main-font;
+    font-size: 1rem;
+    font-style: initial;
+    white-space: nowrap;
+
+    &:after {
+      content: '';
       position: absolute;
+      top: 100%;
       left: 50%;
-      padding: 4px 16px 6px;
-      background: #000;
-      color: #fff;
-      text-align: center;
-      visibility: hidden;
-      border-radius: 5px;
-      font-family: @mainFont;
-      font-size: @fontSize*0.8;
-      font-style: initial;
-      white-space: nowrap;
+      margin-left: -8px;
+      width: 0;
+      height: 0;
+      border-width: 8px;
+      border-style: solid;
+      border-color: black transparent transparent;
+    }
+  }
+}
 
-      &:after {
-        content: '';
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        margin-left: -8px;
-        width: 0;
-        height: 0;
-        border-top: 8px solid black;
-        border-right: 8px solid transparent;
-        border-left: 8px solid transparent;
+navigation {
+  @menus: 5;
+
+  ul {
+    overflow: hidden;
+    background-color: #333;
+
+    li {
+      float: left;
+
+      a {
+        display: inline-block;
+        color: #fff;
+        padding: 16px 20px 12px;
+        text-transform: uppercase;
+        text-shadow: 0 0 6px;
+        width: @container-width / @menus;
+        text-align: center;
+        transition: .3s;
+
+        &:hover {
+          background-color: #222;
+        }
       }
     }
   }
 
-  h1 {
-    font-size: @fontSize * 2.4;
-    text-align: center;
-    margin: 0 0 20px 0;
-    font-weight: bold;
+  .dropdown {
+    ul {
+      display: none;
+      position: absolute;
+      background-color: #eee;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      border-radius: 0 0 16px 16px;
 
-    jap {
-      font-size: @japFontSize * 2.4;
+      a {
+        color: inherit;
+        padding: 14px 16px 10px;
+        display: block;
+        font-size: 1.2rem;
+        text-align: left;
+        text-transform: none;
+        text-shadow: none;
+
+        &:hover {
+          background-color: #ddd;
+          padding-left: 30px;
+        }
+      }
+    }
+
+    &:hover ul {
+      display: block;
+    }
+  }
+}
+
+.training {
+  .start {
+    width: 98% !important;
+    background: radial-gradient(#b400e6, #6400a0);
+    color: #eeeeee;
+    text-shadow: 0 0 6px;
+    border-radius: 4px;
+    box-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.6);
+    margin: 2% auto;
+    height: 200px;
+
+    div {
+      float: left;
+      height: 200px;
+      width: 35%;
+      text-align: center;
+    }
+
+    .task {
+      width: 30%;
+      padding: 0;
+
+      > jap {
+        font-size: 8rem;
+      }
+
+      p {
+        font-weight: bold;
+        text-align: center;
+        font-size: 1.4rem;
+        height: 5px;
+      }
+    }
+
+    .info {
+      padding: 0 20px;
+    }
+
+    .input {
+      padding: 22px 0;
+
+      > * {
+        margin: 10px 0;
+      }
+
+      .result {
+        width: 90%;
+        padding: 12px 0 12px 20px;
+        outline: none;
+        font-size: 24px;
+        .main-font;
+        font-weight: bold;
+        letter-spacing: 1px;
+        background: rgba(0, 0, 0, 0.3);
+        color: #eee;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        border-radius: 4px;
+        text-indent: 30%;
+        transition: all .3s ease-in-out;
+
+        &:focus {
+          box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+          text-indent: 0;
+        }
+      }
+
+      .skip {
+        width: 90%;
+        padding: 12px;
+        outline: none;
+        font-size: 24px;
+        .main-font;
+        font-weight: bold;
+        letter-spacing: 1px;
+        background: rgba(255, 255, 255, 0.2);
+        color: #eee;
+        border: 2px outset;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        box-shadow: inset -4px -4px 16px 0 rgba(0, 0, 0, 0.3);
+
+        &:hover {
+          text-shadow: 0 0 12px;
+          box-shadow: inset -2px -2px 16px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        &:active {
+          border: 2px inset;
+          box-shadow: inset 4px 4px 16px 0 rgba(0, 0, 0, 0.3);
+        }
+      }
     }
   }
 
-  h2 {
-    font-size: @fontSize * 1.8;
-    margin: @fontSize * 1.6 0 0 @fontSize * 1.6;
-
-    jap {
-      font-size: @japFontSize * 1.6;
-    }
+  .double {
+    width: 64.41% !important;
   }
 
-  h3 {
-    font-size: @fontSize * 1.6;
-    margin: 10px 0;
+  .triple {
+    width: 98% !important;
   }
 
-  .container {
-    width: @containerWidth;
-    margin: 80px auto;
-    border: @containerBorder;
-    border-radius: @containerBorderRadius;
-    box-sizing: initial;
-    //box-shadow: 0 0 50px 10px rgba(255,0,0,0.4);
-    background-color: @containerBackground;
-    color: @containerFontColor;
+  .start-button {
+    width: 30.82%;
+    height: 200px;
+    background: radial-gradient(circle, #b400e6 50%, #6400a0);
+    color: #eee;
+    text-shadow: 0 0 6px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.6);
+    .main-font;
+    margin: 1.25% 1%;
+    cursor: pointer;
+    transition: 0.3s linear all;
 
-    strong {
-      font-weight: bold;
+    &:hover {
+      filter: saturate(120%) drop-shadow(0 0 8px black);
     }
 
     .header {
-      height: @headerHeight;
-      background: @headerBackground;
-      background-size: cover;
-      border-top-right-radius: @containerBorderRadius;
-      border-top-left-radius: @containerBorderRadius;
-      box-shadow: inset 0 0 50px 0 rgba(0, 0, 0, 0.5);
-
-      jap {
-        font-size: 5rem;
-        float: right;
-        margin: 4px 16px 0 0;
-        width: 78px;
-      }
+      font-size: 2.4rem;
+      font-weight: bold;
     }
 
-    .navigation {
-      .navigation-menu {
-        > li {
-          float: left;
-          border-top: @containerBorder;
-        }
-
-        .menu {
-          display: block;
-          position: relative;
-          cursor: pointer;
-
-          &:hover {
-            .menu-title {
-              padding: 8px;
-            }
-
-            > a .menu-title {
-              &:before {
-                border-top-width: 0;
-                transition: 0.2s border-top-width ease-in, 0.3s border-top-color;
-              }
-
-              &:after {
-                border-bottom-width: 8px;
-                transition: 0.2s 0.2s border-bottom-width ease-out;
-              }
-            }
-          }
-
-          &:not(:hover) {
-            > .menu-dropdown {
-              padding: 2px 0;
-              background: @navigationBackground;
-              z-index: 9;
-            }
-
-            > .menu-title:after {
-              border-bottom-color: @navigationBackground;
-            }
-
-            > .menu-dropdown:after {
-              border-top-color: @navigationBackground;
-            }
-
-            > .menu-dropdown > li {
-              visibility: hidden;
-              height: 0;
-              padding-top: 0;
-              padding-bottom: 0;
-              margin: 0;
-              color: rgba(25, 25, 25, 0);
-              transition: 0.5s 0.1s height, 0.5s 0.1s padding, 0.5s 0.1s margin, 0.3s color, 0.6s visibility;
-              z-index: 9;
-            }
-          }
-
-          .menu-title {
-            display: block;
-            width: @navigationMenuWidth;
-            height: 40px;
-            padding: 16px;
-            background: @navigationForeground;
-            text-align: center;
-            color: @navigationBackground;
-            font-size: 1.2rem;
-            text-transform: uppercase;
-            transition: 0.4s background-color, 0.4s padding;
-            text-shadow: 0 0 6px;
-
-            &:before {
-              content: "";
-              display: block;
-              height: 0;
-              border-top: 16px solid @navigationForeground;
-              border-left: @navigationMenuWidth/2 solid transparent;
-              border-right: @navigationMenuWidth/2 solid transparent;
-              border-bottom: 0 solid @navigationBackground;
-              position: absolute;
-              top: 100%;
-              left: 0;
-              z-index: 11;
-              transition: 0.2s 0.2s border-top ease-out, 0.2s border-top-color;
-            }
-
-            &:after {
-              content: "";
-              display: block;
-              height: 0;
-              border-left: @navigationMenuWidth/2 solid transparent;
-              border-right: @navigationMenuWidth/2 solid transparent;
-              border-bottom: 0 solid @navigationBackground;
-              position: absolute;
-              bottom: 0;
-              left: 0;
-              z-index: 11;
-              transition: 0.2s border-bottom ease-in;
-            }
-
-            &:hover {
-              background: @navigationForegroundHover;
-
-              &:before {
-                border-top-color: @navigationForegroundHover;
-              }
-            }
-          }
-
-          .menu-dropdown {
-            min-width: 100%;
-            padding: 4px 0;
-            position: absolute;
-            background: @navigationBackground;
-            z-index: 10;
-            transition: 0.5s padding, 0.5s background;
-
-            > li {
-              overflow: hidden;
-              padding: 0 5px 0 20px;
-              background: transparent;
-              transition: 0.5s height cubic-bezier(0.73, 0.32, 0.34, 1.5), 0.3s padding cubic-bezier(0.73, 0.32, 0.34, 1.5), 0.5s margin cubic-bezier(0.73, 0.32, 0.34, 1.5), 0.5s 0.2s color, 0.2s background-color;
-
-              > a {
-                text-decoration: none;
-                color: inherit;
-                display: block;
-                padding: 10px 0;
-              }
-            }
-
-            > li:hover {
-              background: @navigationBackgroundHover;
-              padding: 0 5px 0 30px;
-            }
-
-            &:after {
-              content: "";
-              display: block;
-              height: 0;
-              border-top: 16px solid @navigationBackground;
-              border-left: @navigationMenuWidth/2 solid transparent;
-              border-right: @navigationMenuWidth/2 solid transparent;
-              border-bottom: 0 solid @navigationBackground;
-              position: absolute;
-              top: 100%;
-              left: 0;
-              z-index: 11;
-              transition: 0.5s border-top;
-            }
-          }
-        }
-      }
+    .section {
+      height: 80px;
+      font-size: 1.6rem;
+      display: table-cell;
+      vertical-align: middle;
+      margin: auto;
+      width: 1000px;
+      padding: 0 10px;
     }
 
-    .content {
-      padding: 80px 40px 40px;
-      box-shadow: inset 0 0 50px 0 rgba(0, 0, 0, 0.5);
-      border-radius: 16px;
+    .footer {
+      height: 50px;
+      jap, roma {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
 
-      p {
-        margin: 20px 0;
-        text-align: justify;
-        line-height: 1.5;
-        text-shadow: 0 0 6px rgba(173, 48, 48, 0.3);
-        letter-spacing: 1px;
+table {
+  @tableBorder: 1px solid #888;
+
+  margin: 20px auto;
+
+  tr {
+    th {
+      font-weight: bold;
+    }
+
+    td, th {
+      padding: 10px;
+      border-bottom: @tableBorder;
+      text-align: center;
+    }
+  }
+
+  &.grid-table {
+    tr {
+      &:first-child {
+        border-top: @tableBorder;
+      }
+
+      td {
+        padding: 20px;
+        border-right: @tableBorder;
+
+        &:first-child {
+          border-left: @tableBorder;
+        }
 
         a {
           font-weight: bold;
@@ -317,411 +381,27 @@ body {
             text-decoration: underline;
           }
         }
-
-        span {
-          &.domino {
-            font-size: @fontSize*2.1;
-            display: inline-block;
-            position: relative;
-            top: 8px;
-            margin: -24px 0;
-
-          }
-        }
       }
-
-      ul {
-        list-style-type: circle;
-        margin: 20px 0 20px 80px;
-      }
-
-      .button-group {
-        width: 100%;
-        display: inline-block;
-        text-align: center;
-        margin: 2% auto;
-
-        a {
-          text-decoration: none;
-          font-weight: bold;
-          background-color: @containerFontColor;
-          color: @containerBackground;
-          padding: 10px 20px;
-          border-radius: 4px;
-          margin: 0 4px;
-          box-shadow: inset 0 0 20px 2px rgba(0, 0, 0, 0.3);
-          letter-spacing: 2px;
-          cursor: pointer;
-
-          &:hover {
-            box-shadow: inset 0 0 20px 2px rgba(255, 255, 255, 0.3);
-          }
-
-        }
-      }
-
-      table {
-        @tableBorder: 1px solid #888;
-
-        margin: 20px auto;
-
-        tr {
-          th {
-            font-weight: bold;
-          }
-
-          td, th {
-            padding: 10px;
-            border-bottom: @tableBorder;
-            text-align: center;
-          }
-        }
-
-        &.grid-table {
-          tr {
-            &:first-child {
-              border-top: @tableBorder;
-            }
-
-            td {
-              padding: 20px;
-              border-right: @tableBorder;
-
-              &:first-child {
-                border-left: @tableBorder;
-              }
-
-              a {
-                font-weight: bold;
-                text-decoration: none;
-                color: dodgerblue;
-                text-shadow: none;
-
-                &:hover {
-                  text-decoration: underline;
-                }
-              }
-            }
-          }
-        }
-
-        &.kana-table {
-          text-align: center;
-          margin: 40px auto;
-          font-size: 3rem;
-          font-family: @japFont;
-          border-collapse: separate;
-          border-spacing: 16px;
-          width: 100%;
-
-          tr {
-            td {
-              padding: 10px;
-              background-color: @containerFontColor;
-              color: @containerBackground;
-              border-radius: 3rem;
-            }
-          }
-        }
-      }
-
-      form {
-        &.big-test {
-          .test-block {
-            margin: 40px 0;
-
-            .test-element {
-              display: inline-grid;
-              background-color: @containerFontColor;
-              color: @containerBackground;
-              padding: 1.5%;
-              border-radius: 8px;
-              width: 22.67%;
-              margin: 1%;
-              text-align: center;
-              box-shadow: 0 4px 10px 2px #222;
-
-              &.double {
-                width: 47.78%;
-              }
-
-              span {
-                line-height: @fontSize*1.2;
-                font-size: @fontSize*1.2;
-                margin: -5px 0 5px 0;
-
-                jap {
-                  font-size: inherit;
-                }
-              }
-
-              select, input {
-                height: 2rem;
-                border-radius: 4px;
-                text-indent: 10px;
-                font-size: @fontSize;
-                width: 100%;
-                outline: none;
-                border: none;
-                box-shadow: 0 0 10px 2px #222 inset;
-
-                &:disabled {
-                  background-color: #ccc;
-                }
-              }
-            }
-          }
-        }
-      }
-
-      .training {
-        .start {
-          width: 95.7% !important;
-          background: radial-gradient(#b400e6, #6400a0);
-          color: #eeeeee;
-          text-shadow: 0 0 6px;
-          border-radius: 4px;
-          box-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.6);
-          margin: 2% auto;
-          height: 200px;
-
-          div {
-            float: left;
-            height: 200px;
-            width: 35%;
-            text-align: center;
-          }
-
-          .task {
-            width: 30%;
-            padding: 0;
-
-            > jap {
-              font-size: 8rem;
-            }
-
-            p {
-              font-weight: bold;
-              text-align: center;
-              font-size: 1.4rem;
-              height: 5px;
-            }
-          }
-
-          .info {
-            padding: 0 20px;
-          }
-
-          .input {
-            padding: 22px 0;
-
-            > * {
-              margin: 10px 0;
-            }
-
-            .result {
-              width: 90%;
-              padding: 12px 0 12px 20px;
-              outline: none;
-              font-size: 24px;
-              font-family: @mainFont;
-              font-weight: bold;
-              letter-spacing: 1px;
-              background: rgba(0, 0, 0, 0.3);
-              color: @containerBackground;
-              border: 1px solid rgba(0, 0, 0, 0.3);
-              border-radius: 4px;
-              text-indent: 30%;
-              transition: all .3s ease-in-out;
-
-              &:focus {
-                box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-                text-indent: 0;
-              }
-            }
-
-            .skip {
-              width: 90%;
-              padding: 12px;
-              outline: none;
-              font-size: 24px;
-              font-family: @mainFont;
-              font-weight: bold;
-              letter-spacing: 1px;
-              background: rgba(255, 255, 255, 0.2);
-              color: @containerBackground;
-              border: 2px outset;
-              border-radius: 4px;
-              cursor: pointer;
-              transition: text-shadow 0.3s ease-in-out;
-              box-shadow: inset -4px -4px 16px 0 rgba(0, 0, 0, 0.3);
-
-              &:hover {
-                text-shadow: 0 0 12px;
-              }
-
-              &:active {
-                border: 2px inset;
-                box-shadow: inset 4px 4px 16px 0 rgba(0, 0, 0, 0.3);
-              }
-            }
-          }
-        }
-
-        .double {
-          width: 62.3% !important;
-        }
-
-        .triple {
-          width: 95.7% !important;
-        }
-
-        .start-button {
-          width: 29%;
-          height: 200px;
-          background: radial-gradient(circle, #b400e6 50%, #6400a0);
-          color: @containerBackground;
-          text-shadow: 0 0 6px;
-          border: none;
-          border-radius: 4px;
-          box-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.6);
-          font-family: @mainFont;
-          margin: 0 2%;
-          cursor: pointer;
-          transition: 0.3s linear all;
-
-          &:hover {
-            filter: saturate(120%) drop-shadow(0 0 8px black);
-          }
-
-          header {
-            font-size: @fontSize * 1.7;
-            font-weight: bold;
-          }
-
-          section {
-            height: 80px;
-            font-size: @japFontSize;
-            display: table-cell;
-            vertical-align: middle;
-            margin: auto;
-            width: 1000px;
-            padding: 0 10px;
-          }
-
-          footer {
-            height: 50px;
-            jap, em {
-              font-size: @japFontSize * 1.6;
-            }
-          }
-        }
-      }
-
-    }
-
-    .footer {
-
     }
   }
 
-  .modal {
-    .exercise-block {
-      h1 {
-        font-size: @fontSize*1.2;
-        text-align: left;
-        font-weight: normal;
+  &.kana-table {
+    text-align: center;
+    margin: 40px auto;
+    font-size: 3rem;
+    border-collapse: separate;
+    border-spacing: 16px;
+    width: 100%;
+    .jap-font;
 
-        jap {
-          font-size: @fontSize*1.4;
-        }
-      }
-
-      table {
-        width: 50%;
-      }
-
-      strong {
-        font-weight: bold;
-      }
-
-      ul {
-        display: inline-flex;
-        font-size: @fontSize*0.7;
-        text-align: center;
-        width: 130px;
-
-        li {
-          width: 33px;
-        }
-      }
-
-      .exercise-form {
-        .option {
-          height: 2rem;
-
-          label {
-            line-height: 2rem;
-            cursor: pointer;
-          }
-
-          span {
-            line-height: 2rem;
-          }
-
-          input[type=checkbox],
-          input[type=radio] {
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            background-color: @containerFontColor;
-            padding: 12px;
-            border-radius: 4px;
-            outline: none;
-            position: relative;
-            float: left;
-            margin: 3px 6px 3px 3px;
-            box-shadow: inset 0 0 15px 1px rgba(0, 0, 0, 0.3);
-
-            &:hover {
-              box-shadow: inset 0 0 20px 2px rgba(255, 255, 255, 0.3);
-            }
-
-            &:checked {
-              &:after {
-                content: '\2714';
-                position: absolute;
-                bottom: 0;
-                left: 5px;
-                color: @containerBackground;
-                text-shadow: 0 0 2px;
-                font-size: @fontSize;
-              }
-            }
-          }
-        }
-        button {
-          font-weight: bold;
-          background-color: @containerFontColor;
-          color: #eeeeee;
-          padding: 10px 20px;
-          border-radius: 4px;
-          box-shadow: inset 0 0 20px 2px rgba(0, 0, 0, 0.3);
-          letter-spacing: 2px;
-          cursor: pointer;
-          font-family: inherit;
-          font-size: 1.2rem;
-          border: none;
-          margin: 10px 0 0;
-          outline: none;
-
-          &:hover {
-            box-shadow: inset 0 0 20px 2px rgba(255, 255, 255, 0.3);
-          }
-        }
-
-        .result {
-          margin: 10px 0 0;
-        }
+    tr {
+      td {
+        padding: 12px;
+        background-color: #ad3030;
+        color: #eee;
+        border: none;
+        border-radius: 50%;
+        box-shadow: 0px 3px 6px 2px black;
       }
     }
   }

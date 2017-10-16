@@ -1,0 +1,27 @@
+<?php
+$navigation = new Navigation();
+
+$menu = new Menu('Home', '/');
+$navigation->addMenu($menu);
+
+$menu = new Menu('Lessons', '/Lesson');
+$menu->addItem(new Item('Hitotsu', '/Lesson/Hitotsu'));
+$menu->addItem(new Item('Futatsu', '/Lesson/Futatsu'));
+$navigation->addMenu($menu);
+
+$menu = new Menu('Training', '/Training');
+$menu->addItem(new Item('Hiragana', '/Training/Hiragana'));
+$menu->addItem(new Item('Kanji', '/Training/Kanji'));
+$menu->addItem(new Item('Verb Forms', '/Training/VerbForms'));
+$navigation->addMenu($menu);
+
+$menu = new Menu('Collection', '/Collection');
+$menu->addItem(new Item('Hiragana Table', '/Collection/HiraganaTable'));
+$menu->addItem(new Item('Kanji List', '/Collection/KanjiList'));
+$navigation->addMenu($menu);
+
+$menu = new Menu('Donate', '/Donate');
+$navigation->addMenu($menu);
+
+$navigation->render();
+?>
