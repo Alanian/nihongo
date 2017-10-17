@@ -28,7 +28,7 @@ function KanjiTable(from, number, slice) {
 }
 
 KanjiTable.prototype.add = function (characters, reading, meanings) {
-    this.table.push(new Hiragana(characters, reading, meanings));
+    this.table.push(new Kanji(characters, reading, meanings));
 };
 
 KanjiTable.prototype.fill = function (from, number) {

@@ -1,3 +1,20 @@
-﻿漢字;かんじ;kanji (chinese characters)
-時間;じかん;time
-忍者;にんじゃ;ninja
+﻿漢字;kanji;kanji (chinese characters)
+時間;jikan;time
+忍者;ninja;ninja
+行く;iku;to go (direction, destination)
+学生;gakusei;university student
+先生;sensei;teacher, master of skill
+飛ぶ;tobu;to jump, to fly
+機械;kikai;machine
+料理;ryouri;dish
+私;watashi;I
+毎日;mainichi;every day
+術;jutsu;technique, art
+美味しい;oishii;delicious
+学校;gakkou;school
+日本;nihon;Japan
+飛行機;hikouki;plane
+人;hito;person
+口;kuchi;mouth
+人口;jinkou;population
+忍び;shinobi;ninja

@@ -103,8 +103,7 @@ $(document).ready(function () {
 
         switch (startButtonID) {
             case 'group1':
-                checkMaxCharacters(3);
-                start(0, numberOfCharacters);
+                start(0, 20);
                 break;
         }
     });
