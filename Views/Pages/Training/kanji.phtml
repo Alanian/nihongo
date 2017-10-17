@@ -1,5 +1,5 @@
-<script src="<?= $root . 'Assets/JS/kanji_process.js'; ?>"></script>
-<script src="<?= $root . 'Assets/JS/Kanji.class.js'; ?>"></script>
+<script src="<?= '/Assets/JS/kanji_process.js'; ?>"></script>
+<script src="<?= '/Assets/JS/Kanji.class.js'; ?>"></script>
 
 <h1>Kanji Training</h1>
 
@@ -13,29 +13,35 @@
     <?= $global->roma('Kanji', 'chinese characters'); ?> are very hard at the beginning but get easy pretty fast.
 </p>
 
-<div class="training">
+<div class="training kanji">
     <div class="prepare">
         <div class="button-group">
             <button id="group1" class="start-button">
                 <div class="header">Group 1</div>
                 <div class="section">20 random test words</div>
-                <div class="footer"><jap>忍　飛　生　行　時</jap></div>
+                <div class="footer">
+                    <jap>忍　飛　生　行　時</jap>
+                </div>
             </button>
             <button id="group2" class="start-button">
                 <div class="header">Group 2</div>
                 <div class="section">20 hard ones</div>
-                <div class="footer"><jap>獄　態　滅　違　僧</jap></div>
+                <div class="footer">
+                    <jap>獄　態　滅　違　僧</jap>
+                </div>
             </button>
         </div>
+    </div>
+    <div class="task">
+        <jap></jap>
     </div>
     <div class="start">
         <div class="info">
             <p class="top"></p>
             <p class="bottom"></p>
         </div>
-        <div class="task task-kanji">
+        <div class="answer">
             <p></p>
-            <jap></jap>
         </div>
         <div class="input">
             <input type="text" class="result" placeholder="Reading">

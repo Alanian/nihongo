@@ -16,7 +16,7 @@ class Functions
 
     public function getPage()
     {
-        return isset($_GET['page']) ? $_GET['page'] : '';
+        return isset($_GET['page']) ? strtolower($_GET['page']) : '';
     }
 
     public function getLessonNumber()

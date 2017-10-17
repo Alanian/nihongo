@@ -4,6 +4,6 @@ require 'Classes/Navigation/Navigation.php';
 require 'Classes/Navigation/Menu.php';
 require 'Classes/Navigation/Item.php';
 
-$root = '/';
-$pageRoot = 'Views/Pages/';
+define('ROOT', __DIR__ . '/');
+define('PAGEROOT', ROOT . 'Views/Pages/');
 $global = new Functions();

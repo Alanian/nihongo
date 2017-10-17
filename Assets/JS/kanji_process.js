@@ -58,7 +58,7 @@ function check() {
 
     if (input == correct) {
         _result.val('');
-        showTime(_task.find('p'), kt.table[0].meaning, 3000);
+        showTime(_task.find('p'), kt.table[0].character + '<br>' + kt.table[0].meaning, 5000);
 
         if (!wrong) {
             kt.removeFirst();
@@ -76,7 +76,7 @@ function check() {
 
 function skip() {
     _result.val('');
-    showTime(_task.find('p'), kt.table[0].reading, 2000);
+    showTime(_task.find('p'), kt.table[0].character + '<br>' + kt.table[0].reading, 1000);
     kt.moveFirst(3);
     tries++;
     update();
@@ -100,7 +100,6 @@ $(document).ready(function () {
                 break;
             case 'group2':
                 start(21, 40);
-                alert(1);
                 break;
         }
     });
