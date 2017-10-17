@@ -10,7 +10,6 @@ var tries;
 var matches;
 var accuracy;
 var wrong;
-var numberOfCharacters;
 
 var _info;
 var _result;
@@ -45,7 +44,7 @@ function check() {
 
     if (input.length <= correct.length) {
         if (wrong) {
-            showTime(_task.find('p'), 'Wrong...', 1000);
+            //showTime(_task.find('p'), 'Wrong...', 1000);
         } else {
             for (var i = 0; i < input.length; i++) {
                 if (input[i] != correct[i]) {
@@ -59,7 +58,7 @@ function check() {
 
     if (input == correct) {
         _result.val('');
-        showTime(_task.find('p'), 'Correct!', 1000);
+        showTime(_task.find('p'), kt.table[0].meaning, 3000);
 
         if (!wrong) {
             kt.removeFirst();
@@ -77,16 +76,10 @@ function check() {
 
 function skip() {
     _result.val('');
-    showTime(_task.find('p'), '<jap>' + kt.table[0].character + '</jap> = ' + kt.table[0].reading, 2000);
+    showTime(_task.find('p'), kt.table[0].reading, 2000);
     kt.moveFirst(3);
     tries++;
     update();
-}
-
-function checkMaxCharacters(max) {
-    numberOfCharacters = parseInt(prompt('How many? Choose form 1 to ' + max + '.'));
-    if (numberOfCharacters > max || numberOfCharacters < 1 || isNaN(numberOfCharacters))
-        numberOfCharacters = max;
 }
 
 $(document).ready(function () {
@@ -105,6 +98,10 @@ $(document).ready(function () {
             case 'group1':
                 start(0, 20);
                 break;
+            case 'group2':
+                start(21, 40);
+                alert(1);
+                break;
         }
     });
 
@@ -112,7 +109,7 @@ $(document).ready(function () {
         swapScreens('.prepare', '.end');
     });
 
-    _result.keyup(function (e) {
+    _result.keyup(function () {
         check();
     });
 

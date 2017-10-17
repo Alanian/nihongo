@@ -31,8 +31,6 @@
         else $path = $pageRoot . 'home.phtml';
 
         if (file_exists($path)) require $path;
-
-        echo $path;
         ?>
         <footer>
             &copy; Nipponjaku <?= date('Y'); ?>. Formerly Anime Sekai.

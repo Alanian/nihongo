@@ -12,8 +12,8 @@ $lines = explode(PHP_EOL, $file);
     </tr>
     <?php foreach ($lines as $line) {
         $items = explode(';', $line);
-        echo '<tr><td><jap>' . $items[0] . '</jap></td>';
-        echo '<td><jap>' . $items[1] . '</jap></td>';
+        echo '<tr><td><jap class="big">' . $items[0] . '</jap></td>';
+        echo '<td><roma>' . $items[1] . '</roma></td>';
         echo '<td>' . $items[2] . '</td></tr>';
     } ?>
 </table>
