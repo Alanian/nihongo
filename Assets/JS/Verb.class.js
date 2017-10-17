@@ -91,7 +91,7 @@ VerbTable.prototype.add = function (group, stem, ending, meaning) {
 VerbTable.prototype.fill = function (number) {
     var original = this;
     $.ajax({
-        url: 'https://github.com/Alanian/nihongo/blob/master/Assets/Data/verbs.txt',
+        url: 'https://raw.githubusercontent.com/Alanian/nihongo/master/Assets/Data/verbs.txt',
         async: false,
         success: function (data) {
             var lines = data.split('\n');

@@ -4,6 +4,8 @@
     <list default="true" id="97bfd800-3413-40c5-8a8f-8f264400d3ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/JS/Hiragana.class.js" afterPath="$PROJECT_DIR$/Assets/JS/Hiragana.class.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/JS/Kanji.class.js" afterPath="$PROJECT_DIR$/Assets/JS/Kanji.class.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/JS/Verb.class.js" afterPath="$PROJECT_DIR$/Assets/JS/Verb.class.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -87,11 +89,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Hiragana.class.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Hiragana.class.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/JS/Hiragana.class.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+            <state relative-caret-position="595">
+              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="97" />
               <folding />
             </state>
           </provider>
@@ -100,18 +102,18 @@
       <file leaf-file-name="Verb.class.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/JS/Verb.class.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1632">
-              <caret line="96" column="39" lean-forward="false" selection-start-line="96" selection-start-column="39" selection-end-line="96" selection-end-column="39" />
+            <state relative-caret-position="475">
+              <caret line="93" column="88" lean-forward="false" selection-start-line="93" selection-start-column="88" selection-end-line="93" selection-end-column="88" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Kanji.class.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Kanji.class.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/JS/Kanji.class.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" column="71" lean-forward="false" selection-start-line="36" selection-start-column="71" selection-end-line="36" selection-end-column="72" />
+            <state relative-caret-position="611">
+              <caret line="36" column="88" lean-forward="false" selection-start-line="36" selection-start-column="88" selection-end-line="36" selection-end-column="88" />
               <folding />
             </state>
           </provider>
@@ -205,10 +207,10 @@
         <option value="$PROJECT_DIR$/Views/Pages/Collection/kanjilist.phtml" />
         <option value="$PROJECT_DIR$/Views/Pages/Training/kanji.phtml" />
         <option value="$PROJECT_DIR$/Assets/JS/kanji_process.js" />
-        <option value="$PROJECT_DIR$/Assets/JS/Verb.class.js" />
-        <option value="$PROJECT_DIR$/Assets/JS/Kanji.class.js" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/Assets/JS/Hiragana.class.js" />
+        <option value="$PROJECT_DIR$/Assets/JS/Verb.class.js" />
+        <option value="$PROJECT_DIR$/Assets/JS/Kanji.class.js" />
       </list>
     </option>
   </component>
@@ -336,7 +338,7 @@
       <workItem from="1508164235173" duration="921000" />
       <workItem from="1508165336570" duration="778000" />
       <workItem from="1508167555275" duration="1865000" />
-      <workItem from="1508223592209" duration="204000" />
+      <workItem from="1508223592209" duration="1913000" />
     </task>
     <task id="LOCAL-00001" summary="nihongo 3 (remastered)">
       <created>1508163788558</created>
@@ -352,16 +354,23 @@
       <option name="project" value="LOCAL" />
       <updated>1508164366179</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="test">
+      <created>1508223918699</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1508223918699</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63247000" />
+    <option name="totallyTimeSpent" value="64956000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3848" y="-181" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27452025" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27452025" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -389,7 +398,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="nihongo 3 (remastered)" />
-    <option name="LAST_COMMIT_MESSAGE" value="nihongo 3 (remastered)" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -619,6 +629,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
           <caret line="41" column="4" lean-forward="false" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -665,6 +676,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -672,22 +684,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6052">
           <caret line="356" column="5" lean-forward="false" selection-start-line="356" selection-start-column="5" selection-end-line="356" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/JS/Verb.class.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1632">
-          <caret line="96" column="39" lean-forward="false" selection-start-line="96" selection-start-column="39" selection-end-line="96" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/JS/Kanji.class.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="71" lean-forward="false" selection-start-line="36" selection-start-column="71" selection-end-line="36" selection-end-column="72" />
           <folding />
         </state>
       </provider>
@@ -713,8 +709,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/JS/Hiragana.class.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+        <state relative-caret-position="595">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/JS/Verb.class.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="93" column="88" lean-forward="false" selection-start-line="93" selection-start-column="88" selection-end-line="93" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/JS/Kanji.class.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="611">
+          <caret line="36" column="88" lean-forward="false" selection-start-line="36" selection-start-column="88" selection-end-line="36" selection-end-column="88" />
           <folding />
         </state>
       </provider>
