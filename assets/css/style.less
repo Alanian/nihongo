@@ -11,10 +11,10 @@
 .main-font() {
   font-family: "Josefin Sans", sans-serif;
 }
+
 .jap-font() {
   font-family: "KaiTi", sans-serif;
 }
-
 
 body {
   .main-font;
@@ -62,7 +62,7 @@ footer {
 jap {
   .jap-font;
 
-  &.big{
+  &.big {
     font-size: 2rem;
   }
 }
@@ -202,7 +202,8 @@ navigation {
 .training {
   .start {
     width: 98% !important;
-    background: radial-gradient(#b400e6, #6400a0);
+    //background: radial-gradient(#b400e6, #6400a0);
+    background: url(http://bgfons.com/uploads/wood/wood%20_texture1053.jpg);
     color: #eeeeee;
     text-shadow: 0 0 6px;
     border-radius: 4px;
@@ -305,7 +306,8 @@ navigation {
   .start-button {
     width: 30.82%;
     height: 200px;
-    background: radial-gradient(circle, #b400e6 50%, #6400a0);
+    //background: radial-gradient(circle, #b400e6 50%, #6400a0);
+    background: url(http://bgfons.com/uploads/wood/wood%20_texture1053.jpg);
     color: #eee;
     text-shadow: 0 0 6px;
     border: none;
@@ -340,6 +342,34 @@ navigation {
       jap, roma {
         font-size: 1.8rem;
       }
+    }
+  }
+
+  &.kanji {
+    .task {
+      width: 98% !important;
+      color: #eeeeee;
+      text-shadow: 0 0 6px;
+      border-radius: 4px;
+      box-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.6);
+      margin: 2% auto -1%;
+      height: 100px;
+      text-align: center;
+      //background: radial-gradient(#b400e6, #6400a0);
+      background: url(http://bgfons.com/uploads/wood/wood%20_texture1053.jpg);
+
+      // background:url(https://s-media-cache-ak0.pinimg.com/originals/94/41/56/94415671b3d512034f4da9680a75aacc.jpg)
+      // background:url(http://bgfons.com/uploads/wood/wood%20_texture1053.jpg)
+      // background:url(https://images.freecreatives.com/wp-content/uploads/2015/08/free-metal-texture-1.jpg)
+
+      jap {
+        font-size: 5rem;
+        top: 10px;
+      }
+    }
+
+    .answer {
+      width: 30% !important;
     }
   }
 }
