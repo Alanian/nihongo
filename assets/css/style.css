@@ -78,6 +78,7 @@ h3 {
 
 p {
     margin: 20px 0;
+    line-height: 1.4;
 }
 
 p a {
@@ -89,6 +90,40 @@ p a {
 
 p a:hover {
     text-decoration: underline;
+}
+
+.button-group {
+    text-align: center;
+    margin: 50px;
+}
+
+.button-group .button {
+    padding: 12px 0 8px;
+    margin: 0 20px;
+    width: 200px;
+    display: inline-block;
+    color: #fff;
+    background-color: #ad3030;
+}
+
+.button-group .button.prev:before {
+    content: '◄';
+    margin: 0 10% 0 -18%;
+    transition: 0.2s margin linear;
+}
+
+.button-group .button.prev:hover:before {
+    margin: 0 20% 0 -28%;
+}
+
+.button-group .button.next:after {
+    content: '►';
+    margin: 0 -32% 0 10%;
+    transition: 0.2s margin linear;
+}
+
+.button-group .button.next:hover:after {
+    margin: 0 -42% 0 20%;
 }
 
 jap,
@@ -144,6 +179,34 @@ navigation ul {
 
 navigation ul li {
     float: left;
+}
+
+navigation ul li:after {
+    content: '';
+    width: 100%;
+    height: 10px;
+    display: block;
+    margin: -5px 0;
+}
+
+navigation ul li:nth-child(1):after {
+    background-color: #ff003b;
+}
+
+navigation ul li:nth-child(2):after {
+    background-color: #006eff;
+}
+
+navigation ul li:nth-child(3):after {
+    background-color: #00ff77;
+}
+
+navigation ul li:nth-child(4):after {
+    background-color: #cc00ff;
+}
+
+navigation ul li:nth-child(5):after {
+    background-color: #ffcc00;
 }
 
 navigation ul li a {
