@@ -1,0 +1,36 @@
+<?= $global->lessonHeader('Spelling'); ?>
+<p>
+    Original Japanese isn't written with roman letters, but with
+    <?= $global->roma('Kana', 'the japanese writing systems Hiragana and Katakana'); ?>
+    and
+    <?= $global->roma('Kanji', 'fancy hieroglyph-like pictures'); ?>.
+    Anything you can say in Japanese you can write in
+    <?= $global->roma('Kana', 'the japanese writing systems Hiragana and Katakana'); ?>,
+    hence
+    <?= $global->roma('Kanji', 'fancy hieroglyph-like pictures'); ?>
+    can be written in
+    <?= $global->roma('Kana', 'the japanese writing systems Hiragana and Katakana'); ?>
+    too.
+    <?= $global->roma('Kana', 'the japanese writing systems Hiragana and Katakana'); ?>
+    consists of syllables, which pronunciation length is equal - called <strong>mora</strong>.
+    Even though you don't know
+    <?= $global->roma('Kana', 'the japanese writing systems Hiragana and Katakana'); ?>,
+    you should think of syllables, instead of letters.
+</p>
+<p>
+    So if you are spelling Japanese, you shouldn't spell it letter-wise, but mora-wise.
+    The word
+    <?= $global->jap('はなび', 'fireworks'); ?>
+    is spelt "ha na bi", instead of "h a n a b i" and
+    <?= $global->jap('ちんたつげきとう', 'just a fictional word'); ?>
+    is spelt "chi n ta tsu ge ki to u".
+    If you're asked, what the ending of
+    <?= $global->jap('まねく', 'to invite'); ?>
+    is, then it's not "u", but "ku".
+</p>
+<p>
+    Please note that all mora's pronunciation lengths are equal. For instance, <?= $global->roma('n'); ?> is stressed
+    like "nnh" and double consonants or double vocals have its combination written out. Still don't get it? See this
+    <a href="<?='/Collection/HiraganaTable';?>"><?= $global->roma('Hiragana', 'a japanese writing system'); ?> table</a>. Each character is exactly one mora.
+</p>
+<?= $global->lessonNavigation(); ?>

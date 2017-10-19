@@ -16,6 +16,14 @@
   font-family: "KaiTi", sans-serif;
 }
 
+.dark-texture() {
+  //background: radial-gradient(circle, #b400e6 50%, #6400a0);
+  background: url(http://bgfons.com/uploads/wood/wood%20_texture1053.jpg);
+  // background:url(https://s-media-cache-ak0.pinimg.com/originals/94/41/56/94415671b3d512034f4da9680a75aacc.jpg)
+  // background:url(http://bgfons.com/uploads/wood/wood%20_texture1053.jpg)
+  // background:url(https://images.freecreatives.com/wp-content/uploads/2015/08/free-metal-texture-1.jpg)
+}
+
 body {
   .main-font;
   font-size: 1.4rem;
@@ -89,6 +97,7 @@ h3 {
 
 p {
   margin: 20px 0;
+  line-height: 1.4;
 
   a {
     font-weight: bold;
@@ -98,6 +107,41 @@ p {
 
     &:hover {
       text-decoration: underline;
+    }
+  }
+}
+
+.button-group {
+  text-align: center;
+  text-align: center;
+  margin: 50px;
+
+  .button {
+    padding: 12px 0 8px;
+    margin: 0 20px;
+    width: 200px;
+    display: inline-block;
+    color: #fff;
+    background-color: #ad3030;
+
+    &.prev:before {
+      content: '◄';
+      margin: 0 10% 0 -18%;
+      transition: 0.2s margin linear;
+    }
+
+    &.prev:hover:before {
+      margin: 0 20% 0 -28%;
+    }
+
+    &.next:after {
+      content: '►';
+      margin: 0 -32% 0 10%;
+      transition: 0.2s margin linear;
+    }
+
+    &.next:hover:after {
+      margin: 0 -42% 0 20%;
     }
   }
 }
@@ -202,8 +246,7 @@ navigation {
 .training {
   .start {
     width: 98% !important;
-    //background: radial-gradient(#b400e6, #6400a0);
-    background: url(http://bgfons.com/uploads/wood/wood%20_texture1053.jpg);
+    .dark-texture;
     color: #eeeeee;
     text-shadow: 0 0 6px;
     border-radius: 4px;
@@ -306,8 +349,7 @@ navigation {
   .start-button {
     width: 30.82%;
     height: 200px;
-    //background: radial-gradient(circle, #b400e6 50%, #6400a0);
-    background: url(http://bgfons.com/uploads/wood/wood%20_texture1053.jpg);
+    .dark-texture;
     color: #eee;
     text-shadow: 0 0 6px;
     border: none;
@@ -355,12 +397,7 @@ navigation {
       margin: 2% auto -1%;
       height: 100px;
       text-align: center;
-      //background: radial-gradient(#b400e6, #6400a0);
-      background: url(http://bgfons.com/uploads/wood/wood%20_texture1053.jpg);
-
-      // background:url(https://s-media-cache-ak0.pinimg.com/originals/94/41/56/94415671b3d512034f4da9680a75aacc.jpg)
-      // background:url(http://bgfons.com/uploads/wood/wood%20_texture1053.jpg)
-      // background:url(https://images.freecreatives.com/wp-content/uploads/2015/08/free-metal-texture-1.jpg)
+      .dark-texture;
 
       jap {
         font-size: 5rem;

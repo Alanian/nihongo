@@ -29,30 +29,13 @@
 
         if ($page) $path = PAGEROOT . $dir . '/' . $page . '.phtml';
         elseif ($dir) $path = PAGEROOT . $dir . '/' . $dir . '.phtml';
-        else $path = 'Views/Pages/home.phtml';
+        else $path = PAGEROOT . 'home.phtml';
 
-        if (file_exists($path)) require $path;
-//        var_dump(is_file('Views/Pages/Lessons/1.phtml'));
-
-
-        function listFolderFiles($dir)
-        {
-            $ffs = scandir($dir);
-
-            unset($ffs[array_search('.', $ffs, true)]);
-            unset($ffs[array_search('..', $ffs, true)]);
-
-            // prevent empty ordered elements
-            if (count($ffs) < 1)
-                return;
-
-            echo '<ul>';
-            foreach ($ffs as $ff) {
-                echo '<li>' . $ff;
-                if (is_dir($dir . '/' . $ff)) listFolderFiles($dir . '/' . $ff);
-                echo '</li>';
-            }
-            echo '</ul>';
+        try {
+            if(!is_file($path)) throw new Exception();
+            require $path;
+        } catch (Exception $e) {
+            require PAGEROOT . '404.phtml';
         }
 
         ?>

@@ -4,9 +4,9 @@ $navigation = new Navigation();
 $menu = new Menu('Home', '/');
 $navigation->addMenu($menu);
 
-$menu = new Menu('Lessons', '/Lesson');
-$menu->addItem(new Item('Hitotsu', '/Lesson/Hitotsu'));
-$menu->addItem(new Item('Futatsu', '/Lesson/Futatsu'));
+$menu = new Menu('Lessons', '/Lessons');
+$menu->addItem(new Item('Hitotsu', '/Lessons/Hitotsu'));
+$menu->addItem(new Item('Futatsu', '/Lessons/Futatsu'));
 $navigation->addMenu($menu);
 
 $menu = new Menu('Training', '/Training');
@@ -24,4 +24,3 @@ $menu = new Menu('Donate', '/Donate');
 $navigation->addMenu($menu);
 
 $navigation->render();
-?>
