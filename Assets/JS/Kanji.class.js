@@ -14,17 +14,10 @@ function Kanji(character, reading, meanings) {
  KANJITABLE CLASS
  *************************************************/
 
-function KanjiTable(from, number, slice) {
-    slice = slice || false;
+function KanjiTable(from, number) {
     this.table = [];
-    if (slice) {
-        this.fill(0, 71);
-        this.shuffle();
-        this.table = this.table.slice(0, number);
-    }else{
-        this.fill(from, number);
-        this.shuffle();
-    }
+    this.fill(from, number);
+    this.shuffle();
 }
 
 KanjiTable.prototype.add = function (characters, reading, meanings) {
@@ -42,7 +35,7 @@ KanjiTable.prototype.fill = function (from, number) {
             var len = (typeof number === 'undefined' || number > lines.length - from || number <= 0) ? lines.length : from + number;
             for (var i = from; i < len; i++) {
                 var _split = lines[i].split(';');
-                original.add(_split[0], _split[1]);
+                original.add(_split[0], _split[1], _split[2]);
             }
         }
     });

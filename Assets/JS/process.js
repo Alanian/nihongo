@@ -14,12 +14,14 @@ function end(text) {
     var rank;
     var advice;
 
-    if (accuracy >= 100 && numberOfCharacters == 127) rank = 'S';
-    else if (accuracy > 90) rank = 'A';
-    else if (accuracy > 80) rank = 'B';
-    else if (accuracy > 60) rank = 'C';
-    else if (accuracy > 40) rank = 'D';
-    else if (accuracy > 20) rank = 'E';
+    var interval = 100 / 28;
+
+    if (accuracy >= 100 - interval && numberOfCharacters == 127) rank = 'S';
+    else if (accuracy > 100 - interval * 3) rank = 'A';
+    else if (accuracy > 100 - interval * 6) rank = 'B';
+    else if (accuracy > 100 - interval * 10) rank = 'C';
+    else if (accuracy > 100 - interval * 15) rank = 'D';
+    else if (accuracy > 100 - interval * 21) rank = 'E';
     else rank = 'F';
 
     switch (rank) {
@@ -45,7 +47,7 @@ function end(text) {
             advice = 'This result can have various reasons. Don\'t give up and start over!';
     }
 
-    $('.end').find('.rank').html(rank);
+    $('.end').find('.rank').html(rank + ' ' + accuracy + '%');
     $('.end').find('.advice').html(advice);
 }
 
