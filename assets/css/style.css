@@ -252,6 +252,95 @@ navigation .dropdown:hover ul {
 }
 
 .training .start {
+    width: 100%;
+    display: table;
+    color: #fff;
+    text-shadow: 0 0 6px;
+}
+
+.training .start > div {
+    background: url(http://bgfons.com/uploads/wood/wood%20_texture1053.jpg);
+    margin: 2px 0;
+    float: left;
+    border-radius: 4px;
+}
+
+.training .start .description {
+    width: 100%;
+    padding: 10px 10px 6px;
+    text-align: center;
+}
+
+.training .start .description jap {
+    font-size: 2rem;
+}
+
+.training .start .description p {
+    margin: 0;
+}
+
+.training .start .task {
+    width: 60%;
+    margin: 2px 4px 0 0;
+    text-align: center;
+    font-size: 5rem;
+    line-height: 120px;
+    height: 120px;
+}
+
+.training .start .input {
+    width: 39.5%;
+    height: 120px;
+}
+
+.training .start .input > * {
+    margin: 3% auto;
+    display: block;
+    transition: all 0.3s ease-in-out;
+    color: #eee;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 24px;
+    width: 94%;
+    border-radius: 4px;
+    padding: 8px 16px 4px;
+}
+
+.training .start .input .result {
+    font-weight: bold;
+    letter-spacing: 1px;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-indent: 32%;
+}
+
+.training .start .input .result:focus {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    text-indent: 0;
+}
+
+.training .start .input .skip {
+    background: rgba(255, 255, 255, 0.4);
+    border: 2px outset;
+    cursor: pointer;
+    box-shadow: inset -4px -4px 16px 0 rgba(0, 0, 0, 0.3);
+}
+
+.training .start .input .skip:hover {
+    text-shadow: 0 0 12px;
+    box-shadow: inset -2px -2px 16px 4px rgba(0, 0, 0, 0.3);
+}
+
+.training .start .input .skip:active {
+    border: 2px inset;
+    box-shadow: inset 4px 4px 16px 0 rgba(0, 0, 0, 0.3);
+}
+
+.training .start .progress {
+    width: 100%;
+    padding: 10px 10px 6px;
+}
+
+.training_ .start {
     width: 98% !important;
     background: url(http://bgfons.com/uploads/wood/wood%20_texture1053.jpg);
     color: #eeeeee;
@@ -262,42 +351,42 @@ navigation .dropdown:hover ul {
     height: 200px;
 }
 
-.training .start div {
+.training_ .start div {
     float: left;
     height: 200px;
     width: 35%;
     text-align: center;
 }
 
-.training .start .task {
+.training_ .start .task {
     width: 30%;
     padding: 0;
 }
 
-.training .start .task > jap {
+.training_ .start .task > jap {
     font-size: 8rem;
 }
 
-.training .start .task p {
+.training_ .start .task p {
     font-weight: bold;
     text-align: center;
     font-size: 1.4rem;
     height: 5px;
 }
 
-.training .start .info {
+.training_ .start .info {
     padding: 0 20px;
 }
 
-.training .start .input {
+.training_ .start .input {
     padding: 22px 0;
 }
 
-.training .start .input > * {
+.training_ .start .input > * {
     margin: 10px 0;
 }
 
-.training .start .input .result {
+.training_ .start .input .result {
     width: 90%;
     padding: 12px 0 12px 20px;
     outline: none;
@@ -313,12 +402,12 @@ navigation .dropdown:hover ul {
     transition: all 0.3s ease-in-out;
 }
 
-.training .start .input .result:focus {
+.training_ .start .input .result:focus {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
     text-indent: 0;
 }
 
-.training .start .input .skip {
+.training_ .start .input .skip {
     width: 90%;
     padding: 12px;
     outline: none;
@@ -335,25 +424,25 @@ navigation .dropdown:hover ul {
     box-shadow: inset -4px -4px 16px 0 rgba(0, 0, 0, 0.3);
 }
 
-.training .start .input .skip:hover {
+.training_ .start .input .skip:hover {
     text-shadow: 0 0 12px;
     box-shadow: inset -2px -2px 16px 4px rgba(0, 0, 0, 0.3);
 }
 
-.training .start .input .skip:active {
+.training_ .start .input .skip:active {
     border: 2px inset;
     box-shadow: inset 4px 4px 16px 0 rgba(0, 0, 0, 0.3);
 }
 
-.training .double {
+.training_ .double {
     width: 64.41% !important;
 }
 
-.training .triple {
+.training_ .triple {
     width: 98% !important;
 }
 
-.training .start-button {
+.training_ .start-button {
     width: 30.82%;
     height: 200px;
     background: url(http://bgfons.com/uploads/wood/wood%20_texture1053.jpg);
@@ -368,16 +457,16 @@ navigation .dropdown:hover ul {
     transition: 0.3s linear all;
 }
 
-.training .start-button:hover {
+.training_ .start-button:hover {
     filter: saturate(120%) drop-shadow(0 0 8px black);
 }
 
-.training .start-button .header {
+.training_ .start-button .header {
     font-size: 2.4rem;
     font-weight: bold;
 }
 
-.training .start-button .section {
+.training_ .start-button .section {
     height: 80px;
     font-size: 1.6rem;
     display: table-cell;
@@ -387,16 +476,16 @@ navigation .dropdown:hover ul {
     padding: 0 10px;
 }
 
-.training .start-button .footer {
+.training_ .start-button .footer {
     height: 50px;
 }
 
-.training .start-button .footer jap,
-.training .start-button .footer roma {
+.training_ .start-button .footer jap,
+.training_ .start-button .footer roma {
     font-size: 1.8rem;
 }
 
-.training.kanji .task {
+.training_.kanji .task {
     width: 98% !important;
     color: #eeeeee;
     text-shadow: 0 0 6px;
@@ -408,12 +497,12 @@ navigation .dropdown:hover ul {
     background: url(http://bgfons.com/uploads/wood/wood%20_texture1053.jpg);
 }
 
-.training.kanji .task jap {
+.training_.kanji .task jap {
     font-size: 5rem;
     top: 10px;
 }
 
-.training.kanji .answer {
+.training_.kanji .answer {
     width: 30% !important;
 }
 
