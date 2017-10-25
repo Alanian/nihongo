@@ -16,7 +16,7 @@
 <container>
     <!--    <pre>--><?php //var_dump($_GET); ?><!--</pre>-->
     <header>
-        <?= $global->jap('日本語'); ?>
+        <?= jap('日本語'); ?>
     </header>
     <navigation>
         <?php require 'Views/Blocks/navigation.phtml'; ?>
@@ -24,16 +24,17 @@
     <content>
         <?php
 
-        $dir = $global->getDir();
-        $page = $global->getPage();
+        $dir = getDir();
+        $page = getPage();
 
         if ($page) $path = PAGEROOT . $dir . '/' . $page . '.phtml';
         elseif ($dir) $path = PAGEROOT . $dir . '/' . $dir . '.phtml';
         else $path = PAGEROOT . 'home.phtml';
 
         try {
-            if(!is_file($path)) throw new Exception();
+            if (!is_file($path)) throw new Exception();
             require $path;
+            if (getLessonNumber()) echo lessonNavigation();
         } catch (Exception $e) {
             require PAGEROOT . '404.phtml';
         }
