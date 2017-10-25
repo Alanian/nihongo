@@ -42,6 +42,11 @@ content {
     box-shadow: inset 0 0 50px 0 rgba(0, 0, 0, 0.5);
 }
 
+content ul {
+    list-style-type: circle;
+    margin: 20px 0 20px 80px;
+}
+
 footer {
     display: block;
     font-size: 1rem;
@@ -58,6 +63,10 @@ jap.big {
 
 roma {
     font-style: italic;
+}
+
+strong {
+    font-weight: bold;
 }
 
 h1 {
@@ -92,6 +101,14 @@ p a:hover {
     text-decoration: underline;
 }
 
+p span.domino {
+    font-size: 2.4rem;
+    display: inline-block;
+    position: relative;
+    top: 8px;
+    margin: -24px 0;
+}
+
 .button-group {
     text-align: center;
     margin: 50px;
@@ -104,26 +121,30 @@ p a:hover {
     display: inline-block;
     color: #fff;
     background-color: #ad3030;
+    cursor: pointer;
+    position: relative;
 }
 
 .button-group .button.prev:before {
     content: '◄';
-    margin: 0 10% 0 -18%;
-    transition: 0.2s margin linear;
+    position: absolute;
+    left: 25px;
+    transition: 0.2s all ease-in-out;
 }
 
 .button-group .button.prev:hover:before {
-    margin: 0 20% 0 -28%;
+    left: 5px;
 }
 
 .button-group .button.next:after {
     content: '►';
-    margin: 0 -32% 0 10%;
-    transition: 0.2s margin linear;
+    position: absolute;
+    right: 25px;
+    transition: 0.2s all ease-in-out;
 }
 
 .button-group .button.next:hover:after {
-    margin: 0 -42% 0 20%;
+    right: 5px;
 }
 
 jap,
@@ -340,6 +361,53 @@ navigation .dropdown:hover ul {
     padding: 10px 10px 6px;
 }
 
+form.big-test .test-block {
+    margin: 40px 0;
+}
+
+form.big-test .test-block .test-element {
+    display: inline-grid;
+    background-color: #ad3030;
+    color: #111;
+    padding: 1.5%;
+    border-radius: 8px;
+    width: 22.67%;
+    margin: 1%;
+    text-align: center;
+    box-shadow: 0 4px 10px 2px #222;
+}
+
+form.big-test .test-block .test-element.double {
+    width: 47.78%;
+}
+
+form.big-test .test-block .test-element span {
+    line-height: 2.6rem;
+    font-size: 2.6rem;
+    margin: -5px 0 5px 0;
+}
+
+form.big-test .test-block .test-element span jap {
+    font-size: inherit;
+}
+
+form.big-test .test-block .test-element select,
+form.big-test .test-block .test-element input {
+    height: 2rem;
+    border-radius: 4px;
+    text-indent: 10px;
+    font-size: 1.2rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 10px 2px #222 inset;
+}
+
+form.big-test .test-block .test-element select:disabled,
+form.big-test .test-block .test-element input:disabled {
+    background-color: #ccc;
+}
+
 .training_ .start {
     width: 98% !important;
     background: url(http://bgfons.com/uploads/wood/wood%20_texture1053.jpg);
@@ -485,29 +553,9 @@ navigation .dropdown:hover ul {
     font-size: 1.8rem;
 }
 
-.training_.kanji .task {
-    width: 98% !important;
-    color: #eeeeee;
-    text-shadow: 0 0 6px;
-    border-radius: 4px;
-    box-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.6);
-    margin: 2% auto -1%;
-    height: 100px;
-    text-align: center;
-    background: url(http://bgfons.com/uploads/wood/wood%20_texture1053.jpg);
-}
-
-.training_.kanji .task jap {
-    font-size: 5rem;
-    top: 10px;
-}
-
-.training_.kanji .answer {
-    width: 30% !important;
-}
-
 table {
-    margin: 20px auto;
+    margin: 20px auto 40px;
+    width: 100%;
 }
 
 table tr th {
@@ -516,7 +564,7 @@ table tr th {
 
 table tr td,
 table tr th {
-    padding: 10px 20px;
+    padding: 10px 0;
     border-bottom: 1px solid #888;
     text-align: center;
 }
@@ -561,5 +609,5 @@ table.kana-table tr td {
     color: #eee;
     border: none;
     border-radius: 50%;
-    box-shadow: 0px 3px 6px 2px black;
+    box-shadow: 0 3px 6px 2px black;
 }

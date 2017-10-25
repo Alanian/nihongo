@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97bfd800-3413-40c5-8a8f-8f264400d3ce" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functions.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/CSS/style-old.less" afterPath="$PROJECT_DIR$/Assets/CSS/style-old.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/Pages/Donate/donate.phtml" afterPath="$PROJECT_DIR$/Views/Pages/Donate/donate.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/Pages/Training/kanji.phtml" afterPath="$PROJECT_DIR$/Views/Pages/Training/kanji.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/Pages/home.phtml" afterPath="$PROJECT_DIR$/Views/Pages/home.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.less" afterPath="$PROJECT_DIR$/assets/css/style.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/autoload.php" afterPath="$PROJECT_DIR$/autoload.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -421,7 +416,7 @@
       <workItem from="1508497147522" duration="15851000" />
       <workItem from="1508742813186" duration="2763000" />
       <workItem from="1508833304561" duration="6803000" />
-      <workItem from="1508935413261" duration="9491000" />
+      <workItem from="1508935413261" duration="9612000" />
     </task>
     <task id="LOCAL-00001" summary="nihongo 3 (remastered)">
       <created>1508163788558</created>
@@ -521,11 +516,32 @@
       <option name="project" value="LOCAL" />
       <updated>1508947099297</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="got rid of Function.php class and $global use">
+      <created>1508947157560</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1508947157560</updated>
+    </task>
+    <task id="LOCAL-00016" summary="got rid of Function.php class and $global use">
+      <created>1508947191083</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1508947191083</updated>
+    </task>
+    <task id="LOCAL-00017" summary="installed donation functionality (not tested)">
+      <created>1508947218418</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1508947218418</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126947000" />
+    <option name="totallyTimeSpent" value="127068000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3848" y="-181" width="1936" height="1056" extended-state="6" />
@@ -570,7 +586,9 @@
     <MESSAGE value="kanji training layout and design" />
     <MESSAGE value="all hitotsu lessons imported" />
     <MESSAGE value="automatic lesson navigation" />
-    <option name="LAST_COMMIT_MESSAGE" value="automatic lesson navigation" />
+    <MESSAGE value="got rid of Function.php class and $global use" />
+    <MESSAGE value="installed donation functionality (not tested)" />
+    <option name="LAST_COMMIT_MESSAGE" value="installed donation functionality (not tested)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
