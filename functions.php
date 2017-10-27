@@ -24,6 +24,8 @@ function lessonNavigation()
 {
     $lesson = getLessonNumber();
 
+    if ($lesson <= 0) return;
+
     switch ($lesson) {
         case '1':
             $prev = 'Hitotsu';
