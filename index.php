@@ -27,8 +27,8 @@
         $dir = getDir();
         $page = getPage();
 
-        if ($page) $path = PAGEROOT . $dir . '/' . $page . '.phtml';
-        elseif ($dir) $path = PAGEROOT . $dir . '/' . $dir . '.phtml';
+        if ($page) $path = PAGEROOT . $dir . '/' . strtolower($page) . '.phtml';
+        elseif ($dir) $path = PAGEROOT . $dir . '/' . strtolower($dir) . '.phtml';
         else $path = PAGEROOT . 'home.phtml';
 
         try {
@@ -39,7 +39,7 @@
         } catch (Exception $e) {
             require PAGEROOT . '404.phtml';
         }
-
+        echo $path;
         ?>
         <footer>
             &copy; Nipponjaku <?= date('Y'); ?>. Formerly Anime Sekai.

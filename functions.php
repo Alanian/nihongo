@@ -6,7 +6,7 @@ function getDir()
 
 function getPage()
 {
-    return isset($_GET['page']) ? strtolower($_GET['page']) : '';
+    return isset($_GET['page']) ? $_GET['page'] : '';
 }
 
 function getLessonNumber()
