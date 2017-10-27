@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <?php require 'autoload.php'; ?>
     <title>Nipponjaku</title>
@@ -34,6 +34,7 @@
         try {
             if (!is_file($path)) throw new Exception();
             require $path;
+//            echo getLessonNumber() ? lessonNavigation() : '';
             if (getLessonNumber()) echo lessonNavigation();
         } catch (Exception $e) {
             require PAGEROOT . '404.phtml';
@@ -47,3 +48,4 @@
 </container>
 </body>
 </html>
+<!--Āā Ēē Īī Ōō Ūū äöüß-->
