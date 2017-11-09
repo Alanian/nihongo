@@ -371,6 +371,7 @@ form.big-test .test-block .test-element input:disabled {
 .training .prepare .start-button .header {
     font-size: 2.4rem;
     font-weight: bold;
+    line-height: 40px;
 }
 .training .prepare .start-button .description {
     height: 80px;
@@ -387,6 +388,30 @@ form.big-test .test-block .test-element input:disabled {
 .training .prepare .start-button .demo jap,
 .training .prepare .start-button .demo roma {
     font-size: 1.8rem;
+}
+.training .end .label {
+    background: url(http://bgfons.com/uploads/wood/wood%20_texture1053.jpg);
+    width: 30%;
+    border-radius: 4px;
+    color: #eee;
+    text-shadow: 0 0 6px;
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+}
+.training .end .label span.heading {
+    font-size: 2rem;
+    display: block;
+    margin: 0 0 20px;
+}
+.training .end .label span.rank {
+    font-size: 10rem;
+    display: block;
+    height: 125px;
+}
+.training .end .label span.rank-accuracy {
+    font-size: 1rem;
+    display: block;
 }
 table {
     margin: 20px auto 40px;
