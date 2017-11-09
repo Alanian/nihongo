@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="97bfd800-3413-40c5-8a8f-8f264400d3ce" name="Default" comment="">
+    <list default="true" id="97bfd800-3413-40c5-8a8f-8f264400d3ce" name="Default" comment="live alpha ready">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/Pages/Lessons/20.phtml" afterPath="$PROJECT_DIR$/Views/Pages/Lessons/20.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/Pages/Lessons/lessons.phtml" afterPath="$PROJECT_DIR$/Views/Pages/Lessons/lessons.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/JS/hiragana_process.js" afterPath="$PROJECT_DIR$/Assets/JS/hiragana_process.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/Pages/Training/hiragana.phtml" afterPath="$PROJECT_DIR$/Views/Pages/Training/hiragana.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions.php" afterPath="$PROJECT_DIR$/functions.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="style.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/CSS/style.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="320" column="25" lean-forward="false" selection-start-line="320" selection-start-column="25" selection-end-line="320" selection-end-column="25" />
+            <state relative-caret-position="484">
+              <caret line="474" column="26" lean-forward="false" selection-start-line="474" selection-start-column="26" selection-end-line="474" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -31,23 +29,68 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="27" column="26" lean-forward="true" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
-              <folding>
-                <marker date="1509122135627" expanded="true" signature="741:799" ph="..." />
-                <marker date="1509122135627" expanded="true" signature="1180:1340" ph="..." />
-                <marker date="1509122135627" expanded="true" signature="1377:1408" ph="..." />
-                <marker date="1509122135627" expanded="true" signature="1465:1548" ph="..." />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="verbforms.phtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Views/Pages/Training/verbforms.phtml">
+      <file leaf-file-name="kanji.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Data/kanji.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="1.phtml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Views/Pages/Lessons/1.phtml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="44" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2.phtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Views/Pages/Lessons/2.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="3.phtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Views/Pages/Lessons/3.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kanji.phtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Views/Pages/Training/kanji.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reset.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/CSS/reset.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -56,48 +99,18 @@
       <file leaf-file-name="hiragana.phtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Views/Pages/Training/hiragana.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="44" lean-forward="false" selection-start-line="0" selection-start-column="44" selection-end-line="0" selection-end-column="44" />
+            <state relative-caret-position="524">
+              <caret line="47" column="24" lean-forward="false" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20.phtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Views/Pages/Lessons/20.phtml">
+      <file leaf-file-name="kanji_process.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/JS/kanji_process.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lessons.phtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Views/Pages/Lessons/lessons.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="40" column="59" lean-forward="false" selection-start-line="40" selection-start-column="59" selection-end-line="40" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/functions.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="47" lean-forward="false" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/CSS/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+            <state relative-caret-position="524">
+              <caret line="149" column="29" lean-forward="true" selection-start-line="149" selection-start-column="29" selection-end-line="149" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -114,13 +127,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>foote</find>
-      <find>KAiti</find>
-      <find>&quot;</find>
-      <find>td</find>
-      <find>$root</find>
       <find>$pageroot</find>
-      <find>training</find>
       <find>dark-texture</find>
       <find>_des</find>
       <find>_task</find>
@@ -139,11 +146,17 @@
       <find>em&gt;</find>
       <find>bi</find>
       <find>big-t</find>
-      <find>train</find>
       <find>ad3030</find>
       <find>page</find>
       <find>soon</find>
       <find>.des</find>
+      <find>kt</find>
+      <find>training_</find>
+      <find>train</find>
+      <find>training</find>
+      <find>@dar</find>
+      <find>description</find>
+      <find>corr</find>
     </findStrings>
     <replaceStrings>
       <replace>jap</replace>
@@ -159,6 +172,7 @@
     </replaceStrings>
     <dirStrings>
       <dir>C:\xampp7.0\htdocs\public\nihongo3</dir>
+      <dir>C:\xampp\htdocs\Projects\nihongo</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -167,9 +181,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/JS/Verb.class.js" />
-        <option value="$PROJECT_DIR$/Views/Pages/Collection/kanjilist.phtml" />
-        <option value="$PROJECT_DIR$/Assets/Data/kanji.txt" />
         <option value="$PROJECT_DIR$/Assets/Data/vocabulary.txt" />
         <option value="$PROJECT_DIR$/Classes/Navigation/Navigation.php" />
         <option value="$PROJECT_DIR$/404.php" />
@@ -178,7 +189,6 @@
         <option value="$PROJECT_DIR$/Assets/JS/s" />
         <option value="$PROJECT_DIR$/Assets/JS/Kanji.class.js" />
         <option value="$PROJECT_DIR$/Assets/JS/process.js" />
-        <option value="$PROJECT_DIR$/Assets/JS/kanji_process.js" />
         <option value="$PROJECT_DIR$/Views/Pages/Lessons/h.html" />
         <option value="$PROJECT_DIR$/Views/Pages/Donate/donate.phtml" />
         <option value="$PROJECT_DIR$/autoload.php" />
@@ -194,7 +204,6 @@
         <option value="$PROJECT_DIR$/Views/Pages/Lessons/7.phtml" />
         <option value="$PROJECT_DIR$/Views/Pages/Lessons/8.phtml" />
         <option value="$PROJECT_DIR$/Views/Pages/Lessons/9.phtml" />
-        <option value="$PROJECT_DIR$/Views/Pages/Training/kanji.phtml" />
         <option value="$PROJECT_DIR$/Views/Pages/Lessons/13.phtml" />
         <option value="$PROJECT_DIR$/Views/Pages/Lessons/14.phtml" />
         <option value="$PROJECT_DIR$/Views/Pages/Lessons/15.phtml" />
@@ -211,13 +220,18 @@
         <option value="$PROJECT_DIR$/Views/Pages/404.phtml" />
         <option value="$PROJECT_DIR$/Views/Pages/Collection/collection.phtml" />
         <option value="$PROJECT_DIR$/Views/Pages/Training/training.phtml" />
-        <option value="$PROJECT_DIR$/Assets/CSS/style.css" />
         <option value="$PROJECT_DIR$/functions.php" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/Views/Pages/Training/hiragana.phtml" />
         <option value="$PROJECT_DIR$/Views/Pages/Lessons/20.phtml" />
         <option value="$PROJECT_DIR$/Views/Pages/Lessons/lessons.phtml" />
+        <option value="$PROJECT_DIR$/../BACKUP/index.php" />
+        <option value="$PROJECT_DIR$/Assets/JS/hiragana_process.js" />
+        <option value="$PROJECT_DIR$/Assets/CSS/style.css" />
+        <option value="$PROJECT_DIR$/Views/Pages/Training/hiragana.phtml" />
         <option value="$PROJECT_DIR$/Assets/CSS/style.less" />
+        <option value="$PROJECT_DIR$/Assets/Data/kanji.txt" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/Assets/JS/kanji_process.js" />
+        <option value="$PROJECT_DIR$/Views/Pages/Training/kanji.phtml" />
       </list>
     </option>
   </component>
@@ -236,10 +250,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1928" />
-    <option name="y" value="-185" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="795" />
+    <option name="y" value="589" />
+    <option name="width" value="960" />
+    <option name="height" value="487" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -259,105 +273,66 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="nihongo3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nihongo3" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="nihongo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nihongo" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="nihongo3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nihongo3" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="nihongo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nihongo" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Assets" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="nihongo3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nihongo3" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="nihongo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nihongo" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Assets" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="CSS" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="nihongo3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nihongo3" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="nihongo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nihongo" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Assets" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="CSS" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="style.less" type="620a8d5e:NestingTreeNode" />
             </path>
             <path>
-              <item name="nihongo3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nihongo3" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="CSS" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="style-old.less" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="nihongo3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nihongo3" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="nihongo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nihongo" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Assets" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Data" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="nihongo3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nihongo3" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="nihongo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nihongo" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Assets" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="JS" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="nihongo3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nihongo3" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Classes" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="nihongo3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nihongo3" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="nihongo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nihongo" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Views" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="nihongo3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nihongo3" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Blocks" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="nihongo3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nihongo3" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="nihongo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nihongo" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Pages" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="nihongo3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nihongo3" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Collection" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="nihongo3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nihongo3" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Donate" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="nihongo3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nihongo3" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="nihongo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nihongo" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Pages" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Lessons" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="nihongo3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nihongo3" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Training" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -367,7 +342,7 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/../nihongo2/assets/css/style.less" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -432,6 +407,7 @@
       <workItem from="1509010241224" duration="16350000" />
       <workItem from="1509094448454" duration="4074000" />
       <workItem from="1509120994332" duration="1411000" />
+      <workItem from="1510240982947" duration="8048000" />
     </task>
     <task id="LOCAL-00001" summary="nihongo 3 (remastered)">
       <created>1508163788558</created>
@@ -608,32 +584,47 @@
       <option name="project" value="LOCAL" />
       <updated>1509098682419</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="training style update">
+      <created>1510252341540</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1510252341540</updated>
+    </task>
+    <task id="LOCAL-00027" summary="group 2 added">
+      <created>1510252408031</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1510252408031</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149060000" />
+    <option name="totallyTimeSpent" value="157108000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-185" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13059701" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13020833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32887402" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -644,7 +635,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="nihongo 3 (remastered)" />
     <MESSAGE value="test" />
     <MESSAGE value="github data url fix" />
     <MESSAGE value="add 20 kanji, full 1st group" />
@@ -668,85 +658,15 @@
     <MESSAGE value="not final pages" />
     <MESSAGE value="h2 margin-top&#10;p justify" />
     <MESSAGE value="live alpha ready" />
-    <option name="LAST_COMMIT_MESSAGE" value="live alpha ready" />
+    <MESSAGE value="training style update" />
+    <MESSAGE value="group 2 added" />
+    <option name="LAST_COMMIT_MESSAGE" value="group 2 added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Views/Pages/Lessons/1.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Views/Pages/Lessons/10.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Views/Pages/Lessons/2.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Views/Pages/Lessons/3.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="33" column="63" lean-forward="false" selection-start-line="33" selection-start-column="63" selection-end-line="33" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Views/Pages/Lessons/4.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Views/Pages/Lessons/5.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Views/Pages/Training/kanji.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Views/Pages/Lessons/9.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="54" lean-forward="false" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Views/Pages/Lessons/8.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Views/Pages/Lessons/7.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-57">
@@ -821,7 +741,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -839,7 +758,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1309">
           <caret line="77" column="15" lean-forward="false" selection-start-line="77" selection-start-column="15" selection-end-line="77" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -851,27 +769,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../nihongo2/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../nihongo2/pages/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../nihongo2/pages/verb-forms-training.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../nihongo2/index.php" />
+    <entry file="file://$PROJECT_DIR$/../nihongo2/pages/home.php" />
+    <entry file="file://$PROJECT_DIR$/../nihongo2/pages/verb-forms-training.php" />
     <entry file="file://$PROJECT_DIR$/Assets/Data/verbs.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -883,7 +783,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -891,7 +790,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -899,7 +797,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="713">
           <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="45" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -939,9 +836,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="447">
           <caret line="60" column="78" lean-forward="false" selection-start-line="60" selection-start-column="78" selection-end-line="60" selection-end-column="78" />
-          <folding>
-            <marker date="1509095908769" expanded="true" signature="3348:3400" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -961,47 +856,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/CSS/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="47" lean-forward="false" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="27" column="26" lean-forward="true" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
-          <folding>
-            <marker date="1509122135627" expanded="true" signature="741:799" ph="..." />
-            <marker date="1509122135627" expanded="true" signature="1180:1340" ph="..." />
-            <marker date="1509122135627" expanded="true" signature="1377:1408" ph="..." />
-            <marker date="1509122135627" expanded="true" signature="1465:1548" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Views/Pages/Training/verbforms.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Views/Pages/Training/hiragana.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="44" lean-forward="false" selection-start-line="0" selection-start-column="44" selection-end-line="0" selection-end-column="44" />
           <folding />
         </state>
       </provider>
@@ -1022,10 +880,116 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="47" lean-forward="false" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../BACKUP/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="e#102#108#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/JS/hiragana_process.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="82" column="40" lean-forward="false" selection-start-line="82" selection-start-column="40" selection-end-line="82" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/CSS/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="796">
+          <caret line="439" column="0" lean-forward="true" selection-start-line="439" selection-start-column="0" selection-end-line="439" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/Pages/Training/hiragana.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="47" column="24" lean-forward="false" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/CSS/style.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="320" column="25" lean-forward="false" selection-start-line="320" selection-start-column="25" selection-end-line="320" selection-end-column="25" />
+        <state relative-caret-position="484">
+          <caret line="474" column="26" lean-forward="false" selection-start-line="474" selection-start-column="26" selection-end-line="474" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/JS/kanji_process.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="149" column="29" lean-forward="true" selection-start-line="149" selection-start-column="29" selection-end-line="149" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/Pages/Training/kanji.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/CSS/reset.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Data/kanji.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/Pages/Lessons/3.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/Pages/Lessons/2.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/Pages/Lessons/1.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
