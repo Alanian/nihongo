@@ -300,6 +300,55 @@ navigation {
   }
 }
 
+form {
+  &.big-test {
+    .test-block {
+      margin: 40px 0;
+
+      .test-element {
+        display: inline-grid;
+        background-color: @font-color;
+        color: @background;
+        padding: 1.5%;
+        border-radius: 8px;
+        width: 22.67%;
+        margin: 1%;
+        text-align: center;
+        box-shadow: 0 4px 10px 2px #222;
+
+        &.double {
+          width: 47.78%;
+        }
+
+        span {
+          line-height: 2.6rem;
+          font-size: 2.6rem;
+          margin: -5px 0 5px 0;
+
+          jap {
+            font-size: inherit;
+          }
+        }
+
+        select, input {
+          height: 2rem;
+          border-radius: 4px;
+          text-indent: 10px;
+          font-size: 1.2rem;
+          width: 100%;
+          outline: none;
+          border: none;
+          box-shadow: 0 0 10px 2px #222 inset;
+
+          &:disabled {
+            background-color: #ccc;
+          }
+        }
+      }
+    }
+  }
+}
+
 .training {
 
   .start {
@@ -315,9 +364,10 @@ navigation {
       border-radius: 4px;
     }
 
-    .description {
+    .info {
       width: 100%;
       padding: 10px 10px 6px;
+      text-align: center;
 
       jap {
         font-size: 2rem;
@@ -391,201 +441,58 @@ navigation {
       padding: 10px 10px 6px;
     }
   }
-}
 
-form {
-  &.big-test {
-    .test-block {
-      margin: 40px 0;
-
-      .test-element {
-        display: inline-grid;
-        background-color: @font-color;
-        color: @background;
-        padding: 1.5%;
-        border-radius: 8px;
-        width: 22.67%;
-        margin: 1%;
-        text-align: center;
-        box-shadow: 0 4px 10px 2px #222;
-
-        &.double {
-          width: 47.78%;
-        }
-
-        span {
-          line-height: 2.6rem;
-          font-size: 2.6rem;
-          margin: -5px 0 5px 0;
-
-          jap {
-            font-size: inherit;
-          }
-        }
-
-        select, input {
-          height: 2rem;
-          border-radius: 4px;
-          text-indent: 10px;
-          font-size: 1.2rem;
-          width: 100%;
-          outline: none;
-          border: none;
-          box-shadow: 0 0 10px 2px #222 inset;
-
-          &:disabled {
-            background-color: #ccc;
-          }
-        }
-      }
-    }
-  }
-}
-
-.training_ {
-  .start {
-    width: 98% !important;
-    .dark-texture;
-    color: #eeeeee;
-    text-shadow: 0 0 6px;
-    border-radius: 4px;
-    box-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.6);
-    margin: 2% auto;
-    height: 200px;
-
-    div {
-      float: left;
+  .prepare{
+    .start-button{
+      width: 30.8%;
       height: 200px;
-      width: 35%;
-      text-align: center;
-    }
+      text-shadow: 0 0 6px;
+      border: none;
+      border-radius: 4px;
+      box-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.6);
+      cursor: pointer;
+      transition: 0.3s linear all;
+      .dark-texture;
+      margin: 1.25% 1%;
+      .main-font;
+      color: #eee;
 
-    .task {
-      width: 30%;
-      padding: 0;
-
-      > jap {
-        font-size: 8rem;
+      &.double{
+          width: 64.4%;
       }
 
-      p {
+      &.triple{
+        width: 98%;
+      }
+
+      &:hover {
+        filter: saturate(120%) drop-shadow(0 0 8px black);
+      }
+
+      .header {
+        font-size: 2.4rem;
         font-weight: bold;
-        text-align: center;
-        font-size: 1.4rem;
-        height: 5px;
-      }
-    }
-
-    .info {
-      padding: 0 20px;
-    }
-
-    .input {
-      padding: 22px 0;
-
-      > * {
-        margin: 10px 0;
+        line-height: 40px;
       }
 
-      .result {
-        width: 90%;
-        padding: 12px 0 12px 20px;
-        outline: none;
-        font-size: 24px;
-        .main-font;
-        font-weight: bold;
-        letter-spacing: 1px;
-        background: rgba(0, 0, 0, 0.3);
-        color: #eee;
-        border: 1px solid rgba(0, 0, 0, 0.3);
-        border-radius: 4px;
-        text-indent: 30%;
-        transition: all .3s ease-in-out;
-
-        &:focus {
-          box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-          text-indent: 0;
-        }
+      .description {
+        height: 80px;
+        font-size: 1.6rem;
+        display: table-cell;
+        vertical-align: middle;
+        margin: auto;
+        width: 1000px;
+        padding: 0 10px;
       }
 
-      .skip {
-        width: 90%;
-        padding: 12px;
-        outline: none;
-        font-size: 24px;
-        .main-font;
-        font-weight: bold;
-        letter-spacing: 1px;
-        background: rgba(255, 255, 255, 0.2);
-        color: #eee;
-        border: 2px outset;
-        border-radius: 4px;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-        box-shadow: inset -4px -4px 16px 0 rgba(0, 0, 0, 0.3);
-
-        &:hover {
-          text-shadow: 0 0 12px;
-          box-shadow: inset -2px -2px 16px 4px rgba(0, 0, 0, 0.3);
-        }
-
-        &:active {
-          border: 2px inset;
-          box-shadow: inset 4px 4px 16px 0 rgba(0, 0, 0, 0.3);
+      .demo {
+        height: 50px;
+        jap, roma {
+          font-size: 1.8rem;
         }
       }
     }
   }
-
-  .double {
-    width: 64.41% !important;
-  }
-
-  .triple {
-    width: 98% !important;
-  }
-
-  .start-button {
-    width: 30.82%;
-    height: 200px;
-    .dark-texture;
-    color: #eee;
-    text-shadow: 0 0 6px;
-    border: none;
-    border-radius: 4px;
-    box-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.6);
-    .main-font;
-    margin: 1.25% 1%;
-    cursor: pointer;
-    transition: 0.3s linear all;
-
-    &:hover {
-      filter: saturate(120%) drop-shadow(0 0 8px black);
-    }
-
-    .header {
-      font-size: 2.4rem;
-      font-weight: bold;
-    }
-
-    .section {
-      height: 80px;
-      font-size: 1.6rem;
-      display: table-cell;
-      vertical-align: middle;
-      margin: auto;
-      width: 1000px;
-      padding: 0 10px;
-    }
-
-    .footer {
-      height: 50px;
-      jap, roma {
-        font-size: 1.8rem;
-      }
-    }
-  }
-
 }
 
 table {
