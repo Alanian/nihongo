@@ -58,7 +58,7 @@ function update() {
 
         _progress.append('<br>Accuracy: ' + accuracy + '%');
     } else {
-        end();
+        endHiragana();
     }
 }
 
