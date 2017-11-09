@@ -18,6 +18,26 @@
 口;kuchi;mouth
 人口;jinkou;population
 忍び;shinobi;ninja
+風;kaze;wind
+金;kane;money, gold, metal
+雷;kaminari;thunder
+木;ki;tree
+魚;sakana;fish
+人生;jinsei;life
+月;tsuki;moon
+土;tsuchi;earth, soil
+鳥;tori;bird
+火;hi;fire
+本;hon;book
+水;mizu;water
+者;mono;person
+勉強;benkyou;learning
+国;kuni;land, country
+外国;gaikoku;foreign country
+姉;ane;older sister
+兄;ani;older brother
+弟;otouto;younger brother
+妹;imouto;younger sister
 触る;sawaru;to touch
 地獄;jigoku;hell
 小僧;kozou;apprentice, brat

@@ -13,7 +13,7 @@ var isWrong;
 var startButtonID;
 
 // html blocks
-var _description;
+var _info;
 var _result;
 var _task;
 var _progress;
@@ -32,7 +32,7 @@ function start(from, number) {
     swapScreens('.start', '.prepare');
 
     // show info once
-    _description.html('Please insert the correct reading of the Kanji (in Hiragana) in the input field on the right.');
+    _info.html('Please insert the correct reading of the Kanji (in Hiragana) in the input field on the right.');
 
     clean();
 
@@ -75,18 +75,18 @@ function check() {
         // checks every letter
         for (var i = 0; i < input.length; i++) {
             if (input[i] !== correct[i]) {
-                _description.html('<p>Wrong...</p>');
+                _info.html('<p>Wrong...</p>');
                 if (!isWrong) tries++;
                 isWrong = true;
             } else {
-                _description.html('<p>Right direction...</p>');
+                _info.html('<p>Right direction...</p>');
             }
         }
     }
 
     if (input === correct) {
         clean();
-        _description.html('<jap>' + kt.table[0].character + '</jap><p><b>Meaning</b>: ' + kt.table[0].meanings + '</p>');
+        _info.html('<jap>' + kt.table[0].character + '</jap><p><b>Meaning</b>: ' + kt.table[0].meanings + '</p>');
 
         if (!isWrong) {
             kt.removeFirst();
@@ -108,7 +108,7 @@ function check() {
 function skip() {
     clean();
 
-    _description.html('<jap>' + kt.table[0].character + '</jap><p><b>Reading</b>: <roma>' + kt.table[0].reading + '</roma></p>');
+    _info.html('<jap>' + kt.table[0].character + '</jap><p><b>Reading</b>: <roma>' + kt.table[0].reading + '</roma></p>');
 
     // moves incorrect task for 5 rounds
     kt.moveFirst(5);
@@ -134,7 +134,7 @@ $(document).ready(function () {
     removeScreen('.end');
 
     // sets blocks
-    _description = $('.description');
+    _info = $('.info');
     _result = $('.result');
     _task = $('.task');
     _progress = $('.progress');
@@ -151,6 +151,9 @@ $(document).ready(function () {
                 break;
             case 'group2':
                 start(21, 20);
+                break;
+            case 'group3':
+                start(41, 20);
                 break;
         }
     });
