@@ -38,6 +38,26 @@
 兄;ani;older brother
 弟;otouto;younger brother
 妹;imouto;younger sister
+月曜日;getsuyoubi;monday
+火曜日;kayoubi;tuesday
+水曜日;suiyoubi;wednesday
+木曜日;mokuyoubi;thursday
+金曜日;kinyoubi;friday
+土曜日;doyoubi;saturday
+日曜日;nichiyoubi;sunday
+寒い;samui;cold (air)
+冷たい;tsumetai;cold (touchables)
+眠い;nemui;sleepy
+大きい;ookii;big
+小さい;chiisai;small
+高い;takai;high, expensive
+低い;hikui;low
+安い;yasui;cheap
+寝る;neru;to sleep
+食べる;taberu;to eat
+読む;yomu;to read
+殺す;korosu;to kill
+死ぬ;shinu;to die
 触る;sawaru;to touch
 地獄;jigoku;hell
 小僧;kozou;apprentice, brat
