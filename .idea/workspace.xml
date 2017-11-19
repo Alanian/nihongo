@@ -37,11 +37,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kanji.txt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="kanji.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Data/kanji.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="60" column="18" lean-forward="false" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
+            <state relative-caret-position="771">
+              <caret line="59" column="15" lean-forward="false" selection-start-line="59" selection-start-column="15" selection-end-line="59" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kanji-backup.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Data/kanji-backup.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -67,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kanji_process.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="kanji_process.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/JS/kanji_process.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="155" column="30" lean-forward="true" selection-start-line="155" selection-start-column="30" selection-end-line="155" selection-end-column="30" />
+            <state relative-caret-position="414">
+              <caret line="152" column="27" lean-forward="true" selection-start-line="152" selection-start-column="27" selection-end-line="152" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -142,7 +152,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Data/vocabulary.txt" />
         <option value="$PROJECT_DIR$/Classes/Navigation/Navigation.php" />
         <option value="$PROJECT_DIR$/404.php" />
         <option value="$PROJECT_DIR$/Views/Pages/Lessons/futstsu.phtml" />
@@ -190,9 +199,10 @@
         <option value="$PROJECT_DIR$/Assets/CSS/style.less" />
         <option value="$PROJECT_DIR$/Assets/JS/hiragana_process.js" />
         <option value="$PROJECT_DIR$/Assets/JS/process.js" />
-        <option value="$PROJECT_DIR$/Assets/Data/kanji.txt" />
         <option value="$PROJECT_DIR$/Views/Pages/Training/kanji.phtml" />
         <option value="$PROJECT_DIR$/Assets/JS/kanji_process.js" />
+        <option value="$PROJECT_DIR$/Assets/Data/kanji.txt" />
+        <option value="$PROJECT_DIR$/Assets/Data/kanji-backup.txt" />
       </list>
     </option>
   </component>
@@ -571,7 +581,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="160727000" />
+    <option name="totallyTimeSpent" value="160995000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -639,7 +649,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../nihongo2/pages/lessons/lesson-14.php" />
     <entry file="file://$PROJECT_DIR$/../nihongo2/pages/lessons/lesson-15.php" />
     <entry file="file://$PROJECT_DIR$/Views/Pages/Lessons/11.phtml">
       <provider selected="true" editor-type-id="text-editor">
@@ -939,18 +948,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Data/kanji.txt">
+    <entry file="file://$PROJECT_DIR$/Assets/JS/kanji_process.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="60" column="18" lean-forward="false" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
+        <state relative-caret-position="414">
+          <caret line="152" column="27" lean-forward="true" selection-start-line="152" selection-start-column="27" selection-end-line="152" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/JS/kanji_process.js">
+    <entry file="file://$PROJECT_DIR$/Assets/Data/kanji-backup.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="155" column="30" lean-forward="true" selection-start-line="155" selection-start-column="30" selection-end-line="155" selection-end-column="30" />
+        <state relative-caret-position="323">
+          <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Data/kanji.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="771">
+          <caret line="59" column="15" lean-forward="false" selection-start-line="59" selection-start-column="15" selection-end-line="59" selection-end-column="15" />
           <folding />
         </state>
       </provider>

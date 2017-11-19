@@ -58,23 +58,3 @@
 読む;yomu;to read
 殺す;korosu;to kill
 死ぬ;shinu;to die
-触る;sawaru;to touch
-地獄;jigoku;hell
-小僧;kozou;apprentice, brat
-潰す;tsubusu;to crush, to slaughter, to mash, to break
-偉い;erai;admirable, great, important, eminent, authoriative
-態度;taido;attitude
-違う;chigau;to be different
-護送;gosou;convoy
-黄泉;yomi;underworld
-余所者;yosomono;stranger
-領主;ryoushu;lord
-動脈;doumyaku;artery
-嚙む;kamu;to chew, to bite
-盗賊;touzoku;robber
-大雑把;oozappo;crude, rough
-鉄塊;tekkai;lump of iron
-責任;sekinin;responsibility, charge
-旅芸人;tabigeinin;strolling entertainer
-鉄板;teppan;iron plate
-酒瓶;sakabin;sake bottle
