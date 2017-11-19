@@ -81,7 +81,7 @@
         <entry file="file://$PROJECT_DIR$/Assets/JS/Kanji.class.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
-              <caret line="29" column="126" lean-forward="false" selection-start-line="29" selection-start-column="126" selection-end-line="29" selection-end-column="126" />
+              <caret line="29" column="65" lean-forward="false" selection-start-line="29" selection-start-column="65" selection-end-line="29" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -581,7 +581,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161773000" />
+    <option name="totallyTimeSpent" value="162203000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -977,7 +977,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/JS/Kanji.class.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="29" column="126" lean-forward="false" selection-start-line="29" selection-start-column="126" selection-end-line="29" selection-end-column="126" />
+          <caret line="29" column="65" lean-forward="false" selection-start-line="29" selection-start-column="65" selection-end-line="29" selection-end-column="65" />
           <folding />
         </state>
       </provider>
