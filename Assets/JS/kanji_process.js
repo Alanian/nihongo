@@ -150,10 +150,10 @@ $(document).ready(function () {
                 start(0, 20);
                 break;
             case 'group2':
-                start(19, 15);
+                start(20, 20);
                 break;
             case 'group3':
-                start(39, 15);
+                start(40, 20);
                 break;
         }
     });
