@@ -27,7 +27,7 @@ KanjiTable.prototype.add = function (characters, reading, meanings) {
 KanjiTable.prototype.fill = function (from, number) {
     var original = this;
     $.ajax({
-        url: 'https://raw.githubusercontent.com/Alanian/nihongo/master/Assets/Data/kanji.txt',
+        url: 'https://raw.githubusercontent.com/Alanian/nihongo/dbf63b5b520da4f8eb5d610c9821dc326400f957/Assets/Data/kanji.txt',
         async: false,
         success: function (data) {
             var lines = data.split('\n');
