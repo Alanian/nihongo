@@ -1,0 +1,39 @@
+<?= lessonHeader(roma('Mizenkei')); ?>
+<p>
+    Let us welcome a new main form called <?= roma('Mizenkei', 'Imperfective Form'); ?>. Its job is to
+    mark statements that aren't done directly, such as passive or negations. Let us look on how to build it.
+</p>
+<ul>
+    <li>
+        <p>
+            The MZK for <?= jap('する', 'to do; to make'); ?> is <?= jap('し'); ?><br>
+            In some very specific cases it's <?= jap('さ'); ?> or <?= jap('せ'); ?>
+        </p>
+    </li>
+    <li>
+        <p>
+            The MZK for <?= jap('くる', 'to come'); ?> is <?= jap('こ'); ?>
+        </p>
+    </li>
+    <li>
+        <p>
+            The MZK for lvl1 isn't surprising, just the stem.<br>
+            Example: <?= jap('たべる', 'to eat'); ?> ➤ <?= jap('たべ'); ?>
+        </p>
+    </li>
+    <li>
+        <p>
+            The MZK for lvl5 is the ending replaced by its neighbour from the a-column.<br>
+            Example: <?= jap('よむ', 'to read'); ?> ➤ <?= jap('よま'); ?><br>
+            You have to consider verbs that end with <?= jap('う'); ?>, they're replaced by <?= jap('わ'); ?>
+            instead of <?= jap('あ'); ?>, because they would sound really bad instead.<br>
+            Example: <?= jap('かう', 'to buy'); ?> ➤ <?= jap('かわ'); ?>
+        </p>
+    </li>
+    <li>
+        <p>
+            The MZK for i-adjectives is the same as the RYK, a <?= jap('く'); ?> on <?= jap('い'); ?>.<br>
+            Example: <?= jap('おもい', 'to be heavy'); ?> ➤ <?= jap('おもく'); ?>
+        </p>
+    </li>
+</ul>

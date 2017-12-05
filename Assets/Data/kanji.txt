@@ -38,23 +38,43 @@
 兄;ani;older brother
 弟;otouto;younger brother
 妹;imouto;younger sister
-触る;sawaru;to touch
-地獄;jigoku;hell
-小僧;kozou;apprentice, brat
-潰す;tsubusu;to crush, to slaughter, to mash, to break
-偉い;erai;admirable, great, important, eminent, authoriative
-態度;taido;attitude
-違う;chigau;to be different
-護送;gosou;convoy
-黄泉;yomi;underworld
-余所者;yosomono;stranger
-領主;ryoushu;lord
-動脈;doumyaku;artery
-嚙む;kamu;to chew, to bite
-盗賊;touzoku;robber
-大雑把;oozappo;crude, rough
-鉄塊;tekkai;lump of iron
-責任;sekinin;responsibility, charge
-旅芸人;tabigeinin;strolling entertainer
-鉄板;teppan;iron plate
-酒瓶;sakabin;sake bottle
+月曜日;getsuyoubi;monday
+火曜日;kayoubi;tuesday
+水曜日;suiyoubi;wednesday
+木曜日;mokuyoubi;thursday
+金曜日;kinyoubi;friday
+土曜日;doyoubi;saturday
+日曜日;nichiyoubi;sunday
+寒い;samui;cold (air)
+冷たい;tsumetai;cold (touchables)
+眠い;nemui;sleepy
+大きい;ookii;big
+小さい;chiisai;small
+高い;takai;high, expensive
+低い;hikui;low
+安い;yasui;cheap
+寝る;neru;to sleep
+食べる;taberu;to eat
+読む;yomu;to read
+殺す;korosu;to kill
+死ぬ;shinu;to die
+新聞;shinbun;newspaper
+新しい;atarashii;new
+聞く;kiku;to hear, to listen, to ask
+手紙;tegami;letter
+言う;iu;to say
+話す;hanasu; to speak
+戦う;tatakau; to fight
+武士;bushi;warrior serving the shogun (=samurai)
+侍;samurai;high rank bushi
+刀;katana;sword
+手裏剣;shuriken;throwing star
+力;chikara;strength
+戦争;sensou;war
+天皇;tennou;emperor of Japan
+将軍;shougun;general, leader of military and government
+書く;kaku;to write
+可愛い;kawaii;cute, sweet
+孤独;kodoku;loneliness
+退屈;taikutsu;boredom (boringness)
+絶望;zetsubou;despair

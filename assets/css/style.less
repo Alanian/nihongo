@@ -31,8 +31,7 @@ body {
   .main-font;
   font-size: 1.4rem;
   background-color: @background;
-  color: @font-color;
-;
+  color: @font-color;;
 }
 
 container {
@@ -67,6 +66,34 @@ content {
   ul {
     list-style-type: circle;
     margin: 20px 0 20px 80px;
+  }
+
+  ol {
+    list-style: decimal;
+    padding: 0 50px;
+
+    &.lesson-list {
+      li {
+        margin: 10px 0;
+        background: #eee;
+        border-radius: 8px;
+        border: 2px solid;
+        color: inherit;
+
+        a {
+          text-decoration: none;
+          display: block;
+          padding: 12px 40px 8px;
+          transition: .2s all ease-in-out;
+          box-shadow: 0 -8px 20px 2px rgba(0,0,0,.2) inset;
+
+          &:hover {
+            color: #eee;
+            background-color: @font-color;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -442,8 +469,8 @@ form {
     }
   }
 
-  .prepare{
-    .start-button{
+  .prepare {
+    .start-button {
       width: 30.8%;
       height: 200px;
       text-shadow: 0 0 6px;
@@ -457,11 +484,11 @@ form {
       .main-font;
       color: #eee;
 
-      &.double{
-          width: 64.4%;
+      &.double {
+        width: 64.4%;
       }
 
-      &.triple{
+      &.triple {
         width: 98%;
       }
 
@@ -494,8 +521,8 @@ form {
     }
   }
 
-  .end{
-    .label{
+  .end {
+    .label {
       .dark-texture;
       width: 30%;
       border-radius: 4px;
@@ -505,20 +532,20 @@ form {
       text-align: center;
       margin: auto;
 
-      span{
-        &.heading{
+      span {
+        &.heading {
           font-size: 2rem;
           display: block;
           margin: 0 0 20px;
         }
 
-        &.rank{
+        &.rank {
           font-size: 10rem;
           display: block;
           height: 125px;
         }
 
-        &.rank-accuracy{
+        &.rank-accuracy {
           font-size: 1rem;
           display: block;
           padding: 20px 0 0;
@@ -543,34 +570,6 @@ table {
       padding: 10px 0;
       border-bottom: @tableBorder;
       text-align: center;
-    }
-  }
-
-  &.grid-table {
-    tr {
-      &:first-child {
-        border-top: @tableBorder;
-      }
-
-      td {
-        padding: 20px;
-        border-right: @tableBorder;
-
-        &:first-child {
-          border-left: @tableBorder;
-        }
-
-        a {
-          font-weight: bold;
-          text-decoration: none;
-          color: dodgerblue;
-          text-shadow: none;
-
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-      }
     }
   }
 
