@@ -7,7 +7,9 @@ function kanjiToKana(text) {
     text = text.replace(/私/g, "わたし");
     text = text.replace(/人/g, "ひと");
 
-    text = text.replace(/行/g, "い");
+    text = text.replace(/行く/g, "いく");
+    text = text.replace(/来る/g, "くる");
+    text = text.replace(/帰る/g, "かえる");
 
     return text;
 }

@@ -1,0 +1,27 @@
+<?= lessonHeader('Question Particle'); ?>
+<p>
+    This particle is quite simple, you can add a <?= jap('か', 'question particle');?> to the end of a
+    sentence to make it asking.
+</p>
+<p>
+    <?= jap('きのう', 'yesterday'); ?>
+    <?= jap('の', 'possession particle'); ?>
+    <?= jap('よる', 'night'); ?>
+    <?= jap('アニメ'); ?>
+    <?= jap('を', 'object particle', true); ?>
+    <?= jap('みました', 'to see/watch (polite, past)'); ?>　
+    ➤ Yesterday night I didn't watch anime.<br>
+
+    <?= jap('きのう', 'yesterday'); ?>
+    <?= jap('の', 'possession particle'); ?>
+    <?= jap('よる', 'night'); ?>
+    <?= jap('アニメ'); ?>
+    <?= jap('を', 'object particle', true); ?>
+    <?= jap('みました', 'to see/watch (polite, past)'); ?>
+    <?= jap('か', 'question particle');?>
+    ➤ Did you watch anime yesterday night?<br>
+</p>
+<p>
+    Did you notice that despite of <?= jap('か', 'question particle');?>, the sentences are identical? The
+    grammar doesn't change at all! I'm convinced that of all languages this is the most simple question construction.
+</p>

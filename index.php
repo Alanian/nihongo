@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="<?= '/Assets/CSS/reset.css'; ?>">
     <link rel="stylesheet" type="text/css" href="<?= '/Assets/CSS/style.css'; ?>">
+    <link rel="shortcut icon" type="image/x-icon" href="<?= '/Assets/Images/favicon.ico'; ?>">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="<?= '/Assets/JS/process.js'; ?>"></script>
     <script src="<?= '/Assets/JS/kanaToRomaji.js'; ?>"></script>
