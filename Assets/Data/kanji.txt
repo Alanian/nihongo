@@ -78,3 +78,48 @@
 孤独;kodoku;loneliness
 退屈;taikutsu;boredom (boringness)
 絶望;zetsubou;despair
+新しい;atarashii;to be new
+光;hikari;light
+中;naka;middle, center
+君;kimi;you (personal)
+連れる;tsureru;to bring, to lead, to guide
+行く;yuku;to go
+愛;ai;love
+壊す;kowasu;to break, to destroy
+作る;tsukuru;to make, to create
+傷;kizu;injury, wound
+痛み;itami;pain
+消える;kieru;to vanish
+血;chi;blood
+止まる;tomaru;to stop
+生きる;ikiru;to live
+暗闇;kurayami;darkness
+飲む;nomu;to drink, to swallow
+途絶える;todaeru;to end, to stop
+声;koe;voice
+持つ;motsu;to hold, to own, to carry
+主;nushi;master, owner
+今;ima;now
+手;te;hand
+取る;toru;to take
+産む;umu;to give birth
+太陽;taiyou;sun
+下;shita;under
+色;iro;colour
+目;me;eye
+見る;miru;to see, to watch
+真実;shinjitsu;truth
+形;katachi;shape, form
+変わる;kawaru;to change, to become, to turn
+無い;nai;to not exist
+暴く;abaku;to expose, to uncover, to reveal
+全て;subete;all
+脱ぐ;nugu;to undress
+捨てる;suteru;to throw away
+呼ぶ;yobu;to call, to summon
+合う;au;to match, to fit
+名前;namae;name
+他;hoka;other
+一つ;hitotsu;one
+言葉;kotoba;word
+要る;iru;to need, to require

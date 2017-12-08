@@ -1,0 +1,41 @@
+<?= lessonHeader('Scene Marking Particle'); ?>
+<p>
+    I wasn't sure how to name this particle - hard to explain what something does in one single word. Let me show you what
+    it's used for. By using <?= jap('で', 'scene particle'); ?> after an location it'll mark where an action
+    occur, i.e. <?= jap('ドイツ', 'Germany'); ?> <?= jap('で', 'scene particle'); ?> becomes
+    "in Germany".
+</p>
+<p>
+    More examples:<br>
+    <?= jap('アメリカ', 'USA'); ?>
+    <?= jap('で', 'scene particle'); ?>
+    <?= jap('ひと', 'people'); ?>
+    <?= jap('が', 'subject particle'); ?>
+    <?= jap('のり', 'dried seaweed'); ?>
+    <?= jap('を', 'object particle', true); ?>
+    <?= jap('つかいません', 'not to use (polite)'); ?>
+    ➤ People in the US don't use Nori.<br>
+
+    <?= jap('かれ', 'he'); ?>
+    <?= jap('が', 'subject particle'); ?>
+    <?= jap('まいにち', 'every day'); ?>
+    <?= jap('としょかん', 'library'); ?>
+    <?= jap('で', 'scene particle'); ?>
+    <?= jap('ほん', 'book'); ?>
+    <?= jap('を', 'object particle', true); ?>
+    <?= jap('よむ', 'to read'); ?>
+    ➤ He reads books in the library every day.<br>
+
+    <?= jap('ちゅうしょく', 'lunch'); ?>
+    <?= jap('は', 'topic particle', true); ?>
+    <?= jap('どこ', 'where'); ?>
+    <?= jap('で', 'scene particle'); ?>
+    <?= jap('たべたい', 'want to eat'); ?>
+    <?= jap('です', 'HERE: politeness marker'); ?>
+    <?= jap('か', 'question particle'); ?>
+    ➤ Where do you want to eat your lunch?<br>
+</p>
+<p>
+    Be careful not to use <?= jap('で', 'scene particle'); ?> for <strong>locating</strong> objects. We'll
+    cover this in the next lesson.
+</p>

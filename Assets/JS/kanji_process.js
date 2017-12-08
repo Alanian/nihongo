@@ -158,6 +158,9 @@ $(document).ready(function () {
             case 'group4':
                 start(60, 20);
                 break;
+            case 'atarashii_hikari':
+                start(80, 45);
+                break;
         }
     });
 
