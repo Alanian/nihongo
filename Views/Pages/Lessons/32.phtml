@@ -1,0 +1,77 @@
+<?= lessonHeader(roma('Rentaikei')); ?>
+<p>
+    Our 4th main form, the <?= roma('Rentaikei', 'Attributive Form'); ?> opens a new way of structuring
+    sentences, and fortunately you don't have to learn a new conjugation pattern. The RTK is identical to the SSK with
+    the single exception that the copula becomes <?= jap('な');?>. That's it.
+</p>
+<p>
+    The lesson would be too short if we ended here, so let's look on what the RTK is good for. The RTK allows us to set
+    every expression as <strong>attribute</strong> by preceding the object that is attributed. Please compare these two
+    expressions:
+</p>
+<p>
+    <?= jap('おにぎり', '🍙');?> <?= jap('が', 'subject particle');?>
+    <?= jap('おいしい', 'delicious');?> and <?= jap('おいしい', 'delicious');?> <?= jap('おにぎり', '🍙');?>. <br>
+    The difference should be intuitive, since the first one has a subject marked by <?= jap('が', 'subject particle');?>
+    and a statement on the end, e.g. "Onigiri are delicious". The second one isn't even a sentence, it hasn't no predicate,
+    e.g. "delicious onigiri". However, <?= jap('おいしい', 'delicious');?> <?= jap('おにぎり', '🍙');?>
+    <?= jap('が', 'subject particle');?> <?= jap('たべたい', 'want to eat');?> (I want to eat
+    delicious onigiri) would make sense. So far so good.
+</p>
+<p>
+    With simple adjectives it's kinda comprehensible. But what's with verbs and other forms? <?= jap('たべたい', 'want to eat');?>
+    <?= jap('ひと', 'people');?> is attributing "people" with "want to eat", but how is this meant? It may
+    be very tempting, but please <strong>don't</strong> translate it like "I want to eat people" - analyze the grammar
+    first. So, "want to eat" describes "people", e.g. "people which want to eat" or rather "people I want to eat", since
+    the <roma>tai</roma>-form applies to oneself, if not further specified.
+</p>
+<p>
+    <?= jap('まり', 'a girl\s name');?>
+    <?= jap('は', 'topic particle', true);?>
+    <?= jap('よみたい', 'want to read');?>
+    <?= jap('ほん', 'book');?>
+    <?= jap('が', 'subject particle');?>
+    <?= jap('たくさん', 'many');?>
+    <?= jap('あります', 'to exist (polite)');?>
+    ➤ There're many books Mari wants to read.
+</p>
+<p>
+    The same thing is valid for verbs. In the case of <?= jap('よむ', 'read');?> <?= jap('ほん', 'book');?>,
+    the "book" is described with "to read". It could be "a book that reads" or "a book that she reads". It's lacking
+    further information.
+</p>
+<p>
+    <?= jap('まり', 'a girl\s name');?>
+    <?= jap('は', 'topic particle', true);?>
+    <?= jap('ひと', 'people');?>
+    <?= jap('を', 'object particle', true);?>
+    <?= jap('ころす', 'to kill');?>
+    <?= jap('ひと', 'people');?>
+    <?= jap('に', 'HERE: required particle for "to meet"', true);?>
+    <?= jap('あいたくない', 'not want to meet');?>
+    <?= jap('です', 'HERE: politeness marker');?><br>
+    This one is pretty hard. We should analyze it first and use the reverse translation technique.<br>
+    Translating it the "western" way,
+    <?= jap('まり', 'a girl\s name');?>
+    <?= jap('は', 'topic particle', true);?>
+    <?= jap('ひと', 'people');?>
+    <?= jap('を', 'object particle', true);?>
+    <?= jap('ころす', 'to kill');?> would make Mari a bad person.<br>
+    Here we go:<br>
+    <?= jap('あいたくない', 'not want to meet');?>
+    <?= jap('です', 'HERE: politeness marker');?> ➤ "don't want to meet". Who don't want to meet whom? <br>
+    <?= jap('ひと', 'people');?>
+    <?= jap('に', 'HERE: required particle for "to meet"');?> ➤ "to people". Aha, someone
+    don't want to meet people, which people? <br>
+    <?= jap('ひと', 'people');?>
+    <?= jap('を', 'object particle', true);?>
+    <?= jap('ころす', 'to kill');?>
+    <?= jap('ひと', 'people');?> ➤ "people that kill people". What is it all about?<br>
+    <?= jap('まり', 'a girl\s name');?>
+    <?= jap('は', 'topic particle', true);?> ➤ "As for Mari". So she's the topic, and eventually
+    the subject of that litte story.<br>
+    ➤ Mari don't want meet people that kill (other) people.
+</p>
+<p>
+    You are free to wipe away that sweat from your forehead.
+</p>
