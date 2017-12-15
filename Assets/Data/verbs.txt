@@ -1,25 +1,30 @@
 ﻿kuru;ku;ru;to come
 suru;su;ru;to do, to make
-v1;ki;ru;to dress up
 v1;mi;ru;to see
-v1;nige;ru;to flee, to escape
 v1;tabe;ru;to eat
-v1;hajime;ru;to start, to begin
+v1;hajime;ru;to start, to begin (transitive)
 v5;aru;ku;to go (by feet)
-v5;hara;u;to pay
-v5;hi;ku;to play (a music instrument)
-v5;i;ku;to go (to a destination)
-v5;kae;ru;to go back, to return (home)
 v5;ki;ku;to hear, to ask
-v5;ki;ru;to cut
-v5;koro;su;to kill, to murder
-v5;mana;bu;to learn, to study
-v5;ma;tsu;to wait
-v5;no;mu;to drink, to swallow
-v5;omo;u;to believe, to think
 v5;oyo;gu;to swim
-v5;shi;nu;to die
-v5;shi;ru;to know
-v5;to;ru;to take (in the hand)
-v5;to;bu;to fly, to jump
+v5;ka;gu;to smell
+v5;koro;su;to kill, to murder
+v5;hana;su;to speak
+v5;ma;tsu;to wait
+v5;u;tsu;to hit
+v5;no;mu;to drink, to swallow
+v5;nusu;mu;to steal
 v5;tsuka;u;to use
+v5;omo;u;to believe, to think
+v5;mana;bu;to learn, to study
+v5;to;bu;to fly, to jump
+v5;to;ru;to take (in the hand)
+v5;hajima;ru;to start, to begin (intransitive)
+v5;shi;nu;to die
+v5;ki;ru;to cut
+v5;shi;ru;to know
+v5;kae;ru;to go back, to return (home)
+v5;hara;u;to pay
+v5;i;ku;to go (to a destination)
+v5;hi;ku;to play (a music instrument)x
+v1;nige;ru;to flee, to escape
+v1;ki;ru;to dress up

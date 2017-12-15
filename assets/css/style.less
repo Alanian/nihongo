@@ -63,6 +63,260 @@ content {
   border-radius: 0 0 @border-radius @border-radius;
   box-shadow: inset 0 0 50px 0 rgba(0, 0, 0, 0.5);
 
+  p {
+    margin: 20px 0;
+    line-height: 1.4;
+    text-align: justify;
+
+    a {
+      font-weight: bold;
+      text-decoration: none;
+      color: dodgerblue;
+      text-shadow: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    span {
+      display: inline-block;
+      position: relative;
+      border: 2px solid;
+      padding: 0 4px;
+      border-radius: 6px;
+      margin: 0 -2px;
+      cursor: pointer;
+
+      p {
+        position: absolute;
+        width: max-content;
+        text-align: center;
+        background: rgba(0, 0, 0, .8);
+        color: #eee;
+        padding: 0 12px;
+        margin: 0;
+        border-radius: 4px;
+        top: -40px;
+        .main-font;
+
+        &:after{
+          content: '';
+          position: absolute;
+          top: 31px;
+          left: 50%;
+          margin-left: -8px;
+          border: 8px solid transparent;
+          border-top-color: rgba(0, 0, 0, .8);
+        }
+      }
+
+      &:before {
+        //content: attr(title);
+        //position: absolute;
+        //left: 50%;
+        //padding: 4px 16px 6px;
+        //background: #000;
+        //color: #fff;
+        //text-align: center;
+        //visibility: visible;
+        //border-radius: 5px;
+        //white-space: nowrap;
+        //z-index: 1;
+        //visibility: visible;
+        //opacity: 0.9;
+        //bottom: 150%;
+        //content: attr(content);
+        //position: absolute;
+        //padding: 0 12px 4px;
+        //background: rgba(0, 0, 0, .8);
+        //color: #eee;
+        //font-weight: initial;
+        //border-radius: 4px;
+        //bottom: 41px;
+        //visibility: visible;
+      }
+
+      &:after {
+        //content: '';
+        //position: absolute;
+        //top: 100%;
+        //left: 50%;
+        //margin-left: -8px;
+        //width: 0;
+        //height: 0;
+        //border: 8px solid transparent;
+        //border-top-color: black;
+        //content: '';
+        //position: absolute;
+        //top: -10px;
+        //left: 50%;
+        //margin-left: -8px;
+        //border: 8px solid transparent;
+        //border-top-color: rgba(0, 0, 0, .8);
+        //visibility: visible;
+      }
+
+      //&.domino {
+      //  font-size: 2.4rem;
+      //  display: inline-block;
+      //  position: relative;
+      //  top: 8px;
+      //  margin: -24px 0;
+      //
+      //}
+
+      /******************** word flag design *********************/
+
+      //jap {
+      //  .jap-font;
+      //
+      //  &.big {
+      //    font-size: 2rem;
+      //  }
+      //}
+      //
+      //roma {
+      //  //font-style: italic;
+      //}
+
+      &.jap {
+        .jap-font;
+        font-weight: bold;
+        top: 2px;
+      }
+
+      border-color: #222;
+      color: #222;
+
+      //&.noun {
+      //  background-color: #D76950;
+      //  border-color: #AC5440;
+      //}
+      //
+      //&.verb {
+      //  background-color: #D68420;
+      //  border-color: #4B4237;
+      //  color: #EDE4DA;
+      //}
+      //
+      //&.i-adjective {
+      //  background-color: #7F241F;
+      //  border-color: #681E1A;
+      //}
+      //
+      //&.na-adjective {
+      //  background-color: #4F92BC;
+      //  border-color: #3E7292;
+      //}
+      //
+      //&.copula {
+      //  background-color: #3E4C5E;
+      //  border-color: #333F4D;
+      //}
+      //
+      //&.particle {
+      //  background-color: #331936;
+      //  border-color: #1D031F;
+      //}
+
+      //&.shuushikei {
+      //  border-color: #666;
+      //}
+      //
+      //&.renyoukei {
+      //  border-color: #24668a;
+      //}
+      //
+      //&.rentaikei {
+      //  border-color: #f2865c;
+      //}
+      //
+      //&.mizenkei {
+      //  border-color: #a7284d;
+      //}
+      //
+      //&.izenkei {
+      //  border-color: #8615ec;
+      //}
+      //
+      //&.verb{
+      //  background-color: #f99;
+      //}
+      //
+      //&.na-adjective{
+      //  background-color: #9f9;
+      //}
+
+      &.noun {
+        border-color: rgb(70, 88, 82);
+        background-color: rgb(93, 116, 108);
+        color: rgb(145, 167, 159);
+      }
+
+      &.verb {
+        border-color: rgb(92, 146, 173);
+        background-color: rgb(126, 169, 190);
+        color: rgb(194, 214, 225);
+      }
+
+      &.particle {
+        border-color: rgb(0, 18, 20);
+        background-color: rgb(1, 64, 70);
+        color: rgb(2, 157, 171);
+      }
+
+      &.na-adjective {
+        border-color: rgb(138, 60, 77);
+        background-color: rgb(174, 76, 97);
+        color: rgb(207, 145, 159);
+      }
+
+      &.copula-rentai {
+        border-color: rgb(1, 28, 8);
+        background-color: rgb(4, 77, 22);
+        color: rgb(11, 173, 51);
+      }
+
+      //&.masu-form{
+      //
+      //}
+
+      //.sub-form{
+      //  background-color: #5F6F8E;
+      //  color: #eee;
+      //  border: 2px solid #3C4F76;
+      //  border-radius: 6px;
+      //  padding: 0 6px;
+      //  height: 30px;
+      //  line-height: 26px;
+      //  margin: -43px 0;
+      //  bottom: 3px;
+      //}
+      //
+      //.main-form{
+      //  border: 4px double #3c4f76;
+      //  color: #4d5f82;
+      //  line-height: 28px;
+      //  height: 30px;
+      //  border-radius: 6px;
+      //  padding: 0 6px;
+      //}
+      //
+      //.particle{
+      //  color: #eee;
+      //  border: 2px solid #3B5447;
+      //  border-radius: 6px;
+      //  background-color: #476656;
+      //  padding: 0 4px;
+      //  font-weight: bold;
+      //  text-shadow: 1px 1px 0 black;
+      //}
+
+      /******************** word flag design *********************/
+    }
+  }
+
   ul {
     list-style-type: circle;
     margin: 20px 0 20px 80px;
@@ -85,7 +339,7 @@ content {
           display: block;
           padding: 12px 40px 8px;
           transition: .2s all ease-in-out;
-          box-shadow: 0 -8px 20px 2px rgba(0,0,0,.2) inset;
+          box-shadow: 0 -8px 20px 2px rgba(0, 0, 0, .2) inset;
 
           &:hover {
             color: #eee;
@@ -101,18 +355,6 @@ footer {
   display: block;
   font-size: 1rem;
   margin: 50px 0 -30px 0;
-}
-
-jap {
-  .jap-font;
-
-  &.big {
-    font-size: 2rem;
-  }
-}
-
-roma {
-  font-style: italic;
 }
 
 strong {
@@ -133,34 +375,6 @@ h2 {
 h3 {
   font-size: 1.6rem;
   margin: 0 0 -10px 0;
-}
-
-p {
-  margin: 20px 0;
-  line-height: 1.4;
-  text-align: justify;
-
-  a {
-    font-weight: bold;
-    text-decoration: none;
-    color: dodgerblue;
-    text-shadow: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
-  span {
-    &.domino {
-      font-size: 2.4rem;
-      display: inline-block;
-      position: relative;
-      top: 8px;
-      margin: -24px 0;
-
-    }
-  }
 }
 
 .button-group {
@@ -235,9 +449,8 @@ jap, roma, .kana-table td {
       margin-left: -8px;
       width: 0;
       height: 0;
-      border-width: 8px;
-      border-style: solid;
-      border-color: black transparent transparent;
+      border: 8px solid transparent;
+      border-top-color: black;
     }
   }
 }

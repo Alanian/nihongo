@@ -1,0 +1,67 @@
+<?= lessonHeader('Adjectives Again'); ?>
+<p>
+    No, I'm not going to repeat myself. Instead, I want to show you an absolutely different type of adjectives, the
+    so-called na-adjectives. They seem like nouns and actually can be used like them. Consider that like nouns they need
+    the copula, because they don't implicate the "to be" like i-adjectives do.
+</p>
+<p>
+    Compare following sentences:
+</p>
+<p>
+    <strong>Noun-based:</strong>
+    <?= jap('かれ', 'he'); ?>
+    <?= jap('が', 'subject particle'); ?>
+    <?= jap('がくせい', 'university student'); ?>
+    <?= jap('だ', 'to be'); ?>
+    ➤ He's a student.<br>
+    <strong>Na-adjective-based:</strong>
+    <?= jap('かぞく', 'family'); ?>
+    <?= jap('が', 'subject particle'); ?>
+    <?= jap('すき', 'liking, loving'); ?>
+    <?= jap('だ', 'to be'); ?>
+    ➤ I love my family.<br>
+    <strong>I-adjective-based:</strong>
+    <?= jap('やま', 'mountain'); ?>
+    <?= jap('が', 'subject particle'); ?>
+    <?= jap('たかい', 'high'); ?>
+    ➤ The mountain is high.
+</p>
+<p>
+    There's no difference in the structure between the noun-based and na-adjective-based sentences.
+    The difference between i-adjectives and na-adjectives is that the first one don't need a copula.
+    So where's the catch? The issue lies in the attributing. Remember what's special about the RTK? The copula
+    becomes <?= jap('な'); ?> - and na-adjectives depend on it.
+</p>
+<p>
+    Compare again:
+</p>
+<p>
+    <strong>Noun-based:</strong>
+    <?= jap('がくせい', 'university student'); ?>
+    <?= jap('の', 'possession particle'); ?>
+    <?= jap('いのち', 'life'); ?>
+    ➤ a student's life<br>
+    <strong>Na-adjective-based:</strong>
+    <?= jap('たいせつ', 'important'); ?>
+    <?= jap('な', 'copula RTK'); ?>
+    <?= jap('ひと', 'person'); ?>
+    ➤ an important person<br>
+    <strong>I-adjective-based:</strong>
+    <?= jap('たかい', 'high'); ?>
+    <?= jap('やま', 'mountain'); ?>
+    ➤ a high mountain
+</p>
+<p>
+    Instead of <?= jap('の'); ?> you need <?= jap('な'); ?> before the attributed noun. This is the only rule.
+    The hard part is to determine if a word is a noun or a na-adjective. Unfortunately there's no way to do it
+    visually - you have to know its meaning. However, many na-adjectives have a <?= jap('的'); ?> on the end.
+</p>
+<p>
+    Determining i-adjectives and na-adjectives is pretty easy. Unlike i-adjectives (i.e. <?= jap('暗い', 'to be dark'); ?>)
+    na-adjectives (i.e. <?= jap('便利', 'handy, useful, convenient'); ?>) have no conjugating <?= jap('い'); ?>
+    on the end. It can be tricky if na-adjectives end with <?= jap('い'); ?> and are written in Hiragana, like
+    <?= jap('ゆうめい', 'popular'); ?> do. The good news is that because <roma>ei</roma> is pronounced
+    <roma>ee</roma> (streched <roma>e</roma>, like <roma>sen'see</roma> in <roma>sensei</roma>), an adjective with a
+    mora from the e-column before <?= jap('い'); ?> can impossibly be an i-adjective. However <?= jap('きらい', 'hateful'); ?>
+    can, but isn't. In this case you have to know this word.
+</p>

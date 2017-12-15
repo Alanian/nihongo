@@ -9,19 +9,19 @@ function removeScreen(hide) {
     $(hide).animate({height: 'toggle'}, 0);
 }
 
-function getEndRank(accuracy){
+function getEndRank(accuracy) {
     var interval = 100 / 28;
 
     if (accuracy >= 100 - interval) return 'S';
-    else if (accuracy > 100 - interval * 3) return  'A';
-    else if (accuracy > 100 - interval * 6) return  'B';
-    else if (accuracy > 100 - interval * 10) return  'C';
-    else if (accuracy > 100 - interval * 15) return  'D';
-    else if (accuracy > 100 - interval * 21) return  'E';
-    return  'F';
+    else if (accuracy > 100 - interval * 3) return 'A';
+    else if (accuracy > 100 - interval * 6) return 'B';
+    else if (accuracy > 100 - interval * 10) return 'C';
+    else if (accuracy > 100 - interval * 15) return 'D';
+    else if (accuracy > 100 - interval * 21) return 'E';
+    return 'F';
 }
 
-function endHiragana(){
+function endHiragana() {
     var rank = getEndRank(accuracy);
     rank = rank == 'S' && numberOfCharacters != 127 ? 'A' : rank;
     var advice;
@@ -102,45 +102,133 @@ function showTime(element, text, time) {
 }
 
 $(document).ready(function () {
-    $('jap').hover(function () {
-        var meaning = $(this).find('meaning');
-        var width = meaning.width();
-        meaning.css('margin-left', '-' + (width / 2 + 16) + 'px');
-    });
+    // $('jap').hover(function () {
+    //     var meaning = $(this).find('meaning');
+    //     var width = meaning.width();
+    //     meaning.css('margin-left', '-' + (width / 2 + 16) + 'px');
+    // });
+    //
+    // $('.kana-table').find('td').hover(function () {
+    //     var meaning = $(this).find('meaning');
+    //     var width = meaning.width();
+    //     meaning.css('margin-left', '-' + (width / 2 + 16) + 'px');
+    //     meaning.css('margin-bottom', '-27px');
+    // });
+    //
+    var content = $('content');
+    var html;
 
-    $('.kana-table').find('td').hover(function () {
-        var meaning = $(this).find('meaning');
-        var width = meaning.width();
-        meaning.css('margin-left', '-' + (width / 2 + 16) + 'px');
-        meaning.css('margin-bottom', '-27px');
-    });
+    content.find('span').hover(
+        function () {
+            var meaning = $(this).attr('content');
+            html = $(this).html();
+            if (meaning) $(this).html(html + '<p>' + meaning + '</p>');
+            var width = $(this).outerWidth();
+            $(this).find('p').css('min-width', Math.floor(width) + 'px');
+        },
+        function () {
+            $(this).html(html);
+        }
+    );
 
-    $('roma').hover(function () {
-        var meaning = $(this).find('meaning');
-        var width = meaning.width();
-        meaning.css('margin-left', '-' + (width / 2 + 16) + 'px');
-        meaning.css('margin-bottom', '-8px');
-    });
+    content.find('span.jap').click(function () {
 
-    var particleClicked = false;
-    $('p').find('jap[particle]').click(function () {
-        particleClicked = true;
-    });
-    $('p').find('jap').click(function () {
+        alert($(this).outerWidth());
+
+        var particle = $(this).hasClass('particle');
+
         var text = $(this).html();
-        var kanaText = kanjiToKana(text);
-        if (text == kanaText) $(this).wrap('<roma></roma>').parent().html(kanaToRomaji(kanaText, particleClicked));
-        else $(this).html(kanaText);
-        particleClicked = false;
+        var roma = kanaToRomaji(text, particle);
+
+        if (text === roma) {
+            $(this).html(kanjiToKana(text));
+            alert(html);
+        } else {
+            $(this).removeClass('jap');
+            $(this).html(roma);
+        }
     });
-    $('form').find('jap[particle]').click(function () {
-        particleClicked = true;
-    });
-    $('form').find('jap').click(function () {
-        var text = $(this).html();
-        var kanaText = kanjiToKana(text);
-        if (text == kanaText) $(this).wrap('<roma></roma>').parent().html(kanaToRomaji(kanaText, particleClicked));
-        else $(this).html(kanaText);
-        particleClicked = false;
-    });
+
+    //
+    // $('span:after').css('color', 'red');
+    // $(this).attr('data-content', 'hallo');
+    // var width = meaning.width();
+    // meaning.css('margin-left', '-' + (width / 2 + 16) + 'px');
+    // meaning.css('margin-bottom', '-8px');
+
+
+    // var meaning = $(this).find('meaning');
+
+
+    // function getRandomInt(min, max) {
+    //     return Math.floor(Math.random() * (max - min + 1)) + min;
+    // }
+
+    // function getRandomColor() {
+    //     var min = 0;
+    //     var max = 255;
+    //     return 'rgb(' + getRandomInt(min, max) + ',' + getRandomInt(min, max) + ',' + getRandomInt(min, max) + ')';
+    // }
+    //
+    // function getRandomColorBright() {
+    //     var min = 150;
+    //     var max = 255;
+    //     return 'rgb(' + getRandomInt(min, max) + ',' + getRandomInt(min, max) + ',' + getRandomInt(min, max) + ')';
+    // }
+    //
+    // function getRandomColorDark() {
+    //     var min = 0;
+    //     var max = 100;
+    //     return 'rgb(' + getRandomInt(min, max) + ',' + getRandomInt(min, max) + ',' + getRandomInt(min, max) + ')';
+    // }
+
+
+    // function getHSL() {
+    //     var c = getRandomInt(0, 360);
+    //     var s = getRandomInt(0, 100);
+    //     var h = getRandomInt(10, 80);
+    //
+    //     var bg = 'hsl(' + c + ',' + s + '%,' + h + '%)';
+    //     var bd = 'hsl(' + c + ',' + s + '%,' + (h - 10) + '%)';
+    //     var co = 'hsl(' + c + ',' + s + '%,' + (h + 20) + '%)';
+    //
+    //     return [bd, bg, co];
+    // }
+    //
+    // function getHex(min, max) {
+    //     return '#' + getRandomInt(min, max).toString(16) + getRandomInt(min, max).toString(16) + getRandomInt(min, max).toString(16);
+    // }
+
+    // $('content').find('span').hover(function () {
+    //     // $(this).css('border-color', getHSLA());
+    //     // $(this).css('background-color', getHSLA());
+    //     // $(this).css('color', getHSLA());
+    //     // var meaning = $(this).attr('meaning');
+    //     // $(this).after('<meaning>'+meaning+'</meaning>');
+    //     // $(this).attr('data-content', 'hallo');
+    //     // var width = meaning.width();
+    //     // meaning.css('margin-left', '-' + (width / 2 + 16) + 'px');
+    //     // meaning.css('margin-bottom', '-8px');
+    //
+    //
+    //     // var meaning = $(this).find('meaning');
+    //
+    // });
+
+    // $('content').find('.main').mousedown(function () {
+    //     var hsl = getHSL();
+    //     $(this).css('border-color', hsl[0]);
+    //     $(this).css('background-color', hsl[1]);
+    //     $(this).css('color', hsl[2]);
+    //     // var meaning = $(this).attr('meaning');
+    //     // $(this).after('<meaning>'+meaning+'</meaning>');
+    //     // $(this).attr('data-content', 'hallo');
+    //     // var width = meaning.width();
+    //     // meaning.css('margin-left', '-' + (width / 2 + 16) + 'px');
+    //     // meaning.css('margin-bottom', '-8px');
+    //
+    //
+    //     // var meaning = $(this).find('meaning');
+    //
+    // });
 });
